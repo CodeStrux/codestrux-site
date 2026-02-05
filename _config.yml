@@ -17,40 +17,32 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: Codestrux Tech
-email: contact@codestrux.tech
+title: CodeStrux Tech
+author:
+  name: Codestrux Tech
+  email: contact@codestrux.tech
 description: >- # this means to ignore newlines until "baseurl:"
   Codestrux Tech is a leading software development company based in Costa Rica,
   specializing in scalable cloud applications, API integrations, software
   containerization, and high availability solutions. We deliver robust,
   enterprise-grade software that drives business growth.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: codestruxtech
-github_username:  codestrux
+show_excerpts: true # set to true to show excerpts on the homepage
+heading: Building Scalable Solutions for Modern Businesses
+subheading: >
+  At Codestrux Tech, we offer comprehensive software development services designed to meet the evolving needs of modern businesses. Our expertise spans across cloud technologies, system integration, containerization, and high availability architectures.
+
 
 # Build settings
-theme: minima
+# aao: theme: minima
+theme: jekyll-nord-theme
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+jekyll-nord-theme:
+  date_format: "%Y-%b-%d"
+
+  # generate social links in footer
+  social_links:
+    twitter: codestrux
+    github:  CodeStrux
+    linkedin: alvaroaraya

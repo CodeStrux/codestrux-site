@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: Software Development
 ---
 
 # Building Scalable Solutions for Modern Businesses
