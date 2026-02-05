@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   specializing in scalable cloud applications, API integrations, software
   containerization, and high availability solutions. We deliver robust,
   enterprise-grade software that drives business growth.
-show_excerpts: true # set to true to show excerpts on the homepage
+show_excerpts: false # set to true to show excerpts on the homepage
 heading: Building Scalable Solutions for Modern Businesses
 subheading: >
   At Codestrux Tech, we offer comprehensive software development services designed to meet the evolving needs of modern businesses. Our expertise spans across cloud technologies, system integration, containerization, and high availability architectures.
