@@ -1,0 +1,45 @@
+# UI / nav / footer strings for the manual bilingual tree.
+# Accessed in templates as site.data.i18n[L] where L is page.lang
+# ("en" canonical at root, "es-CR" mirrored under /es/).
+# Keep both language blocks in sync — every key must exist in both.
+
+en:
+  # Label shown on the language switcher (the language you switch TO).
+  switch_to: "Español"
+  nav:
+    home: "Home"
+    about: "About"
+    services: "Services"
+    projects: "Projects"
+  footer:
+    tagline: "A two-engineer studio from Cartago, Costa Rica. We build and run infrastructure and software."
+    legal: "Legal"
+    contact: "Contact"
+  legal_links:
+    privacy: "Privacy Policy"
+    terms: "Terms of Service"
+    data_deletion: "Data Deletion"
+  # Strings used by _includes/legal-doc.html
+  legal_label: "Legal"
+  effective: "Effective date"
+  data_deletion: "Data Deletion Instructions"
+
+es-CR:
+  switch_to: "English"
+  nav:
+    home: "Inicio"
+    about: "Nosotros"
+    services: "Servicios"
+    projects: "Proyectos"
+  footer:
+    tagline: "Un estudio de dos ingenieros desde Cartago, Costa Rica. Construimos y operamos infraestructura y software."
+    legal: "Legal"
+    contact: "Contacto"
+  legal_links:
+    privacy: "Política de Privacidad"
+    terms: "Términos del Servicio"
+    data_deletion: "Eliminación de Datos"
+  # Cadenas usadas por _includes/legal-doc.html
+  legal_label: "Legal"
+  effective: "Fecha de vigencia"
+  data_deletion: "Instrucciones de Eliminación de Datos"

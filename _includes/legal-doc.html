@@ -1,0 +1,38 @@
+{%- comment -%}
+  Renders one legal document from _data/legal/<page.doc>.yml in the page's
+  language (page.lang), falling back to English. page.doc is the file stem
+  ("privacy", "terms", or "data-deletion") — always bracket access because
+  "data-deletion" is hyphenated. Section ids are shared across languages so
+  in-page anchors are stable. The privacy doc's "deletion" section gets an
+  explicit link to the Data Deletion Instructions page (localized URL).
+{%- endcomment -%}
+{%- assign L = page.lang | default: "en" -%}
+{%- assign doc = site.data.legal[page.doc][L] | default: site.data.legal[page.doc].en -%}
+{%- assign ui = site.data.i18n[L] | default: site.data.i18n.en -%}
+{%- if L == "es-CR" -%}{%- assign dd_url = "/es/data-deletion" -%}{%- else -%}{%- assign dd_url = "/data-deletion" -%}{%- endif -%}
+<article class="legal-doc">
+  <header class="legal-doc-header">
+    <p class="eyebrow">{{ ui.legal_label }}</p>
+    <h1 class="page-heading">{{ doc.title }}</h1>
+    <p class="legal-summary">{{ doc.summary }}</p>
+    <p class="legal-effective">{{ ui.effective }}: {{ doc.effective_date }}</p>
+  </header>
+  {%- for p in doc.intro -%}<p>{{ p | markdownify }}</p>{%- endfor -%}
+  {%- for s in doc.sections -%}
+    <section id="{{ s.id }}">
+      <h2>{{ s.heading }}</h2>
+      {%- for p in s.paragraphs -%}<p>{{ p | markdownify }}</p>{%- endfor -%}
+      {%- if s.bullets -%}
+        <ul>
+          {%- for b in s.bullets -%}<li>{{ b | markdownify }}</li>{%- endfor -%}
+          {%- if s.id == "deletion" -%}<li><a href="{{ dd_url | relative_url }}">{{ ui.data_deletion }}</a></li>{%- endif -%}
+        </ul>
+      {%- endif -%}
+      {%- if s.steps -%}
+        <ol>
+          {%- for st in s.steps -%}<li>{{ st | markdownify }}</li>{%- endfor -%}
+        </ol>
+      {%- endif -%}
+    </section>
+  {%- endfor -%}
+</article>

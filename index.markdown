@@ -1,35 +1,58 @@
 ---
 layout: home
-title: Software Development
+title: "CodeStrux Tech"
+lang: en
+ref: home
+alt_url: /es/
+permalink: /
 ---
 
-# Building Scalable Solutions for Modern Businesses
+<p class="eyebrow">A two-engineer studio · Cartago, Costa Rica</p>
 
-Welcome to **Codestrux Tech**, your trusted partner for enterprise software development in Costa Rica. We specialize in creating robust, scalable, and high-performance solutions that power modern businesses.
+We are **CodeStrux Tech** — two engineers who build and run both the
+infrastructure and the software on top of it. From the Linux box and the
+hypervisor up to the API, the data pipeline, the web app, and the AI agent, we
+design it, ship it, and keep it running.
 
-## Our Expertise
+We work the whole stack rather than a single layer: Linux and virtualization,
+open source, cloud and serverless, data engineering, Java and TypeScript
+backends and frontends, electronic invoicing, WhatsApp messaging automation,
+and AI tooling. Small team, direct collaboration, software built to last.
 
-### Cloud Applications
-We design and deploy scalable cloud-native applications that grow with your business. Our solutions leverage modern cloud architectures to ensure performance, reliability, and cost-efficiency.
+## What we do
 
-### API Integrations
-Seamlessly connect your systems and services with our expert API integration solutions. We build secure, efficient, and maintainable integrations that enable your business to work smarter.
+<div class="card-grid" markdown="1">
 
-### Software Containerization
-Transform your applications with containerization technologies. We help you achieve consistency across environments, simplify deployments, and improve resource utilization using Docker, Kubernetes, and modern orchestration platforms.
+<div class="card" markdown="1">
+### Infrastructure & Linux
+Arch, Debian/Ubuntu, FreeBSD, RHEL, and Amazon Linux on Proxmox VE, KVM, and
+bare metal. We provision, harden, and operate the machines our software runs on.
+</div>
 
-### High Availability Applications
-Mission-critical applications demand zero downtime. Our high availability solutions ensure your services remain operational 24/7 with automated failover, load balancing, and disaster recovery strategies.
+<div class="card" markdown="1">
+### Open source
+We build on open source and contribute back. Our own tooling — including the
+Aether orchestration framework — ships under the CodeStrux organization on
+GitHub.
+</div>
 
-## Why Choose Codestrux Tech?
+<div class="card" markdown="1">
+### Cloud, data & backends
+AWS and GCP, serverless and containers, ETL and BI pipelines, and production
+backends in Java 21 (Jakarta EE, Spring Boot) and TypeScript (React, Next.js).
+</div>
 
-- **Expert Team**: Experienced developers with deep expertise in modern technologies
-- **Costa Rica Based**: Convenient timezone alignment with North American businesses
-- **Quality Focused**: We deliver enterprise-grade solutions built to last
-- **Agile Approach**: Flexible, iterative development that adapts to your needs
+<div class="card" markdown="1">
+### Fintech & messaging
+Costa Rican electronic invoicing (Hacienda e-invoicing, XAdES signing) and
+WhatsApp Business Platform automation with consent and opt-in compliance.
+</div>
 
-## Ready to Build Something Great?
+</div>
 
-Let's discuss how we can help transform your business with powerful software solutions.
+## Work with us
 
-[Contact Us](mailto:contact@codestrux.tech)
+See what we have built on the [projects](/projects/) page, or read more
+[about us](/about/) and the [services](/services/) we offer.
+
+Ready to talk? Email us at [contact@codestrux.tech](mailto:contact@codestrux.tech).

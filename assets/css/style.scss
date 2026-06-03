@@ -1,0 +1,99 @@
+---
+# Repo-level override of jekyll-nord-theme's assets/css/style.scss.
+# Imports the theme's Nord base unchanged, then adds scoped styles for the
+# components this site introduces (language switcher, legal docs, project /
+# capability cards). All colors reference the theme's Nord variables so the
+# house style is preserved.
+---
+
+@import "initialize";
+
+/* Language switcher in the nav — accent it so it reads as a control. */
+.site-nav .page-link.lang-switch {
+  font-weight: 600;
+  color: $link-base-color;
+}
+
+@media screen and (min-width: $on-medium) {
+  .site-nav .page-link.lang-switch {
+    border-left: 1px solid $border-color-01;
+    padding-left: 14px;
+  }
+}
+
+/* Editorial eyebrow kicker reused on the home hero and legal pages. */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: $small-font-size;
+  font-weight: 600;
+  color: $brand-color;
+  margin-bottom: $spacing-unit / 3;
+}
+
+/* Footer additions. */
+.site-footer .footer-heading {
+  font-weight: 600;
+  margin-bottom: $spacing-unit / 3;
+}
+.site-footer .legal-links a {
+  color: $text-color;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+/* Long-form legal documents. */
+.legal-doc {
+  max-width: $content-width;
+
+  .legal-doc-header {
+    margin-bottom: $spacing-unit;
+  }
+  .legal-summary {
+    font-size: $base-font-size * 1.05;
+  }
+  .legal-effective {
+    font-size: $small-font-size;
+    color: lighten($text-color, 18%);
+  }
+  section {
+    margin-bottom: $spacing-unit;
+    h2 {
+      margin-top: $spacing-unit;
+    }
+  }
+  ol li, ul li {
+    margin-bottom: $spacing-unit / 4;
+  }
+}
+
+/* Card grid used by the home, services, and projects pages. Falls back to a
+   single column on narrow screens. */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-unit;
+  margin: $spacing-unit 0;
+
+  @media screen and (min-width: $on-medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  border: 1px solid $border-color-01;
+  border-radius: 5px;
+  padding: $spacing-unit / 1.2;
+  background-color: lighten($background-color, 3%);
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: $spacing-unit / 3;
+  }
+  .card-meta {
+    font-size: $small-font-size;
+    color: lighten($text-color, 18%);
+    margin-bottom: $spacing-unit / 3;
+  }
+  p:last-child { margin-bottom: 0; }
+}

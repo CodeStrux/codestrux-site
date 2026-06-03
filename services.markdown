@@ -1,122 +1,89 @@
 ---
 layout: page
-title: Services
+title: "Services"
+lang: en
+ref: services
+alt_url: /es/services/
 permalink: /services/
 ---
 
-# Our Services
+<p class="eyebrow">Services</p>
 
-At Codestrux Tech, we offer comprehensive software development services designed to meet the evolving needs of modern businesses. Our expertise spans across cloud technologies, system integration, containerization, and high availability architectures.
+# What we do
 
-## Scalable Cloud Applications
+We build and operate the full stack — the machines, the platforms on top of
+them, and the software they run. Our capabilities are pooled across the team, so
+a single engagement can span infrastructure, data, backend, frontend, and
+compliance without handing off between vendors.
 
-### What We Offer
-We design, develop, and deploy cloud-native applications that leverage the full potential of modern cloud platforms including AWS, Azure, and Google Cloud Platform.
+## Infrastructure & virtualization
 
-### Key Features
-- **Microservices Architecture**: Build modular, independently deployable services
-- **Auto-scaling**: Automatically adjust resources based on demand
-- **Cloud-Native Design**: Leverage managed services for optimal performance
-- **Cost Optimization**: Implement efficient resource utilization strategies
-- **Multi-Region Deployment**: Global reach with low-latency access
+We run Linux in production and at home: Arch, Debian and Ubuntu, FreeBSD, RHEL,
+and Amazon Linux. We provision and operate virtualization with Proxmox VE and
+KVM, and we are comfortable on bare metal and RAID. We treat the host as part of
+the product — provisioned, hardened, monitored, and reproducible.
 
-### Technologies We Use
-- AWS (Lambda, ECS, EKS, RDS, S3)
-- Azure (App Service, AKS, Cosmos DB)
-- Google Cloud Platform (Cloud Run, GKE, Cloud SQL)
-- Serverless frameworks
-- Infrastructure as Code (Terraform, CloudFormation)
+## Open source
 
----
+We build on open source and support it. We prefer open, inspectable tooling, run
+self-hosted services where it makes sense, and release our own work — such as
+the Aether orchestration framework — under the CodeStrux organization on GitHub.
 
-## API Integrations
+## Cloud & serverless
 
-### What We Offer
-We create seamless connections between disparate systems, enabling data flow and process automation across your technology stack.
+We design and run cloud-native systems on AWS and GCP — serverless functions,
+containers, managed data services, and infrastructure as code. We size for the
+workload and keep an eye on cost as well as availability.
 
-### Key Features
-- **RESTful API Development**: Modern, standards-based API design
-- **GraphQL Implementation**: Flexible data querying for complex needs
-- **Third-Party Integrations**: Connect with popular SaaS platforms
-- **API Gateway Management**: Secure, scalable API access control
-- **Webhook Implementation**: Real-time event-driven integrations
-- **Documentation**: Comprehensive API documentation with OpenAPI/Swagger
+## Data pipelines, ETL & BI
 
-### Integration Specialties
-- Custom enterprise systems
-- CRM systems (Salesforce, HubSpot)
-- E-commerce platforms (Shopify, WooCommerce)
-- Communication tools (Slack, Microsoft Teams, WhatsApp)
-- Payment gateways (Stripe, PayPal, etc.)
+We build data pipelines and analytics: ingestion and ETL, warehousing, and
+business-intelligence reporting on tools such as Redshift, Glue, and QuickSight.
+We turn operational data into something the business can actually use.
 
----
+## Backends
 
-## Software Containerization
+We write production backends in two main stacks:
 
-### What We Offer
-Transform your applications into portable, consistent, and easily manageable containerized services that run reliably across any environment.
+- **Java 21 / Jakarta EE** — JPA/EclipseLink, JAX-RS, CDI, and JSF/PrimeFaces,
+  on application servers such as WildFly.
+- **Java 21 / Spring & Spring Boot** — REST and reactive/async services.
 
-### Key Features
-- **Container Strategy**: Assess and plan your containerization journey
-- **Docker Implementation**: Create optimized container images
-- **Kubernetes Orchestration**: Deploy and manage containers at scale
-- **CI/CD Integration**: Automated build and deployment pipelines
-- **Migration Services**: Move legacy applications to containers
-- **Monitoring & Logging**: Comprehensive observability solutions
+## Frontends
 
-### Technologies We Use
-- Docker & Docker Compose
-- Kubernetes
-- Helm charts
-- Container registries (Docker Hub, ECR, GCR)
-- Monitoring (Prometheus, Grafana)
+We build typed, modern web interfaces with TypeScript, React 19, and Next.js,
+paired with the backends above.
 
----
+## Databases
 
-## High Availability Applications
+We run and tune relational and document stores: MySQL and Percona, and
+MongoDB / Atlas.
 
-### What We Offer
-Build mission-critical systems that deliver consistent uptime and performance, even during failures or peak demand periods.
+## DevOps & CI/CD
 
-### Key Features
-- **Redundancy Design**: Eliminate single points of failure
-- **Load Balancing**: Distribute traffic efficiently across resources
-- **Automated Failover**: Instant recovery from component failures
-- **Disaster Recovery**: Comprehensive backup and recovery strategies
-- **Health Monitoring**: Proactive detection and alerting
-- **Performance Optimization**: Maintain speed under any load
+We containerize with Docker, orchestrate with Kubernetes, and automate build and
+deployment with GitHub Actions and similar pipelines.
 
-### Implementation Strategies
-- Active-active and active-passive configurations
-- Database replication and clustering
-- Distributed caching (Redis, Memcached)
-- CDN integration for global content delivery
-- Circuit breakers and retry mechanisms
-- Chaos engineering for resilience testing
+## Fintech compliance & e-invoicing
 
----
+We implement Costa Rican electronic invoicing against Hacienda's requirements —
+generating, signing (XAdES), and submitting comprobantes — and handle the
+surrounding compliance details.
 
-## Our Process
+## Messaging automation
 
-### 1. Discovery & Planning
-We work closely with you to understand your requirements, constraints, and business objectives.
+We integrate the WhatsApp Business Platform / Meta Cloud API for customer
+messaging: templates, flows, and automation built around consent and opt-in
+compliance.
 
-### 2. Architecture & Design
-Our team designs solutions that are scalable, maintainable, and aligned with industry best practices.
+## AI & agent tooling
 
-### 3. Development & Implementation
-Using agile methodologies, we build your solution iteratively with regular feedback loops.
+We build with modern AI and agent frameworks — including our own multi-agent
+orchestration tooling — and integrate them into real backends and workflows.
 
-### 4. Testing & Quality Assurance
-Comprehensive testing ensures reliability, security, and performance.
+## Ready to start?
 
-### 5. Deployment & Support
-We handle deployment and provide ongoing support to ensure continued success.
+Every engagement is different. Tell us what you are building and we will tell you
+how we can help.
 
----
-
-## Ready to Get Started?
-
-Every project is unique, and we're here to tailor our services to your specific needs. Let's discuss how we can help you achieve your technology goals.
-
-[Contact Us](mailto:contact@codestrux.tech) to schedule a consultation.
+[Contact us](mailto:contact@codestrux.tech) to start a conversation.

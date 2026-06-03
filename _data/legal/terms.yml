@@ -1,0 +1,159 @@
+# Terms of Service — ported from the Stratos UI draft
+# (stratos-whatsapp-ui/src/content/legal/terms.ts) and adapted for the
+# CodeStrux Tech brand site. Entity = "CodeStrux Tech"; platform / Meta app =
+# "CodeStrux Tech App"; jurisdiction = Costa Rica; address = San Nicolás,
+# Cartago. Section ids are shared with the es-CR block. Pinned as the Terms of
+# Service URL in Meta App Settings.
+en:
+  kind: "terms"
+  title: "Terms of Service"
+  summary: "The terms governing your use of the CodeStrux Tech App."
+  effective_date: "2026-06-03"
+  intro:
+    - "These Terms of Service (\"Terms\") govern your access to and use of the CodeStrux Tech App provided by CodeStrux Tech (\"we\", \"us\"). By accessing the platform or using it on behalf of a business, you agree to these Terms."
+    - "If you use the CodeStrux Tech App on behalf of an organization, you represent that you are authorized to bind that organization to these Terms."
+  sections:
+    - id: "service"
+      heading: "The service"
+      paragraphs:
+        - "The CodeStrux Tech App is a messaging console that lets a business send and receive WhatsApp messages with its customers through the WhatsApp Business Platform, manage message templates, record customer consent, and review conversation activity. We may add, change, or remove features over time."
+    - id: "accounts"
+      heading: "Eligibility and accounts"
+      paragraphs:
+        - "You must be at least 18 years old and able to form a binding contract. Access is provisioned through your organization's administrator and an identity provider. You are responsible for the activity that occurs under your account and for keeping your credentials confidential. Notify us promptly of any unauthorized use."
+    - id: "whatsapp-compliance"
+      heading: "WhatsApp compliance and opt-in"
+      paragraphs:
+        - "Your use of the CodeStrux Tech App to message customers over WhatsApp is also subject to the WhatsApp Business Messaging Policy, the WhatsApp Business Terms of Service, and the Meta Platform Terms. You agree to comply with all of them. In particular, you must:"
+      bullets:
+        - "Obtain valid opt-in from each customer before sending the first template message, in a way that clearly identifies your business and the purpose of the messages."
+        - "Keep auditable evidence of that opt-in and honor opt-out requests promptly."
+        - "Only send message categories and content permitted by the WhatsApp policies, and not use the platform to send spam or unsolicited messages."
+        - "Maintain the accuracy of your business profile and display name as required by Meta."
+    - id: "data-responsibilities"
+      heading: "Your responsibilities as data controller"
+      paragraphs:
+        - "For the personal data of your own customers that you process through the CodeStrux Tech App, you are the data controller and we are your processor. You are responsible for having a lawful basis to contact your customers, for the content you send, and for responding to your customers' data-subject requests. We will assist you in meeting those obligations as described in our Privacy Policy and Data Deletion Instructions."
+    - id: "prohibited"
+      heading: "Prohibited uses"
+      paragraphs:
+        - "You may not:"
+      bullets:
+        - "Use the platform for any unlawful, fraudulent, deceptive, or harmful purpose, or to send prohibited content."
+        - "Message people who have not opted in, or continue messaging people who have opted out."
+        - "Infringe intellectual-property or privacy rights, or violate any applicable law or third-party policy, including Meta's."
+        - "Probe, scan, or reverse engineer the platform, circumvent access controls, or interfere with its operation or security."
+        - "Resell or provide the service to third parties except as expressly permitted by your agreement with us."
+    - id: "ip"
+      heading: "Intellectual property"
+      paragraphs:
+        - "The platform, its software, and its design are owned by CodeStrux Tech and its licensors and are protected by intellectual-property laws. We grant you a limited, non-exclusive, non-transferable right to use the platform during your subscription. You retain ownership of the content and data you submit; you grant us the rights needed to operate the service for you."
+    - id: "third-party"
+      heading: "Third-party services"
+      paragraphs:
+        - "The platform depends on the WhatsApp Business Platform and other third-party services. Your use of those services is governed by their respective terms, and we are not responsible for their availability, changes, or actions. WhatsApp and Meta are trademarks of Meta Platforms, Inc."
+    - id: "disclaimer"
+      heading: "Disclaimers"
+      paragraphs:
+        - "The platform is provided \"as is\" and \"as available\", without warranties of any kind, whether express or implied, including merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the service will be uninterrupted, error-free, or that messages will always be delivered, since delivery depends on WhatsApp/Meta and on recipients' settings."
+    - id: "liability"
+      heading: "Limitation of liability"
+      paragraphs:
+        - "To the maximum extent permitted by law, CodeStrux Tech will not be liable for any indirect, incidental, special, consequential, or punitive damages, or for lost profits, revenues, or data, arising from your use of the platform. Our total liability for any claim relating to the service is limited to the amounts you paid for the service in the twelve months before the claim."
+    - id: "indemnity"
+      heading: "Indemnification"
+      paragraphs:
+        - "You agree to indemnify and hold CodeStrux Tech harmless from claims, losses, and expenses arising out of your use of the platform in breach of these Terms or of the WhatsApp/Meta policies, including claims by your customers or by regulators relating to your messaging or consent practices."
+    - id: "termination"
+      heading: "Suspension and termination"
+      paragraphs:
+        - "We may suspend or terminate access if you breach these Terms, if required to comply with the WhatsApp/Meta policies or the law, or to protect the platform's security and integrity. You may stop using the platform at any time. On termination, the provisions that by their nature should survive will survive."
+    - id: "changes"
+      heading: "Changes to these Terms"
+      paragraphs:
+        - "We may update these Terms to reflect changes to the service or the law. We will revise the effective date above and, where changes are material, take reasonable steps to notify you. Continued use after an update means you accept the revised Terms."
+    - id: "law"
+      heading: "Governing law"
+      paragraphs:
+        - "These Terms are governed by the laws of the Republic of Costa Rica, without regard to conflict-of-laws rules. The courts located in Costa Rica will have jurisdiction over disputes, unless mandatory law provides otherwise."
+    - id: "contact"
+      heading: "Contact us"
+      paragraphs:
+        - "Questions about these Terms can be sent to CodeStrux Tech at support@codestrux.tech, or by post at San Nicolás, Cartago 30104, Costa Rica."
+
+es-CR:
+  kind: "terms"
+  title: "Términos del Servicio"
+  summary: "Los términos que rigen el uso de la CodeStrux Tech App."
+  effective_date: "2026-06-03"
+  intro:
+    - "Estos Términos del Servicio (\"Términos\") rigen su acceso y uso de la CodeStrux Tech App provista por CodeStrux Tech (\"nosotros\"). Al acceder a la plataforma o usarla en nombre de una empresa, usted acepta estos Términos."
+    - "Si usa la CodeStrux Tech App en nombre de una organización, declara estar autorizado para obligar a esa organización a estos Términos."
+  sections:
+    - id: "service"
+      heading: "El servicio"
+      paragraphs:
+        - "La CodeStrux Tech App es una consola de mensajería que permite a una empresa enviar y recibir mensajes de WhatsApp con sus clientes a través de la Plataforma de WhatsApp Business, administrar plantillas de mensajes, registrar el consentimiento de los clientes y revisar la actividad de las conversaciones. Podemos agregar, cambiar o eliminar funciones con el tiempo."
+    - id: "accounts"
+      heading: "Elegibilidad y cuentas"
+      paragraphs:
+        - "Usted debe tener al menos 18 años y capacidad para celebrar un contrato vinculante. El acceso se aprovisiona a través del administrador de su organización y de un proveedor de identidad. Usted es responsable de la actividad que ocurra en su cuenta y de mantener la confidencialidad de sus credenciales. Notifíquenos sin demora cualquier uso no autorizado."
+    - id: "whatsapp-compliance"
+      heading: "Cumplimiento de WhatsApp y opt-in"
+      paragraphs:
+        - "Su uso de la CodeStrux Tech App para enviar mensajes a clientes por WhatsApp también está sujeto a la Política de Mensajería de WhatsApp Business, los Términos del Servicio de WhatsApp Business y los Términos de la Plataforma de Meta. Usted acepta cumplirlos todos. En particular, usted debe:"
+      bullets:
+        - "Obtener un opt-in válido de cada cliente antes de enviar el primer mensaje de plantilla, de forma que identifique claramente su empresa y el propósito de los mensajes."
+        - "Conservar evidencia auditable de ese opt-in y atender con prontitud las solicitudes de opt-out."
+        - "Enviar únicamente las categorías y el contenido de mensajes permitidos por las políticas de WhatsApp, y no usar la plataforma para enviar spam o mensajes no solicitados."
+        - "Mantener la exactitud de su perfil de empresa y nombre para mostrar según lo exige Meta."
+    - id: "data-responsibilities"
+      heading: "Sus responsabilidades como responsable del tratamiento"
+      paragraphs:
+        - "Respecto de los datos personales de sus propios clientes que usted trata mediante la CodeStrux Tech App, usted es el responsable del tratamiento y nosotros somos su encargado. Usted es responsable de contar con una base legal para contactar a sus clientes, del contenido que envía y de atender las solicitudes de los titulares de los datos. Le asistiremos en el cumplimiento de esas obligaciones según se describe en nuestra Política de Privacidad y en las Instrucciones de Eliminación de Datos."
+    - id: "prohibited"
+      heading: "Usos prohibidos"
+      paragraphs:
+        - "Usted no puede:"
+      bullets:
+        - "Usar la plataforma con fines ilícitos, fraudulentos, engañosos o dañinos, ni para enviar contenido prohibido."
+        - "Enviar mensajes a personas que no han dado opt-in, o continuar enviando mensajes a personas que han dado opt-out."
+        - "Infringir derechos de propiedad intelectual o de privacidad, ni violar ninguna ley aplicable o política de terceros, incluidas las de Meta."
+        - "Sondear, escanear o realizar ingeniería inversa de la plataforma, eludir los controles de acceso o interferir con su operación o seguridad."
+        - "Revender o proporcionar el servicio a terceros salvo que su acuerdo con nosotros lo permita expresamente."
+    - id: "ip"
+      heading: "Propiedad intelectual"
+      paragraphs:
+        - "La plataforma, su software y su diseño son propiedad de CodeStrux Tech y sus licenciantes y están protegidos por las leyes de propiedad intelectual. Le otorgamos un derecho limitado, no exclusivo e intransferible para usar la plataforma durante su suscripción. Usted conserva la titularidad del contenido y los datos que envía; nos otorga los derechos necesarios para operar el servicio en su beneficio."
+    - id: "third-party"
+      heading: "Servicios de terceros"
+      paragraphs:
+        - "La plataforma depende de la Plataforma de WhatsApp Business y de otros servicios de terceros. Su uso de esos servicios se rige por sus respectivos términos, y no somos responsables de su disponibilidad, cambios o acciones. WhatsApp y Meta son marcas de Meta Platforms, Inc."
+    - id: "disclaimer"
+      heading: "Renuncia de garantías"
+      paragraphs:
+        - "La plataforma se proporciona \"tal cual\" y \"según disponibilidad\", sin garantías de ningún tipo, expresas o implícitas, incluidas las de comerciabilidad, idoneidad para un fin particular y no infracción. No garantizamos que el servicio sea ininterrumpido o libre de errores, ni que los mensajes siempre se entreguen, ya que la entrega depende de WhatsApp/Meta y de la configuración de los destinatarios."
+    - id: "liability"
+      heading: "Limitación de responsabilidad"
+      paragraphs:
+        - "En la máxima medida permitida por la ley, CodeStrux Tech no será responsable por daños indirectos, incidentales, especiales, consecuentes o punitivos, ni por pérdida de ganancias, ingresos o datos, derivados de su uso de la plataforma. Nuestra responsabilidad total por cualquier reclamo relacionado con el servicio se limita a los montos que usted pagó por el servicio en los doce meses previos al reclamo."
+    - id: "indemnity"
+      heading: "Indemnización"
+      paragraphs:
+        - "Usted acepta indemnizar y mantener indemne a CodeStrux Tech frente a reclamos, pérdidas y gastos derivados de su uso de la plataforma en incumplimiento de estos Términos o de las políticas de WhatsApp/Meta, incluidos los reclamos de sus clientes o de autoridades relacionados con sus prácticas de mensajería o consentimiento."
+    - id: "termination"
+      heading: "Suspensión y terminación"
+      paragraphs:
+        - "Podemos suspender o terminar el acceso si usted incumple estos Términos, si es necesario para cumplir con las políticas de WhatsApp/Meta o con la ley, o para proteger la seguridad e integridad de la plataforma. Usted puede dejar de usar la plataforma en cualquier momento. Al terminar, subsistirán las disposiciones que por su naturaleza deban subsistir."
+    - id: "changes"
+      heading: "Cambios a estos Términos"
+      paragraphs:
+        - "Podemos actualizar estos Términos para reflejar cambios en el servicio o en la ley. Revisaremos la fecha de vigencia indicada arriba y, cuando los cambios sean sustanciales, tomaremos medidas razonables para notificarle. El uso continuado tras una actualización implica que acepta los Términos revisados."
+    - id: "law"
+      heading: "Ley aplicable"
+      paragraphs:
+        - "Estos Términos se rigen por las leyes de la República de Costa Rica, sin atención a las normas de conflicto de leyes. Los tribunales ubicados en Costa Rica tendrán jurisdicción sobre las controversias, salvo que una norma imperativa disponga lo contrario."
+    - id: "contact"
+      heading: "Contáctenos"
+      paragraphs:
+        - "Las consultas sobre estos Términos pueden enviarse a CodeStrux Tech a support@codestrux.tech, o por correo postal en San Nicolás, Cartago 30104, Costa Rica."
