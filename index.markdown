@@ -14,9 +14,13 @@ permalink: /
     <span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span>
   </div>
   <div class="pane__body hero__body">
-    <pre class="ascii-logo" aria-hidden="true">┌─┐┌─┐┌┬┐┌─┐┌─┐┌┬┐┬─┐┬ ┬─┐ ┬
-│  │ │ ││├┤ └─┐ │ ├┬┘│ │┌┴┬┘
-└─┘└─┘─┴┘└─┘└─┘ ┴ ┴└─└─┘┴ └─</pre>
+    <pre class="ascii-logo" aria-hidden="true">                                         ▄█████▄
+███ ███ ██  ███ ███ ███ ██  █ █ █ █    ▟█████████▙
+█   █ █ █ █ █   █    █  █ █ █ █ █ █    ██ ▀▀ ▀▀ ██
+█   █ █ █ █ ██  ███  █  ██  █ █  █     ██   ▄   ██
+█   █ █ █ █ █     █  █  █ █ █ █ █ █    ▜█████████▛
+███ ███ ██  ███ ███  █  █ █ ███ █ █      █ █ █ █
+                                         ▀▀▀▀▀▀▀</pre>
     <p class="prompt prompt--hero">
       <span class="prompt__sigil" aria-hidden="true">$</span>
       <span class="prompt__cmd" data-typewriter data-typewriter-text="whoami">whoami</span>
