@@ -1,11 +1,10 @@
 {%- comment -%}
-  Language toggle. Points at page.alt_url (the paired page in the other
-  language). Rendered inside the theme's .site-nav, so it carries the
-  page-link class to inherit the nav's responsive layout, plus lang-switch
-  for the accent treatment defined in assets/css/style.scss.
+  Language toggle — a real <a> pointing at page.alt_url (the paired page in
+  the other language). Styled as a terminal "EN | ES"-style control via the
+  .lang-switch rules in assets/css/style.scss. Drives hreflang correctness too.
 {%- endcomment -%}
 {%- assign L = page.lang | default: "en" -%}
 {%- assign ui = site.data.i18n[L] | default: site.data.i18n.en -%}
 {%- if page.alt_url -%}
-<a class="page-link lang-switch" hreflang="{% if L == 'es-CR' %}en{% else %}es-CR{% endif %}" href="{{ page.alt_url | relative_url }}" rel="alternate">{{ ui.switch_to }}</a>
+<a class="lang-switch" hreflang="{% if L == 'es-CR' %}en{% else %}es-CR{% endif %}" href="{{ page.alt_url | relative_url }}" rel="alternate" aria-label="{{ ui.switch_to_full }}"><span aria-hidden="true">{{ ui.switch_to }}</span></a>
 {%- endif -%}

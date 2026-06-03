@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{%- comment -%}
+  Content-page layout: a bento grid the page body fills with terminal panes.
+  The page's markdown body supplies the panes (via _includes/terminal-pane.html
+  or raw .pane markup), so this layout is just the grid container + a
+  command-as-heading masthead pane driven by front matter.
+{%- endcomment -%}
+<div class="bento">
+  {{ content }}
+</div>

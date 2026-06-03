@@ -1,0 +1,27 @@
+{%- comment -%}
+  Reusable bento "window" pane. Renders the soft-cornered pane chrome:
+  a title bar with a path label on the left and three brand-tinted window
+  "traffic-light" dots on the right, then the body.
+
+  Params:
+    path     path label shown in the title bar, e.g. "~/services" (required).
+    status   optional muted status text shown right of the path label.
+    span     optional grid span class: "col-2" | "row-2" | "col-2 row-2" | "full".
+    feature  optional: "true" gives the pane the accent (emerald) border treatment.
+    label    optional aria-label for the <section>; defaults to the path.
+    body     the pane's inner HTML (capture it first, then pass it).
+
+  Usage:
+    {% capture pane_body %}<h2>…</h2><p>…</p>{% endcapture %}
+    {% include terminal-pane.html path="~/about" span="col-2" body=pane_body %}
+{%- endcomment -%}
+<section class="pane{% if include.span %} pane--{{ include.span | replace: ' ', ' pane--' }}{% endif %}{% if include.feature == "true" %} pane--feature{% endif %}"{% if include.label or include.path %} aria-label="{{ include.label | default: include.path }}"{% endif %}>
+  <div class="pane__bar">
+    <span class="pane__path">{{ include.path }}</span>
+    {%- if include.status -%}<span class="pane__status">{{ include.status }}</span>{%- endif -%}
+    <span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span>
+  </div>
+  <div class="pane__body">
+    {{ include.body }}
+  </div>
+</section>

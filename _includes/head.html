@@ -1,0 +1,42 @@
+{%- comment -%}
+  <head> for the bento-terminal redesign. Order is deliberate:
+    1. charset + viewport (must be first).
+    2. theme-color + favicon + font preloads.
+    3. INLINE no-FOUC theme script — runs BEFORE the stylesheet so the
+       correct data-theme is set on <html> on the very first paint
+       (reads localStorage "codestrux-theme" → falls back to
+       prefers-color-scheme). Never deferred.
+    4. The stylesheet.
+    5. {% feed_meta %} (from jekyll-feed; replaces the dropped theme's tag).
+    6. {% include custom-head.html %} — the title / meta description / canonical /
+       hreflang / Facebook domain-verification chain, preserved verbatim.
+{%- endcomment -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11201a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f2f7f2" media="(prefers-color-scheme: light)">
+<link rel="icon" href="{{ '/assets/logo/codestrux.png' | relative_url }}" type="image/png">
+
+{%- comment -%} Preload the primary weight (body text) for fast first paint. {%- endcomment -%}
+<link rel="preload" href="{{ '/assets/fonts/jetbrains-mono-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+
+<script>
+  /* No-FOUC theme: set data-theme before first paint. Keep in sync with
+     terminal.js (STORAGE_KEY = "codestrux-theme"). */
+  (function () {
+    try {
+      var stored = localStorage.getItem('codestrux-theme');
+      var theme = (stored === 'light' || stored === 'dark')
+        ? stored
+        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+{%- feed_meta -%}
+{%- include custom-head.html -%}

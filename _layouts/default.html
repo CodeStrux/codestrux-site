@@ -1,0 +1,25 @@
+<!doctype html>
+{%- comment -%}
+  Clean-room base layout for the bento-terminal redesign (replaces the dropped
+  jekyll-nord-theme default.html). data-theme is set pre-paint by the inline
+  script in head.html; we ship "dark" as the SSR default so no-JS visitors get
+  a coherent first paint. lang is driven by per-page front matter.
+{%- endcomment -%}
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-theme="dark" class="boot">
+<head>
+  {%- include head.html -%}
+</head>
+{%- assign L = page.lang | default: "en" -%}
+{%- assign ui = site.data.i18n[L] | default: site.data.i18n.en -%}
+<body class="{{ page.layout }} {{ page.ref }}">
+  <a class="skip-link" href="#main">{{ ui.shell.skip }}</a>
+  <div class="scanlines" aria-hidden="true"></div>
+  {%- include header.html -%}
+  <main id="main" class="shell" tabindex="-1">
+    {{ content }}
+  </main>
+  {%- include footer.html -%}
+  {%- include command-palette.html -%}
+  <script src="{{ '/assets/js/terminal.js' | relative_url }}" defer></script>
+</body>
+</html>
