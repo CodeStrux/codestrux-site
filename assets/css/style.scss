@@ -453,8 +453,8 @@ code, kbd, samp { font-family: var(--mono); }
 /* ============================================================ *
  *  Footer
  * ============================================================ */
-.site-footer { flex-shrink: 0; width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(16px, 3vw, 28px) clamp(20px, 3vw, 32px); }
-.footer-grid { display: grid; gap: 28px 32px; grid-template-columns: repeat(4, 1fr); }
+.site-footer { flex-shrink: 0; width: 100%; max-width: var(--maxw); margin: 0 auto; padding: clamp(28px, 4.5vw, 52px) clamp(16px, 3vw, 28px) clamp(24px, 3.5vw, 40px); }
+.footer-grid { display: grid; gap: 34px 40px; grid-template-columns: repeat(4, 1fr); }
 .footer-col--brand { grid-column: span 4; }
 .footer-prompt { font-size: 12.5px; color: var(--fg-dim); margin-bottom: 8px; }
 .footer-prompt__caret { color: var(--accent); font-weight: 700; }
@@ -469,7 +469,7 @@ code, kbd, samp { font-family: var(--mono); }
 .social-links { list-style: none; padding: 0; display: flex; gap: 10px; }
 .social-links a { color: var(--fg-dim); display: inline-flex; padding: 6px; border: 1px solid var(--rule); border-radius: var(--radius-chip); transition: color var(--speed) var(--ease), border-color var(--speed) var(--ease); }
 .social-links a:hover { color: var(--accent); border-color: var(--accent); }
-.site-footer__rule { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.site-footer__rule { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .footer-meta { color: var(--fg-faint); font-size: 12px; }
 
 /* ============================================================ *
@@ -548,4 +548,9 @@ kbd {
   .topbar__tools { margin-left: auto; }
   .palette-trigger__k { display: none; }
   .palette-trigger__menu { display: inline; }
+  /* Hero ASCII emblem: center the CODESTRUX wordmark + skull as one
+     fit-to-width unit on phones so it reads as a balanced, symmetric block
+     (by default the <pre> is left-anchored in the full-width pane). */
+  .ascii-logo { width: fit-content; margin-inline: auto; font-size: clamp(7px, 2.1vw, 11px); line-height: 1.1; }
+  .hero__body { align-items: center; text-align: center; }
 }

@@ -21,10 +21,7 @@ permalink: /projects/
   <div class="pane__body">
     <div class="product-wordmark">{% include stratos-wordmark.html class="is-lg" %}</div>
     <p class="card-meta">Audio-first WhatsApp Business inbox for LATAM SMBs</p>
-    <p>A real-time WhatsApp Business inbox built for small and mid-sized businesses in Latin America. It delivers messages over SSE, transcribes Spanish voice notes, suggests replies, and reconciles payment receipts (SINPE, Pix, SPEI) with OCR. It supports templates with variables, WhatsApp Flows, vertical AI agents, and consent/opt-in compliance for Costa Rica's Ley 8968, Brazil's LGPD, and Mexico's LFPDPPP. Auth runs on Keycloak / OIDC.</p>
-    <ul class="tags" aria-label="Stack">
-      <li>Next.js</li><li>React 19</li><li>Java 21</li><li>Spring Boot</li><li>MySQL</li><li>MongoDB</li><li>Keycloak / OIDC</li><li>SSE</li>
-    </ul>
+    <p>A real-time WhatsApp Business inbox built for small and mid-sized businesses in Latin America. It delivers messages over SSE, transcribes Spanish voice notes, suggests replies, and runs vertical AI agents.</p>
     <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">open stratos</a></p>
   </div>
 </section>
@@ -34,10 +31,7 @@ permalink: /projects/
   <div class="pane__body">
     <h2 class="cmd-head">FacturaCR <span class="flag">(ce-je)</span></h2>
     <p class="card-meta">Costa Rican electronic invoicing</p>
-    <p>A Costa Rican electronic-invoicing engine. It generates, signs (XAdES), and submits comprobantes to Hacienda against the v4.4 XSD — facturas, tiquetes, notas de crédito and débito, compras, exportación, and recibos — with export to PDF, Excel, and QR.</p>
-    <ul class="tags" aria-label="Stack">
-      <li>Jakarta EE 10</li><li>Java 21</li><li>WildFly</li><li>EclipseLink</li><li>RESTEasy/Jersey</li><li>JSF/PrimeFaces</li><li>JAXB</li><li>MySQL/Percona</li>
-    </ul>
+    <p>A Costa Rican electronic-invoicing engine. It generates, signs (XAdES), and submits tax documents to Hacienda against the v4.4 XSD — invoices, tickets, credit and debit notes, purchase and export documents, and receipts — with export to PDF, Excel, and QR.</p>
   </div>
 </section>
 
