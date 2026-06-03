@@ -35,27 +35,16 @@ subheading: >
   and operate the whole stack — Linux and virtualization, open source, cloud, data
   pipelines, backends and frontends, e-invoicing, messaging automation, and AI tooling.
 
-# Pages that appear in the English top nav. The Spanish nav is rendered from
-# _data/i18n.yml by the local _includes/header.html override, so the /es/*
-# mirror never leaks into this list.
-header_pages:
-  - index.markdown
-  - about.markdown
-  - services.markdown
-  - projects.markdown
+# Nav is rendered from _data/nav.yml + _data/i18n.yml by the local
+# _includes/header.html (and the ⌘K command palette), so there is no
+# vestigial header_pages list and the /es/* mirror never leaks into the EN nav.
 
+# Brand social handles, surfaced in the footer (the dropped Nord theme used to
+# inject these from its own block).
+social:
+  github: CodeStrux
+  linkedin: alvaroaraya
 
-# Build settings
-# aao: theme: minima
-theme: jekyll-nord-theme
+# Build settings — clean-room layouts + fresh SCSS, no gem theme.
 plugins:
   - jekyll-feed
-
-jekyll-nord-theme:
-  date_format: "%Y-%b-%d"
-
-  # generate social links in footer
-  social_links:
-    twitter: codestrux
-    github:  CodeStrux
-    linkedin: alvaroaraya

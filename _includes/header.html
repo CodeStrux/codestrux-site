@@ -1,44 +1,40 @@
 {%- comment -%}
-  Local override of the jekyll-nord-theme header. Keeps the theme's markup
-  (.site-header > .header-content > .wrapper, the responsive nav-trigger
-  hamburger, .trigger, and the .header-wave SVG) and its classes intact, but
-  makes the brand link and nav links language-aware so the /es/ mirror never
-  leaks into the English nav. Nav labels come from _data/i18n.yml keyed by
-  page.lang; the language switcher is appended last.
+  Terminal top-bar header for the bento-terminal redesign.
+  - ASCII brand prompt (codestrux@cartago:~$) linking home; real <a> nav.
+  - Nav links come from _data/nav.yml (single source shared with the palette);
+    labels localized via _data/i18n.yml; the /es prefix is applied per language
+    so the /es/ mirror never leaks into the EN nav.
+  - Real <a>/<button> controls: language switcher, theme toggle, ⌘K affordance.
+    The palette is progressive enhancement layered on top of this real nav.
 {%- endcomment -%}
 {%- assign L = page.lang | default: "en" -%}
 {%- assign ui = site.data.i18n[L] | default: site.data.i18n.en -%}
-{%- if L == "es-CR" -%}{%- assign root = "/es/" -%}{%- assign base = "/es" -%}
-{%- else -%}{%- assign root = "/" -%}{%- assign base = "" -%}{%- endif -%}
-<header class="site-header">
-  <div class="header-content">
-    <div class="wrapper">
-      <a class="site-title" rel="author" href="{{ root | relative_url }}">{{ site.title | escape }}</a>
+{%- if L == "es-CR" -%}{%- assign base = "/es" -%}{%- else -%}{%- assign base = "" -%}{%- endif -%}
+<header class="topbar" role="banner">
+  <div class="topbar__inner">
+    <a class="brand" href="{{ base | append: '/' | relative_url }}" rel="home">
+      <span class="brand__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span>
+      <span class="brand__prompt"><span class="brand__user">{{ ui.shell.user }}@{{ ui.shell.host }}</span><span class="brand__sep">:</span><span class="brand__path">~</span><span class="brand__caret">$</span></span>
+      <span class="brand__name">codestrux<span class="brand__tld">.tech</span></span>
+    </a>
 
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+    <nav class="nav" aria-label="{{ ui.shell.nav_label }}">
+      {%- for item in site.data.nav.items -%}
+      {%- if item.key == "home" -%}{%- assign href = base | append: "/" -%}{%- else -%}{%- assign href = base | append: item.path -%}{%- endif -%}
+      <a class="nav__link{% if page.ref == item.key %} is-current{% endif %}" href="{{ href | relative_url }}"{% if page.ref == item.key %} aria-current="page"{% endif %}><span class="nav__slash" aria-hidden="true">/</span>{{ ui.nav[item.label] }}</a>
+      {%- endfor -%}
+    </nav>
 
-        <div class="trigger">
-          <a class="page-link" href="{{ root | relative_url }}">{{ ui.nav.home }}</a>
-          <a class="page-link" href="{{ base | append: '/about/' | relative_url }}">{{ ui.nav.about }}</a>
-          <a class="page-link" href="{{ base | append: '/services/' | relative_url }}">{{ ui.nav.services }}</a>
-          <a class="page-link" href="{{ base | append: '/projects/' | relative_url }}">{{ ui.nav.projects }}</a>
-          {% include lang-switcher.html %}
-        </div>
-      </nav>
+    <div class="topbar__tools">
+      <button type="button" class="btn-ghost palette-trigger" data-palette-open aria-haspopup="dialog" aria-controls="command-palette" aria-label="{{ ui.palette.open }}">
+        <span class="palette-trigger__k" aria-hidden="true">⌘K</span>
+        <span class="palette-trigger__menu" aria-hidden="true">{{ ui.shell.menu }}</span>
+      </button>
+      <button type="button" class="btn-ghost theme-toggle" data-theme-toggle aria-label="{{ ui.theme.toggle }}">
+        <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">●</span>
+        <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">○</span>
+      </button>
+      {% include lang-switcher.html %}
     </div>
-  </div>
-
-  <div class="header-wave">
-    <svg viewBox="0 0 1920 100" xmlns="http://www.w3.org/2000/svg" class="DividerSvgTop">
-      <path d="M1920 250H0V0s126.707 78.536 349.975 80.05c177.852 1.203 262.805-63.874 553.803-63.874 290.517 0 383.458 57.712 603.992 61.408 220.527 3.696 278.059-61.408 412.23-17.239" class="WaveFooter___StyledPath3"></path>
-    </svg>
   </div>
 </header>

@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{%- comment -%}
+  Home layout: just the bento grid container. The index body supplies every
+  pane (the hero "boot" pane with the typewriter prompt, the capability tiles,
+  the featured Stratos product pane, the contact pane) as .pane markup, so the
+  hero copy and panes stay fully editable and localized per index file.
+{%- endcomment -%}
+<div class="bento bento--home">
+  {{ content }}
+</div>

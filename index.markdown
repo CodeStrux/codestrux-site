@@ -7,52 +7,74 @@ alt_url: /es/
 permalink: /
 ---
 
-<p class="eyebrow">A two-engineer studio · Cartago, Costa Rica</p>
+<section class="pane pane--feature pane--col-3 pane--row-2 hero" aria-label="CodeStrux Tech">
+  <div class="pane__bar">
+    <span class="pane__path">codestrux@cartago:~</span>
+    <span class="pane__status" data-boot-status data-ready="ready.">booting codestrux.tech …</span>
+    <span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span>
+  </div>
+  <div class="pane__body hero__body">
+    <pre class="ascii-logo" aria-hidden="true">┌─┐┌─┐┌┬┐┌─┐┌─┐┌┬┐┬─┐┬ ┬─┐ ┬
+│  │ │ ││├┤ └─┐ │ ├┬┘│ │┌┴┬┘
+└─┘└─┘─┴┘└─┘└─┘ ┴ ┴└─└─┘┴ └─</pre>
+    <p class="prompt prompt--hero">
+      <span class="prompt__sigil" aria-hidden="true">$</span>
+      <span class="prompt__cmd" data-typewriter data-typewriter-text="whoami">whoami</span>
+      <span class="caret" aria-hidden="true"></span>
+    </p>
+    <h1 class="hero__heading">We build and run <span class="hl">infrastructure</span> and <span class="hl">software</span>.</h1>
+    <p class="hero__sub">A two-engineer studio from Cartago, Costa Rica. From the Linux box and the hypervisor up to the API, the data pipeline, the web app, and the AI agent — we design it, ship it, and keep it running.</p>
+    <p class="hero__cta">
+      <a class="btn" href="/projects/">ls projects</a>
+      <a class="btn btn--ghost" href="mailto:contact@codestrux.tech">contact</a>
+    </p>
+  </div>
+</section>
 
-We are **CodeStrux Tech** — two engineers who build and run both the
-infrastructure and the software on top of it. From the Linux box and the
-hypervisor up to the API, the data pipeline, the web app, and the AI agent, we
-design it, ship it, and keep it running.
+<section class="pane" aria-label="Infrastructure and Linux">
+  <div class="pane__bar"><span class="pane__path">~/infra</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> uname <span class="flag">-a</span></h2>
+    <p>Arch, Debian/Ubuntu, FreeBSD, RHEL, and Amazon Linux on Proxmox VE, KVM, and bare metal. We provision, harden, and operate the machines our software runs on.</p>
+  </div>
+</section>
 
-We work the whole stack rather than a single layer: Linux and virtualization,
-open source, cloud and serverless, data engineering, Java and TypeScript
-backends and frontends, electronic invoicing, WhatsApp messaging automation,
-and AI tooling. Small team, direct collaboration, software built to last.
+<section class="pane" aria-label="Open source">
+  <div class="pane__bar"><span class="pane__path">~/oss</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> git remote <span class="flag">-v</span></h2>
+    <p>We build on open source and contribute back, and release our own tooling under the CodeStrux organization on GitHub.</p>
+  </div>
+</section>
 
-## What we do
+<section class="pane pane--col-2" aria-label="Cloud, data, and backends">
+  <div class="pane__bar"><span class="pane__path">~/stack</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> ls <span class="arg">stack/</span></h2>
+    <p>AWS and GCP, serverless and containers, ETL and BI pipelines, and production backends in Java 21 (Jakarta EE, Spring Boot) and TypeScript (React, Next.js).</p>
+    <ul class="tags" aria-label="Stack">
+      <li>AWS</li><li>GCP</li><li>Java 21</li><li>Spring Boot</li><li>Jakarta EE</li><li>TypeScript</li><li>React 19</li><li>Next.js</li><li>Docker</li><li>Kubernetes</li>
+    </ul>
+  </div>
+</section>
 
-<div class="card-grid" markdown="1">
+<section class="pane pane--feature pane--col-2 product-stratos" aria-label="Stratos WhatsApp — featured product">
+  <div class="pane__bar"><span class="pane__path">~/projects/stratos</span><span class="pane__status">running</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">./stratos --status</span></p>
+    <div class="product-wordmark">{% include stratos-wordmark.html class="is-lg" %}</div>
+    <p>Our own real-time WhatsApp Business inbox for LATAM SMBs: live updates over SSE, Spanish voice-note transcription, AI reply suggestions, and payment-receipt OCR for SINPE, Pix, and SPEI.</p>
+    <ul class="tags" aria-label="Stratos capabilities">
+      <li>SSE inbox</li><li>voice transcription</li><li>reply suggestions</li><li>receipt OCR</li><li>WhatsApp Flows</li><li>AI agents</li>
+    </ul>
+    <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">open stratos</a> <a class="btn btn--ghost" href="/projects/">more projects</a></p>
+  </div>
+</section>
 
-<div class="card" markdown="1">
-### Infrastructure & Linux
-Arch, Debian/Ubuntu, FreeBSD, RHEL, and Amazon Linux on Proxmox VE, KVM, and
-bare metal. We provision, harden, and operate the machines our software runs on.
-</div>
-
-<div class="card" markdown="1">
-### Open source
-We build on open source and contribute back. Our own tooling — including the
-Aether orchestration framework — ships under the CodeStrux organization on
-GitHub.
-</div>
-
-<div class="card" markdown="1">
-### Cloud, data & backends
-AWS and GCP, serverless and containers, ETL and BI pipelines, and production
-backends in Java 21 (Jakarta EE, Spring Boot) and TypeScript (React, Next.js).
-</div>
-
-<div class="card" markdown="1">
-### Fintech & messaging
-Costa Rican electronic invoicing (Hacienda e-invoicing, XAdES signing) and
-WhatsApp Business Platform automation with consent and opt-in compliance.
-</div>
-
-</div>
-
-## Work with us
-
-See what we have built on the [projects](/projects/) page, or read more
-[about us](/about/) and the [services](/services/) we offer.
-
-Ready to talk? Email us at [contact@codestrux.tech](mailto:contact@codestrux.tech).
+<section class="pane pane--col-4" aria-label="Work with us">
+  <div class="pane__bar"><span class="pane__path">~/contact</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">contact.md</span></h2>
+    <p>See what we have built on the <a href="/projects/">projects</a> page, read more <a href="/about/">about us</a>, or browse the <a href="/services/">services</a> we offer. Ready to talk? Email <a href="mailto:contact@codestrux.tech">contact@codestrux.tech</a>.</p>
+  </div>
+</section>

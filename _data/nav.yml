@@ -1,0 +1,33 @@
+# Single source of truth for the primary nav AND the ⌘K command-palette
+# command set. Consumed by _includes/header.html, _includes/command-palette.html,
+# and assets/js/terminal.js (serialized to JSON in a <script type="application/json">).
+#
+# - `key`     stable page key (matches front-matter `ref`); also the `cd <key>` target.
+# - `label`   i18n key under nav.* (localized; resolved in the template).
+# - `path`    EN path WITHOUT the /es prefix; the template prepends `base` for es-CR.
+# - `cmd`     the shell-style label shown in the palette / nav (English; universal shell).
+# - `icon`    a single ASCII/box glyph used as the palette row marker.
+#
+# Commands stay in English in both languages (a universal shell); only the
+# human-facing `label` is localized.
+items:
+  - key: home
+    label: home
+    path: /
+    cmd: "cd ~"
+    icon: "~"
+  - key: about
+    label: about
+    path: /about/
+    cmd: "cat about.md"
+    icon: "*"
+  - key: services
+    label: services
+    path: /services/
+    cmd: "ls services/"
+    icon: "+"
+  - key: projects
+    label: projects
+    path: /projects/
+    cmd: "ls projects/"
+    icon: "#"

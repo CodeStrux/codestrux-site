@@ -1,0 +1,12 @@
+{%- comment -%}
+  The genuine Stratos WhatsApp wordmark, ported verbatim from
+  stratos-whatsapp-ui/src/components/layout/TopBar.tsx (lines 55–62):
+  italic-light "Stratos" + black " WhatsApp" + emerald ".".
+  This is the ONLY place Fraunces is used on the site (the family tie is
+  JetBrains Mono everywhere else). Colors are exact OKLCH from the source,
+  lifted toward ivory in dark mode via .stratos-wordmark in style.scss while
+  the dot stays emerald. Pure text + CSS — no image.
+
+  Pass an optional `class` param to scale it (e.g. {% include stratos-wordmark.html class="is-lg" %}).
+{%- endcomment -%}
+<span class="stratos-wordmark {{ include.class }}" aria-label="Stratos WhatsApp" role="img"><span class="sw-stratos" aria-hidden="true">Stratos</span><span class="sw-whatsapp" aria-hidden="true"> WhatsApp</span><span class="sw-dot" aria-hidden="true">.</span></span>
