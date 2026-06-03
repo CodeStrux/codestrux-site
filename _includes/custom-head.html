@@ -1,3 +1,32 @@
-<style>
- 
-</style>
+{%- comment -%}
+  Server-rendered <head> additions for the bilingual tree:
+  - <title> + meta description (the theme's head.html never calls {% seo %},
+    so we emit these ourselves; home pages use the site title alone).
+  - Facebook domain-verification tag, scoped to the two home pages only
+    (EN "/" and ES "/es/") so it is present on the home page and absent
+    everywhere else, per the Meta requirement.
+  - Canonical URL (absolute via site.url).
+  - hreflang alternates wired through page.alt_url (the paired page).
+{%- endcomment -%}
+{%- if page.url == "/" or page.url == "/es/" -%}
+<title>{{ site.title | escape }}</title>
+{%- else -%}
+<title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+{%- endif -%}
+<meta name="description" content="{{ page.description | default: site.description | strip_newlines | escape }}" />
+{%- if page.url == "/" or page.url == "/es/" -%}
+<meta name="facebook-domain-verification" content="l9yyr7w4gsfpa8jjhi9girh1lrrct1" />
+{%- endif -%}
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+{%- if page.alt_url -%}
+  {%- assign L = page.lang | default: "en" -%}
+  {%- if L == "es-CR" -%}
+    <link rel="alternate" hreflang="es-CR" href="{{ page.url | absolute_url }}" />
+    <link rel="alternate" hreflang="en" href="{{ page.alt_url | absolute_url }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ page.alt_url | absolute_url }}" />
+  {%- else -%}
+    <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}" />
+    <link rel="alternate" hreflang="es-CR" href="{{ page.alt_url | absolute_url }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}" />
+  {%- endif -%}
+{%- endif -%}

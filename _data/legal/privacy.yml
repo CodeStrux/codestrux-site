@@ -1,0 +1,189 @@
+# Privacy Policy — ported from the Stratos UI draft
+# (stratos-whatsapp-ui/src/content/legal/privacy.ts) and adapted for the
+# CodeStrux Tech brand site. Entity = "CodeStrux Tech"; the Meta app /
+# platform = "CodeStrux Tech App"; address = San Nicolás, Cartago.
+# Section ids are shared with the es-CR block so in-page anchors match.
+# This is the document pinned as the Privacy Policy URL in Meta App Settings.
+en:
+  kind: "privacy"
+  title: "Privacy Policy"
+  summary: "How the CodeStrux Tech App collects, uses, and protects personal data."
+  effective_date: "2026-06-03"
+  intro:
+    - "This Privacy Policy explains how CodeStrux Tech (\"we\", \"us\") handles personal data in connection with the CodeStrux Tech App — a console that businesses use to send and receive messages with their customers over the WhatsApp Business Platform."
+    - "We designed the CodeStrux Tech App for businesses that must demonstrate lawful, consent-based customer messaging. This policy describes the data we process, why, the legal bases we rely on, and the rights available to the people whose data we hold."
+  sections:
+    - id: "roles"
+      heading: "Who we are and our role"
+      paragraphs:
+        - "CodeStrux Tech operates the CodeStrux Tech App. For data about the business users (agents and administrators) who sign in to the console, we act as a data controller."
+        - "For the personal data of a business's own customers — phone numbers, message content, and consent records that flow through the platform — the business that operates the workspace is the controller and we act as its data processor, handling that data only on the business's documented instructions. The WhatsApp Business Platform, provided by Meta, acts as a further processor for message transmission."
+    - id: "collect"
+      heading: "Information we collect"
+      paragraphs:
+        - "We collect the following categories of personal data:"
+      bullets:
+        - "Account and agent data — name, email, username, role, and organization, provided through our identity provider (Keycloak / OpenID Connect) when an agent signs in."
+        - "Customer conversation data — the phone numbers, message text, media, and delivery/read status exchanged between a business and its customers over WhatsApp, plus message metadata (timestamps, direction, template used)."
+        - "Consent and opt-in records — evidence that a customer agreed to be contacted, including the timestamp, source, channel, and legal basis recorded at the point of opt-in."
+        - "Technical and usage data — IP address, browser and device information, and diagnostic logs needed to operate, secure, and troubleshoot the service."
+        - "Local browser storage — session tokens and interface preferences stored in your browser to keep you signed in and remember settings; we do not use advertising cookies."
+    - id: "use"
+      heading: "How we use information"
+      paragraphs:
+        - "We use personal data to:"
+      bullets:
+        - "Provide the messaging console — route inbound messages to agents, send outbound messages and templates, and show conversation history."
+        - "Establish and evidence customer consent before the first template message is sent, as required by the WhatsApp Business Messaging Policy."
+        - "Authenticate users, enforce roles and access control, and keep the service secure."
+        - "Maintain quality and delivery — surface WhatsApp quality ratings and messaging limits, and diagnose delivery problems."
+        - "Comply with legal obligations and respond to lawful requests."
+    - id: "bases"
+      heading: "Legal bases for processing"
+      paragraphs:
+        - "Where we act as controller, we rely on the following legal bases under the Costa Rican Law on the Protection of the Person regarding the Processing of their Personal Data (Ley N.º 8968) and, where applicable to a business's customers, comparable frameworks such as Brazil's LGPD and Mexico's LFPDPPP:"
+      bullets:
+        - "Consent — for contacting customers over WhatsApp and for any processing that requires it; consent can be withdrawn at any time."
+        - "Performance of a contract — to provide the service to the businesses that subscribe to it."
+        - "Legitimate interests — to secure, maintain, and improve the platform, balanced against the rights of the people affected."
+        - "Legal obligation — where processing is required by law."
+    - id: "whatsapp"
+      heading: "WhatsApp and Meta"
+      paragraphs:
+        - "The CodeStrux Tech App sends and receives messages through the WhatsApp Business Platform operated by Meta Platforms, Inc. When you message a business through the CodeStrux Tech App, your message is transmitted and processed by WhatsApp/Meta in accordance with their own terms and privacy policy."
+        - "The CodeStrux Tech App is the application registered with Meta for this integration; if you wish to stop messages or have your data deleted, see our Data Deletion Instructions."
+        - "We do not control Meta's processing of your data and encourage you to review the WhatsApp and Meta privacy policies. WhatsApp is a trademark of Meta Platforms, Inc.; the CodeStrux Tech App is an independent platform and is not endorsed by or affiliated with Meta beyond its use of the WhatsApp Business Platform."
+    - id: "sharing"
+      heading: "How we share information"
+      paragraphs:
+        - "We do not sell personal data. We share data only with the sub-processors needed to run the service:"
+      bullets:
+        - "Meta Platforms, Inc. (WhatsApp Business Platform) — to transmit and receive messages."
+        - "Our identity provider — to authenticate agents and administrators."
+        - "Hosting and infrastructure providers — to operate the databases and servers that store conversation and account data, under confidentiality and data-protection commitments."
+        - "Authorities and advisers — where required by law, regulation, or legal process."
+    - id: "transfers"
+      heading: "International data transfers"
+      paragraphs:
+        - "The platform and its sub-processors may process data in countries other than your own. Where data is transferred across borders, we rely on appropriate safeguards and on the protections offered by the relevant providers. By using the service you understand that message transmission via WhatsApp/Meta may involve international transfers."
+    - id: "retention"
+      heading: "Data retention"
+      paragraphs:
+        - "We retain conversation and consent data for as long as the operating business needs it for the purposes described above and to meet its legal obligations, after which it is deleted or anonymized. Agent account data is kept for the life of the account. A business may instruct us to delete specific records at any time; see Data Deletion below."
+    - id: "security"
+      heading: "Security"
+      paragraphs:
+        - "We protect personal data with encryption in transit, authenticated access, role-based authorization, and least-privilege handling of credentials. No method of transmission or storage is completely secure, but we work to protect data against unauthorized access, alteration, and loss."
+    - id: "rights"
+      heading: "Your rights"
+      paragraphs:
+        - "Subject to applicable law, you have the right to access, correct, update, or delete your personal data, to object to or restrict certain processing, to data portability, and to withdraw consent. To exercise these rights, contact us using the details below, or, if you are a customer of a business that uses the CodeStrux Tech App, contact that business directly — it is the controller of your conversation data."
+    - id: "deletion"
+      heading: "Data deletion"
+      paragraphs:
+        - "You can request deletion of your data at any time. Our Data Deletion Instructions explain exactly what to send, where, and what happens next:"
+      bullets: []
+    - id: "children"
+      heading: "Children's data"
+      paragraphs:
+        - "The CodeStrux Tech App is a business tool and is not directed to children. We do not knowingly collect personal data from children. If you believe a child's data has reached us, contact us and we will delete it."
+    - id: "changes"
+      heading: "Changes to this policy"
+      paragraphs:
+        - "We may update this policy to reflect changes to the service or the law. We will revise the effective date above and, where changes are material, take reasonable steps to notify the businesses that use the platform."
+    - id: "contact"
+      heading: "Contact us"
+      paragraphs:
+        - "For privacy questions or to exercise your rights, contact CodeStrux Tech at privacy@codestrux.tech, or by post at San Nicolás, Cartago 30104, Costa Rica."
+
+es-CR:
+  kind: "privacy"
+  title: "Política de Privacidad"
+  summary: "Cómo la CodeStrux Tech App recopila, usa y protege los datos personales."
+  effective_date: "2026-06-03"
+  intro:
+    - "Esta Política de Privacidad explica cómo CodeStrux Tech (\"nosotros\") trata los datos personales en relación con la CodeStrux Tech App — una consola que las empresas utilizan para enviar y recibir mensajes con sus clientes a través de la Plataforma de WhatsApp Business."
+    - "Diseñamos la CodeStrux Tech App para empresas que deben demostrar una mensajería con sus clientes lícita y basada en el consentimiento. Esta política describe los datos que tratamos, con qué fines, las bases legales en que nos apoyamos y los derechos de las personas cuyos datos conservamos."
+  sections:
+    - id: "roles"
+      heading: "Quiénes somos y nuestro rol"
+      paragraphs:
+        - "CodeStrux Tech opera la CodeStrux Tech App. Respecto de los datos de las personas usuarias de la empresa (agentes y administradores) que ingresan a la consola, actuamos como responsable del tratamiento."
+        - "Respecto de los datos personales de los clientes de cada empresa —números de teléfono, contenido de los mensajes y registros de consentimiento que circulan por la plataforma— la empresa que opera el espacio de trabajo es la responsable y nosotros actuamos como su encargado del tratamiento, tratando esos datos únicamente según sus instrucciones documentadas. La Plataforma de WhatsApp Business, provista por Meta, actúa como un encargado adicional para la transmisión de los mensajes."
+    - id: "collect"
+      heading: "Información que recopilamos"
+      paragraphs:
+        - "Recopilamos las siguientes categorías de datos personales:"
+      bullets:
+        - "Datos de cuenta y de agente — nombre, correo electrónico, usuario, rol y organización, provistos mediante nuestro proveedor de identidad (Keycloak / OpenID Connect) cuando un agente inicia sesión."
+        - "Datos de conversaciones de clientes — los números de teléfono, texto de los mensajes, archivos multimedia y estado de entrega/lectura intercambiados entre una empresa y sus clientes por WhatsApp, junto con los metadatos del mensaje (marcas de tiempo, dirección, plantilla utilizada)."
+        - "Registros de consentimiento y opt-in — la evidencia de que un cliente aceptó ser contactado, incluyendo la marca de tiempo, la fuente, el canal y la base legal registrada al momento del opt-in."
+        - "Datos técnicos y de uso — dirección IP, información del navegador y del dispositivo, y registros de diagnóstico necesarios para operar, asegurar y dar soporte al servicio."
+        - "Almacenamiento local del navegador — tokens de sesión y preferencias de interfaz guardados en su navegador para mantener la sesión y recordar ajustes; no usamos cookies publicitarias."
+    - id: "use"
+      heading: "Cómo usamos la información"
+      paragraphs:
+        - "Usamos los datos personales para:"
+      bullets:
+        - "Proveer la consola de mensajería — enrutar los mensajes entrantes a los agentes, enviar mensajes y plantillas salientes y mostrar el historial de conversaciones."
+        - "Establecer y evidenciar el consentimiento del cliente antes de enviar el primer mensaje de plantilla, según lo exige la Política de Mensajería de WhatsApp Business."
+        - "Autenticar a las personas usuarias, aplicar roles y control de acceso, y mantener seguro el servicio."
+        - "Mantener la calidad y la entrega — mostrar la calificación de calidad y los límites de mensajería de WhatsApp y diagnosticar problemas de entrega."
+        - "Cumplir con obligaciones legales y atender solicitudes legítimas."
+    - id: "bases"
+      heading: "Bases legales del tratamiento"
+      paragraphs:
+        - "Cuando actuamos como responsables, nos apoyamos en las siguientes bases legales conforme a la Ley de Protección de la Persona frente al tratamiento de sus datos personales de Costa Rica (Ley N.º 8968) y, cuando corresponda a los clientes de una empresa, en marcos comparables como la LGPD de Brasil y la LFPDPPP de México:"
+      bullets:
+        - "Consentimiento — para contactar a los clientes por WhatsApp y para cualquier tratamiento que lo requiera; el consentimiento puede retirarse en cualquier momento."
+        - "Ejecución de un contrato — para prestar el servicio a las empresas que lo contratan."
+        - "Interés legítimo — para asegurar, mantener y mejorar la plataforma, ponderado frente a los derechos de las personas afectadas."
+        - "Obligación legal — cuando el tratamiento es exigido por la ley."
+    - id: "whatsapp"
+      heading: "WhatsApp y Meta"
+      paragraphs:
+        - "La CodeStrux Tech App envía y recibe mensajes a través de la Plataforma de WhatsApp Business operada por Meta Platforms, Inc. Cuando usted escribe a una empresa mediante la CodeStrux Tech App, su mensaje es transmitido y tratado por WhatsApp/Meta conforme a sus propios términos y política de privacidad."
+        - "La CodeStrux Tech App es la aplicación registrada ante Meta para esta integración; si desea detener los mensajes o eliminar sus datos, consulte nuestras Instrucciones de Eliminación de Datos."
+        - "No controlamos el tratamiento que Meta hace de sus datos y le recomendamos revisar las políticas de privacidad de WhatsApp y de Meta. WhatsApp es una marca de Meta Platforms, Inc.; la CodeStrux Tech App es una plataforma independiente y no cuenta con respaldo ni afiliación de Meta más allá de su uso de la Plataforma de WhatsApp Business."
+    - id: "sharing"
+      heading: "Cómo compartimos la información"
+      paragraphs:
+        - "No vendemos datos personales. Solo los compartimos con los encargados necesarios para operar el servicio:"
+      bullets:
+        - "Meta Platforms, Inc. (Plataforma de WhatsApp Business) — para transmitir y recibir mensajes."
+        - "Nuestro proveedor de identidad — para autenticar a agentes y administradores."
+        - "Proveedores de hospedaje e infraestructura — para operar las bases de datos y servidores que almacenan los datos de conversaciones y cuentas, bajo compromisos de confidencialidad y protección de datos."
+        - "Autoridades y asesores — cuando lo exija la ley, la regulación o un proceso legal."
+    - id: "transfers"
+      heading: "Transferencias internacionales de datos"
+      paragraphs:
+        - "La plataforma y sus encargados pueden tratar datos en países distintos al suyo. Cuando los datos se transfieren entre fronteras, nos apoyamos en salvaguardas apropiadas y en las protecciones que ofrecen los respectivos proveedores. Al usar el servicio, usted comprende que la transmisión de mensajes por WhatsApp/Meta puede implicar transferencias internacionales."
+    - id: "retention"
+      heading: "Conservación de los datos"
+      paragraphs:
+        - "Conservamos los datos de conversaciones y de consentimiento durante el tiempo que la empresa operadora los necesite para los fines descritos y para cumplir sus obligaciones legales, tras lo cual se eliminan o anonimizan. Los datos de cuenta de los agentes se conservan durante la vigencia de la cuenta. Una empresa puede instruirnos a eliminar registros específicos en cualquier momento; vea Eliminación de Datos más abajo."
+    - id: "security"
+      heading: "Seguridad"
+      paragraphs:
+        - "Protegemos los datos personales mediante cifrado en tránsito, acceso autenticado, autorización basada en roles y manejo de credenciales con privilegio mínimo. Ningún método de transmisión o almacenamiento es completamente seguro, pero trabajamos para proteger los datos frente a accesos, alteraciones y pérdidas no autorizadas."
+    - id: "rights"
+      heading: "Sus derechos"
+      paragraphs:
+        - "Conforme a la ley aplicable, usted tiene derecho a acceder, corregir, actualizar o eliminar sus datos personales, a oponerse o limitar ciertos tratamientos, a la portabilidad de los datos y a retirar el consentimiento. Para ejercer estos derechos, contáctenos con los datos de abajo o, si usted es cliente de una empresa que usa la CodeStrux Tech App, contacte directamente a esa empresa: ella es la responsable de los datos de su conversación."
+    - id: "deletion"
+      heading: "Eliminación de datos"
+      paragraphs:
+        - "Usted puede solicitar la eliminación de sus datos en cualquier momento. Nuestras Instrucciones de Eliminación de Datos explican exactamente qué enviar, a dónde y qué ocurre después:"
+      bullets: []
+    - id: "children"
+      heading: "Datos de menores"
+      paragraphs:
+        - "La CodeStrux Tech App es una herramienta empresarial y no está dirigida a menores. No recopilamos a sabiendas datos personales de menores. Si cree que hemos recibido datos de un menor, contáctenos y los eliminaremos."
+    - id: "changes"
+      heading: "Cambios a esta política"
+      paragraphs:
+        - "Podemos actualizar esta política para reflejar cambios en el servicio o en la ley. Revisaremos la fecha de vigencia indicada arriba y, cuando los cambios sean sustanciales, tomaremos medidas razonables para notificar a las empresas que usan la plataforma."
+    - id: "contact"
+      heading: "Contáctenos"
+      paragraphs:
+        - "Para consultas de privacidad o para ejercer sus derechos, contacte a CodeStrux Tech en privacy@codestrux.tech, o por correo postal en San Nicolás, Cartago 30104, Costa Rica."

@@ -1,48 +1,58 @@
 ---
 layout: page
-title: About
+title: "About"
+lang: en
+ref: about
+alt_url: /es/about/
 permalink: /about/
 ---
 
-## About Codestrux Tech
+<p class="eyebrow">About</p>
 
-Codestrux Tech is a dynamic software development company based in the heart of Costa Rica, dedicated to delivering cutting-edge technology solutions for businesses worldwide.
+# About CodeStrux Tech
 
-### Our Mission
+CodeStrux Tech is a two-engineer studio based in San Nicolás, Cartago, Costa
+Rica. We are a small, hands-on team: the same two people who design a system
+are the ones who build it, deploy it, and keep it running. We treat
+infrastructure and software as one discipline — from the Linux host and the
+hypervisor up through the data pipeline, the API, and the user interface.
 
-We empower businesses to achieve their digital transformation goals through innovative software solutions. Our focus is on creating scalable, reliable, and maintainable systems that drive real business value.
+## The team
 
-### What We Do
+<div class="card-grid" markdown="1">
 
-At Codestrux Tech, we specialize in four core areas:
+<div class="card" markdown="1">
+### Alejandro Araya Jiménez
+<p class="card-meta">System Development Engineer · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
 
-**Scalable Cloud Applications**
-We build cloud-native applications designed to scale effortlessly with your business growth. Whether you're starting small or managing enterprise-level traffic, our solutions adapt to your needs.
+System Development Engineer at Amazon (Enterprise Service Delivery), previously
+a Finance BI Engineer at Amazon, with earlier backend and IT/development work in
+Costa Rica. Works across AWS (Lambda, CDK, Glue, Redshift, QuickSight, Batch,
+Lake Formation, S3, Bedrock), data pipelines and BI, Java/Spring, TypeScript,
+React and Next.js, and Docker/Kubernetes.
+</div>
 
-**API Integrations**
-In today's interconnected world, seamless system communication is essential. We create robust API integrations that connect your platforms, streamline workflows, and enhance operational efficiency.
+<div class="card" markdown="1">
+### Alvaro Araya Obando
+<p class="card-meta">Backend & e-invoicing engineer · <a href="mailto:aao@codestrux.tech">aao@codestrux.tech</a></p>
 
-**Software Containerization**
-We help organizations modernize their infrastructure through containerization. Our expertise in Docker, Kubernetes, and container orchestration ensures your applications are portable, consistent, and easy to manage.
+Author of FacturaCR (ce-je), our Jakarta EE electronic-invoicing engine for
+Costa Rica. Focused on Java and Jakarta EE backends and the Hacienda
+e-invoicing domain.
+</div>
 
-**High Availability Applications**
-Downtime is not an option for mission-critical systems. We architect and implement high availability solutions with redundancy, automated failover, and disaster recovery capabilities to keep your business running 24/7.
+</div>
 
-### Why Costa Rica?
+## How we work
 
-Costa Rica offers a unique combination of technical talent, business-friendly environment, and convenient timezone alignment with North American markets. Our location allows us to provide real-time collaboration while maintaining competitive pricing.
+Capabilities at CodeStrux Tech are pooled, not split by person — between the two
+of us we cover infrastructure and operations, cloud and data, backends and
+frontends, fintech compliance, and AI tooling. We collaborate directly with the
+people we build for, keep our systems open and maintainable, and prefer durable
+engineering over throwaway work.
 
-### Our Approach
+## Get in touch
 
-We believe in:
-- **Transparency**: Clear communication throughout the development process
-- **Quality**: Code that is clean, tested, and maintainable
-- **Collaboration**: Working closely with clients as partners, not just vendors
-- **Innovation**: Staying current with emerging technologies and best practices
-- **Results**: Delivering solutions that create measurable business impact
-
-### Get in Touch
-
-Ready to discuss your next project? We'd love to hear from you.
+We would be glad to hear about your project.
 
 Email: [contact@codestrux.tech](mailto:contact@codestrux.tech)

@@ -1,0 +1,95 @@
+# Data Deletion Instructions — ported from the Stratos UI draft
+# (stratos-whatsapp-ui/src/content/legal/data-deletion.ts) and adapted for the
+# CodeStrux Tech brand site. This is the PRIMARY data-deletion artifact: an
+# instructions URL referenced from the Privacy Policy, which satisfies Meta's
+# data-deletion requirement (no callback needed). Entity = "CodeStrux Tech";
+# platform / Meta app = "CodeStrux Tech App"; address = San Nicolás, Cartago.
+# Verified-request timeline: within 30 days (as drafted). Section ids are
+# shared with the es-CR block.
+en:
+  kind: "data-deletion"
+  title: "Data Deletion Instructions"
+  summary: "How to request deletion of your data from the CodeStrux Tech App."
+  effective_date: "2026-06-03"
+  intro:
+    - "This page explains how to request the deletion of personal data held by the CodeStrux Tech App, operated by CodeStrux Tech. It is referenced from our Privacy Policy and satisfies the data-deletion requirement of the Meta / WhatsApp Business Platform."
+    - "The CodeStrux Tech App is a tool that businesses use to message their customers over WhatsApp. Depending on who you are, your request is handled slightly differently — the steps below cover every case."
+  sections:
+    - id: "what-we-hold"
+      heading: "What data we hold"
+      paragraphs:
+        - "Through the platform we may hold: your phone number and the content of WhatsApp messages exchanged with a business; consent and opt-in records (timestamp, source, channel, legal basis); and, for business agents, account details such as name, email, and role. We describe these categories in full in our Privacy Policy."
+    - id: "how-to-request"
+      heading: "How to request deletion"
+      paragraphs:
+        - "To request deletion of your data, send an email to privacy@codestrux.tech with the subject line \"Data Deletion Request\" and include the details below. If you can, send it from the email address associated with your account."
+      steps:
+        - "Email privacy@codestrux.tech with the subject \"Data Deletion Request\"."
+        - "Tell us who you are: the WhatsApp phone number involved (in full international format, e.g. +506 0000 0000), and — if you are a business agent — your account email."
+        - "State what you want deleted: all of your data, or specific conversations or records."
+        - "We will verify your identity to protect your data before acting on the request."
+        - "We confirm by email once the deletion is complete."
+    - id: "customer-of-business"
+      heading: "If you are a customer of a business that uses the CodeStrux Tech App"
+      paragraphs:
+        - "The business you messaged is the controller of your conversation data; the CodeStrux Tech App processes it on that business's behalf. You can ask that business directly to delete your data, or email us at privacy@codestrux.tech and we will route your request to the relevant business and assist with the deletion."
+    - id: "withdraw-optin"
+      heading: "Stop messages and withdraw WhatsApp opt-in"
+      paragraphs:
+        - "To stop receiving WhatsApp messages from a business, reply to its chat asking to opt out (for example, \"STOP\"). The business must honor opt-out requests. Withdrawing opt-in stops future messages; to also delete the data already held, follow the deletion steps above."
+    - id: "for-businesses"
+      heading: "For businesses operating a workspace"
+      paragraphs:
+        - "If you operate a CodeStrux Tech App workspace, you can delete a customer's conversation and consent records from the console, and you can instruct us to delete data we process on your behalf — including, where applicable, requesting deletion from the WhatsApp Business Platform. Contact support@codestrux.tech for bulk or workspace-level deletion."
+    - id: "timeline"
+      heading: "Timeline and what we retain"
+      paragraphs:
+        - "We action verified deletion requests without undue delay and within 30 days. We propagate deletions to the sub-processors that hold the data on our behalf. We may retain limited information where the law requires it (for example, records needed to comply with a legal obligation), and we will tell you if that applies to your request."
+    - id: "contact"
+      heading: "Contact"
+      paragraphs:
+        - "Data deletion requests and questions: privacy@codestrux.tech. Postal address: San Nicolás, Cartago 30104, Costa Rica."
+
+es-CR:
+  kind: "data-deletion"
+  title: "Instrucciones de Eliminación de Datos"
+  summary: "Cómo solicitar la eliminación de sus datos de la CodeStrux Tech App."
+  effective_date: "2026-06-03"
+  intro:
+    - "Esta página explica cómo solicitar la eliminación de los datos personales que conserva la CodeStrux Tech App, operada por CodeStrux Tech. Está referenciada desde nuestra Política de Privacidad y satisface el requisito de eliminación de datos de la Plataforma de Meta / WhatsApp Business."
+    - "La CodeStrux Tech App es una herramienta que las empresas usan para enviar mensajes a sus clientes por WhatsApp. Según quién sea usted, su solicitud se atiende de forma un poco distinta — los pasos de abajo cubren todos los casos."
+  sections:
+    - id: "what-we-hold"
+      heading: "Qué datos conservamos"
+      paragraphs:
+        - "A través de la plataforma podemos conservar: su número de teléfono y el contenido de los mensajes de WhatsApp intercambiados con una empresa; registros de consentimiento y opt-in (marca de tiempo, fuente, canal, base legal); y, para los agentes de empresa, datos de cuenta como nombre, correo y rol. Describimos estas categorías por completo en nuestra Política de Privacidad."
+    - id: "how-to-request"
+      heading: "Cómo solicitar la eliminación"
+      paragraphs:
+        - "Para solicitar la eliminación de sus datos, envíe un correo a privacy@codestrux.tech con el asunto \"Solicitud de Eliminación de Datos\" e incluya los detalles de abajo. Si puede, envíelo desde el correo asociado a su cuenta."
+      steps:
+        - "Escriba a privacy@codestrux.tech con el asunto \"Solicitud de Eliminación de Datos\"."
+        - "Indíquenos quién es: el número de WhatsApp involucrado (en formato internacional completo, p. ej. +506 0000 0000) y — si es agente de empresa — el correo de su cuenta."
+        - "Indique qué desea eliminar: todos sus datos, o conversaciones o registros específicos."
+        - "Verificaremos su identidad para proteger sus datos antes de actuar sobre la solicitud."
+        - "Le confirmamos por correo una vez completada la eliminación."
+    - id: "customer-of-business"
+      heading: "Si usted es cliente de una empresa que usa la CodeStrux Tech App"
+      paragraphs:
+        - "La empresa a la que escribió es la responsable de los datos de su conversación; la CodeStrux Tech App los trata en nombre de esa empresa. Puede pedir directamente a esa empresa que elimine sus datos, o escribirnos a privacy@codestrux.tech y encaminaremos su solicitud a la empresa correspondiente y asistiremos con la eliminación."
+    - id: "withdraw-optin"
+      heading: "Detener mensajes y retirar el opt-in de WhatsApp"
+      paragraphs:
+        - "Para dejar de recibir mensajes de WhatsApp de una empresa, responda en su chat solicitando el opt-out (por ejemplo, \"STOP\" o \"BAJA\"). La empresa debe atender las solicitudes de opt-out. Retirar el opt-in detiene los mensajes futuros; para además eliminar los datos ya conservados, siga los pasos de eliminación de arriba."
+    - id: "for-businesses"
+      heading: "Para empresas que operan un espacio de trabajo"
+      paragraphs:
+        - "Si usted opera un espacio de trabajo de la CodeStrux Tech App, puede eliminar los registros de conversación y consentimiento de un cliente desde la consola, y puede instruirnos a eliminar los datos que tratamos en su nombre — incluyendo, cuando corresponda, solicitar la eliminación a la Plataforma de WhatsApp Business. Contacte a support@codestrux.tech para eliminaciones masivas o a nivel de espacio de trabajo."
+    - id: "timeline"
+      heading: "Plazos y qué conservamos"
+      paragraphs:
+        - "Atendemos las solicitudes de eliminación verificadas sin demora indebida y dentro de 30 días. Propagamos las eliminaciones a los encargados que conservan los datos en nuestro nombre. Podemos conservar información limitada cuando la ley lo exija (por ejemplo, registros necesarios para cumplir una obligación legal), y se lo indicaremos si aplica a su solicitud."
+    - id: "contact"
+      heading: "Contacto"
+      paragraphs:
+        - "Solicitudes de eliminación de datos y consultas: privacy@codestrux.tech. Dirección postal: San Nicolás, Cartago 30104, Costa Rica."

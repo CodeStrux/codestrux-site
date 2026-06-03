@@ -18,18 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: CodeStrux Tech
+url: "https://codestrux.tech"
+lang: en
 author:
-  name: Codestrux Tech
+  name: CodeStrux Tech
   email: contact@codestrux.tech
 description: >- # this means to ignore newlines until "baseurl:"
-  Codestrux Tech is a leading software development company based in Costa Rica,
-  specializing in scalable cloud applications, API integrations, software
-  containerization, and high availability solutions. We deliver robust,
-  enterprise-grade software that drives business growth.
+  CodeStrux Tech is a two-engineer studio in Cartago, Costa Rica. We build and
+  run both infrastructure and software — Linux and virtualization, open source,
+  cloud and serverless, data pipelines, Java and TypeScript backends and
+  frontends, e-invoicing, WhatsApp automation, and AI tooling.
 show_excerpts: false # set to true to show excerpts on the homepage
-heading: Building Scalable Solutions for Modern Businesses
+heading: We build and run infrastructure and software.
 subheading: >
-  At Codestrux Tech, we offer comprehensive software development services designed to meet the evolving needs of modern businesses. Our expertise spans across cloud technologies, system integration, containerization, and high availability architectures.
+  CodeStrux Tech is a two-engineer studio from Cartago, Costa Rica. We design, build,
+  and operate the whole stack — Linux and virtualization, open source, cloud, data
+  pipelines, backends and frontends, e-invoicing, messaging automation, and AI tooling.
+
+# Pages that appear in the English top nav. The Spanish nav is rendered from
+# _data/i18n.yml by the local _includes/header.html override, so the /es/*
+# mirror never leaks into this list.
+header_pages:
+  - index.markdown
+  - about.markdown
+  - services.markdown
+  - projects.markdown
 
 
 # Build settings
