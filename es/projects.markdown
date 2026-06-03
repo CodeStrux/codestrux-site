@@ -21,10 +21,7 @@ permalink: /es/projects/
   <div class="pane__body">
     <div class="product-wordmark">{% include stratos-wordmark.html class="is-lg" %}</div>
     <p class="card-meta">Bandeja de WhatsApp Business centrada en audio para pymes de LATAM</p>
-    <p>Una bandeja de entrada de WhatsApp Business en tiempo real, pensada para pequeñas y medianas empresas en América Latina. Entrega mensajes por SSE, transcribe notas de voz en español, sugiere respuestas y concilia comprobantes de pago (SINPE, Pix, SPEI) con OCR. Soporta plantillas con variables, WhatsApp Flows, agentes de IA verticales y cumplimiento de consentimiento/opt-in para la Ley 8968 de Costa Rica, la LGPD de Brasil y la LFPDPPP de México. La autenticación corre sobre Keycloak / OIDC.</p>
-    <ul class="tags" aria-label="Stack">
-      <li>Next.js</li><li>React 19</li><li>Java 21</li><li>Spring Boot</li><li>MySQL</li><li>MongoDB</li><li>Keycloak / OIDC</li><li>SSE</li>
-    </ul>
+    <p>Una bandeja de entrada de WhatsApp Business en tiempo real, pensada para pequeñas y medianas empresas en América Latina. Entrega mensajes por SSE, transcribe notas de voz en español, sugiere respuestas y ejecuta agentes de IA verticales.</p>
     <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">open stratos</a></p>
   </div>
 </section>
@@ -35,9 +32,6 @@ permalink: /es/projects/
     <h2 class="cmd-head">FacturaCR <span class="flag">(ce-je)</span></h2>
     <p class="card-meta">Facturación electrónica de Costa Rica</p>
     <p>Un motor de facturación electrónica de Costa Rica. Genera, firma (XAdES) y envía comprobantes a Hacienda conforme al XSD v4.4 — facturas, tiquetes, notas de crédito y débito, compras, exportación y recibos — con exportación a PDF, Excel y QR.</p>
-    <ul class="tags" aria-label="Stack">
-      <li>Jakarta EE 10</li><li>Java 21</li><li>WildFly</li><li>EclipseLink</li><li>RESTEasy/Jersey</li><li>JSF/PrimeFaces</li><li>JAXB</li><li>MySQL/Percona</li>
-    </ul>
   </div>
 </section>
 

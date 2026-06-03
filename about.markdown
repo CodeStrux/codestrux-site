@@ -12,7 +12,7 @@ permalink: /about/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat about.md</span></p>
     <h1 class="hero__heading">About CodeStrux Tech</h1>
-    <p class="hero__sub">A two-engineer studio based in San Nicolás, Cartago, Costa Rica. The same two people who design a system are the ones who build it, deploy it, and keep it running — we treat infrastructure and software as one discipline.</p>
+    <p class="hero__sub">A studio based in San Nicolás, Cartago, Costa Rica. The people who design a system are the ones who build it, deploy it, and keep it running — we treat infrastructure and software as one discipline.</p>
   </div>
 </section>
 
@@ -40,7 +40,7 @@ permalink: /about/
   <div class="pane__bar"><span class="pane__path">~/about/how-we-work</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">how-we-work.md</span></h2>
-    <p>Capabilities at CodeStrux Tech are pooled, not split by person — between the two of us we cover infrastructure and operations, cloud and data, backends and frontends, fintech compliance, and AI tooling. We collaborate directly with the people we build for, keep our systems open and maintainable, and prefer durable engineering over throwaway work.</p>
+    <p>Capabilities at CodeStrux Tech are pooled, not split by person — together we cover infrastructure and operations, cloud and data, backends and frontends, fintech compliance, and AI tooling. We collaborate directly with the people we build for, keep our systems open and maintainable, and prefer durable engineering over throwaway work.</p>
   </div>
 </section>
 

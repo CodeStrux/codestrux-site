@@ -41,7 +41,7 @@ en:
     line: "booting codestrux.tech …"
     ready: "ready."
   footer:
-    tagline: "A two-engineer studio from Cartago, Costa Rica. We build and run infrastructure and software."
+    tagline: "A studio from Cartago, Costa Rica. We build and run infrastructure and software."
     legal: "Legal"
     contact: "Contact"
     nav_heading: "Navigate"
@@ -86,7 +86,7 @@ es-CR:
     line: "arrancando codestrux.tech …"
     ready: "listo."
   footer:
-    tagline: "Un estudio de dos ingenieros desde Cartago, Costa Rica. Construimos y operamos infraestructura y software."
+    tagline: "Un estudio desde Cartago, Costa Rica. Construimos y operamos infraestructura y software."
     legal: "Legal"
     contact: "Contacto"
     nav_heading: "Navegar"

@@ -27,7 +27,7 @@ permalink: /
       <span class="caret" aria-hidden="true"></span>
     </p>
     <h1 class="hero__heading">We build and run <span class="hl">infrastructure</span> and <span class="hl">software</span>.</h1>
-    <p class="hero__sub">A two-engineer studio from Cartago, Costa Rica. From the Linux box and the hypervisor up to the API, the data pipeline, the web app, and the AI agent — we design it, ship it, and keep it running.</p>
+    <p class="hero__sub">A studio from Cartago, Costa Rica. From the Linux box and the hypervisor up to the API, the data pipeline, the web app, and the AI agent — we design it, ship it, and keep it running.</p>
     <p class="hero__cta">
       <a class="btn" href="/projects/">ls projects</a>
       <a class="btn btn--ghost" href="mailto:contact@codestrux.tech">contact</a>
@@ -55,9 +55,9 @@ permalink: /
   <div class="pane__bar"><span class="pane__path">~/stack</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> ls <span class="arg">stack/</span></h2>
-    <p>AWS and GCP, serverless and containers, ETL and BI pipelines, and production backends in Java 21 (Jakarta EE, Spring Boot) and TypeScript (React, Next.js).</p>
+    <p>AWS and GCP, serverless and containers, ETL and BI pipelines, and production backends in Java (Jakarta EE, Spring Boot) and TypeScript (React, Next.js).</p>
     <ul class="tags" aria-label="Stack">
-      <li>AWS</li><li>GCP</li><li>Java 21</li><li>Spring Boot</li><li>Jakarta EE</li><li>TypeScript</li><li>React 19</li><li>Next.js</li><li>Docker</li><li>Kubernetes</li>
+      <li>AWS</li><li>GCP</li><li>Java</li><li>Spring Boot</li><li>Jakarta EE</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Docker</li><li>Kubernetes</li>
     </ul>
   </div>
 </section>
@@ -67,9 +67,9 @@ permalink: /
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">./stratos --status</span></p>
     <div class="product-wordmark">{% include stratos-wordmark.html class="is-lg" %}</div>
-    <p>Our own real-time WhatsApp Business inbox for LATAM SMBs: live updates over SSE, Spanish voice-note transcription, AI reply suggestions, and payment-receipt OCR for SINPE, Pix, and SPEI.</p>
+    <p>Our own real-time WhatsApp Business inbox for LATAM SMBs: live updates over SSE, Spanish voice-note transcription, AI reply suggestions, and vertical AI agents.</p>
     <ul class="tags" aria-label="Stratos capabilities">
-      <li>SSE inbox</li><li>voice transcription</li><li>reply suggestions</li><li>receipt OCR</li><li>WhatsApp Flows</li><li>AI agents</li>
+      <li>AI agents</li><li>SSE inbox</li><li>voice transcription</li><li>reply suggestions</li><li>WhatsApp Flows</li>
     </ul>
     <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">open stratos</a> <a class="btn btn--ghost" href="/projects/">more projects</a></p>
   </div>

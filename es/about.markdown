@@ -12,7 +12,7 @@ permalink: /es/about/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat about.md</span></p>
     <h1 class="hero__heading">Sobre CodeStrux Tech</h1>
-    <p class="hero__sub">Un estudio de dos ingenieros con sede en San Nicolás, Cartago, Costa Rica. Las mismas dos personas que diseñan un sistema son quienes lo construyen, lo despliegan y lo mantienen funcionando — tratamos la infraestructura y el software como una sola disciplina.</p>
+    <p class="hero__sub">Un estudio con sede en San Nicolás, Cartago, Costa Rica. Las mismas personas que diseñan un sistema son quienes lo construyen, lo despliegan y lo mantienen funcionando — tratamos la infraestructura y el software como una sola disciplina.</p>
   </div>
 </section>
 
@@ -40,7 +40,7 @@ permalink: /es/about/
   <div class="pane__bar"><span class="pane__path">~/about/how-we-work</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">how-we-work.md</span></h2>
-    <p>En CodeStrux Tech las capacidades son compartidas, no divididas por persona — entre los dos cubrimos infraestructura y operaciones, nube y datos, backends y frontends, cumplimiento fintech y herramientas de IA. Colaboramos de forma directa con las personas para quienes construimos, mantenemos nuestros sistemas abiertos y mantenibles, y preferimos la ingeniería duradera sobre el trabajo desechable.</p>
+    <p>En CodeStrux Tech las capacidades son compartidas, no divididas por persona — juntos cubrimos infraestructura y operaciones, nube y datos, backends y frontends, cumplimiento fintech y herramientas de IA. Colaboramos de forma directa con las personas para quienes construimos, mantenemos nuestros sistemas abiertos y mantenibles, y preferimos la ingeniería duradera sobre el trabajo desechable.</p>
   </div>
 </section>
 

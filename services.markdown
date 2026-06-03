@@ -54,8 +54,8 @@ permalink: /services/
     <h2 class="cmd-head"><span class="sigil">$</span> ls <span class="arg">backend/</span></h2>
     <p>Production backends in two main stacks:</p>
     <ul>
-      <li><strong>Java 21 / Jakarta EE</strong> — JPA/EclipseLink, JAX-RS, CDI, and JSF/PrimeFaces, on application servers such as WildFly.</li>
-      <li><strong>Java 21 / Spring &amp; Spring Boot</strong> — REST and reactive/async services.</li>
+      <li><strong>Java / Jakarta EE</strong> — JPA/EclipseLink, JAX-RS, CDI, and JSF/PrimeFaces, on application servers such as WildFly.</li>
+      <li><strong>Java / Spring &amp; Spring Boot</strong> — REST and reactive/async services.</li>
     </ul>
   </div>
 </section>
@@ -64,7 +64,7 @@ permalink: /services/
   <div class="pane__bar"><span class="pane__path">services/frontend</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> frontend</h2>
-    <p>Typed, modern web interfaces with TypeScript, React 19, and Next.js, paired with the backends above.</p>
+    <p>Typed, modern web interfaces with TypeScript, React, and Next.js, paired with the backends above.</p>
   </div>
 </section>
 
