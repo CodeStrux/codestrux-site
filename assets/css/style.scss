@@ -391,9 +391,9 @@ code, kbd, samp { font-family: var(--mono); }
 
 /* ASCII logotype block */
 .ascii-logo {
-  font-family: var(--mono); color: var(--accent); white-space: pre; line-height: 1;
-  font-size: clamp(7px, 2.2vw, 12px); font-weight: 700; overflow: hidden; margin-bottom: 14px;
-  text-shadow: 0 0 18px oklch(from var(--accent) l c h / 0.35);
+  display: block; width: min(100%, 360px); height: auto; margin-bottom: 14px;
+  color: var(--accent); /* SVG <rect>s inherit fill: currentColor → emerald in both themes */
+  filter: drop-shadow(0 0 18px oklch(from var(--accent) l c h / 0.35));
 }
 
 /* ============================================================ *
