@@ -1,33 +1,29 @@
 #!/usr/bin/env python3
+"""Generate the CodeStrux wordmark+skull as a crisp inline SVG.
+
+Source of truth: tools/wordmark.txt (the original Unicode block-element art).
+The wordmark (columns left of SPLIT) renders on square cells; the skull (right
+of SPLIT) renders on slimmer, taller cells so it reads as a more elongated
+emblem. Every rect coordinate is an integer, so shape-rendering="crispEdges"
+stays seam-free across engines/DPRs (which is the whole point of using an SVG
+instead of live block-text). Output: _includes/codestrux-wordmark.html
+
+Run: python3 tools/ascii_to_svg.py
 """
-Generate the CodeStrux wordmark+skull as a crisp inline SVG from the existing
-Unicode block-element ASCII art that lives in index.markdown.
-
-Why: block-element art rendered as live text cannot tile sub-pixel-perfectly
-across engines/DPRs (WebKit vs Gecko round the half/quadrant seams differently),
-so it looked wrong on real iOS Safari. An SVG of the same pixel grid renders
-byte-identically everywhere.
-
-The art is the single source of truth: we parse the <pre class="ascii-logo">…</pre>
-block out of index.markdown, map each block glyph to filled sub-cells on a 10-unit
-grid, run-length-merge horizontally, and emit _includes/codestrux-wordmark.html.
-
-Run:  python3 tools/ascii_to_svg.py
-"""
-import re
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SRC = ROOT / "index.markdown"
+ART_FILE = ROOT / "tools" / "wordmark.txt"
 OUT = ROOT / "_includes" / "codestrux-wordmark.html"
 
-CELL = 10
-HALF = 5
+SPLIT = 37             # column separating the wordmark (left) from the skull (right)
+WM_W, WM_H = 20, 20    # wordmark cell size (square)
+SK_W, SK_H = 18, 24    # skull cell size — slimmer (-10%) + taller (+20%) than square
+GAP = 56               # gap between wordmark and skull, in viewBox units
 
-# Each block glyph -> the set of quadrants it fills (UL, UR, LL, LR).
-# Full block and the two half blocks are special-cased to single rects.
+# block glyph -> the quadrants it fills (UL, UR, LL, LR)
 QUADRANTS = {
-    0x2588: {"UL", "UR", "LL", "LR"},  # █ full block
+    0x2588: {"UL", "UR", "LL", "LR"},  # █ full
     0x2580: {"UL", "UR"},              # ▀ upper half
     0x2584: {"LL", "LR"},              # ▄ lower half
     0x2599: {"UL", "LL", "LR"},        # ▙ all but UR
@@ -35,38 +31,19 @@ QUADRANTS = {
     0x259C: {"UL", "UR", "LR"},        # ▜ all but LL
     0x259B: {"UL", "UR", "LL"},        # ▛ all but LR
 }
-QPOS = {"UL": (0, 0), "UR": (HALF, 0), "LL": (0, HALF), "LR": (HALF, HALF)}
 
 
-def extract_art(text: str) -> list[str]:
-    m = re.search(r'<pre class="ascii-logo"[^>]*>(.*?)</pre>', text, re.DOTALL)
-    if not m:
-        raise SystemExit("Could not find <pre class=\"ascii-logo\"> in index.markdown")
-    return m.group(1).split("\n")
-
-
-def glyph_rects(cp: int, x: int, y: int) -> list[tuple[int, int, int, int]]:
-    quad = QUADRANTS[cp]
-    if quad == {"UL", "UR", "LL", "LR"}:
-        return [(x, y, CELL, CELL)]
-    if quad == {"UL", "UR"}:
-        return [(x, y, CELL, HALF)]
-    if quad == {"LL", "LR"}:
-        return [(x, y + HALF, CELL, HALF)]
-    return [(x + QPOS[q][0], y + QPOS[q][1], HALF, HALF) for q in sorted(quad)]
-
-
-def merge_runs(rects: list[tuple[int, int, int, int]]) -> list[tuple[int, int, int, int]]:
-    """Merge horizontally-contiguous rects that share the same y and height."""
-    by_band: dict[tuple[int, int], list[tuple[int, int]]] = {}
+def merge_runs(rects):
+    """Merge horizontally-contiguous rects sharing the same y and height."""
+    bands = {}
     for x, y, w, h in rects:
-        by_band.setdefault((y, h), []).append((x, w))
-    out: list[tuple[int, int, int, int]] = []
-    for (y, h), spans in sorted(by_band.items()):
+        bands.setdefault((y, h), []).append((x, w))
+    out = []
+    for (y, h), spans in sorted(bands.items()):
         spans.sort()
         cx, cw = spans[0]
         for x, w in spans[1:]:
-            if x <= cx + cw:           # contiguous or overlapping
+            if x <= cx + cw:
                 cw = max(cx + cw, x + w) - cx
             else:
                 out.append((cx, y, cw, h)); cx, cw = x, w
@@ -74,37 +51,77 @@ def merge_runs(rects: list[tuple[int, int, int, int]]) -> list[tuple[int, int, i
     return out
 
 
-def main() -> None:
-    lines = extract_art(SRC.read_text(encoding="utf-8"))
-    max_cols = max(len(l) for l in lines)
-    rects: list[tuple[int, int, int, int]] = []
-    unknown: set[str] = set()
+def render(lines, cw, ch):
+    """Rects for a block-art grid at the given cell size (cw, ch must be even)."""
+    hw, hh = cw // 2, ch // 2
+    qpos = {"UL": (0, 0), "UR": (hw, 0), "LL": (0, hh), "LR": (hw, hh)}
+    rects, unknown = [], set()
     for r, line in enumerate(lines):
-        for c, ch in enumerate(line):
-            if ch == " " or ord(ch) == 0:
+        for c, char in enumerate(line):
+            if char == " " or ord(char) == 0:
                 continue
-            if ord(ch) not in QUADRANTS:
-                unknown.add(f"{ch!r} U+{ord(ch):04X}")
-                continue
-            rects += glyph_rects(ord(ch), c * CELL, r * CELL)
+            cp = ord(char)
+            if cp not in QUADRANTS:
+                unknown.add(f"{char!r} U+{cp:04X}"); continue
+            quad = QUADRANTS[cp]
+            x, y = c * cw, r * ch
+            if quad == {"UL", "UR", "LL", "LR"}:
+                rects.append((x, y, cw, ch))
+            elif quad == {"UL", "UR"}:
+                rects.append((x, y, cw, hh))
+            elif quad == {"LL", "LR"}:
+                rects.append((x, y + hh, cw, hh))
+            else:
+                for q in sorted(quad):
+                    qx, qy = qpos[q]
+                    rects.append((x + qx, y + qy, hw, hh))
     if unknown:
-        raise SystemExit(f"Unmapped glyph(s) in art: {sorted(unknown)}")
+        raise SystemExit(f"Unmapped glyph(s): {sorted(unknown)}")
+    return merge_runs(rects)
 
-    merged = merge_runs(rects)
-    vb_w, vb_h = max_cols * CELL, len(lines) * CELL
-    body = "\n".join(
-        f'  <rect x="{x}" y="{y}" width="{w}" height="{h}"/>' for x, y, w, h in merged
-    )
-    svg = (
-        f'<svg class="ascii-logo" viewBox="0 0 {vb_w} {vb_h}" fill="currentColor"\n'
-        f'     shape-rendering="crispEdges" role="img" aria-hidden="true"\n'
-        f'     focusable="false" xmlns="http://www.w3.org/2000/svg">\n'
-        f"{body}\n"
-        f"</svg>\n"
-    )
+
+def trim_left(lines):
+    width = max(len(l) for l in lines)
+    lines = [l.ljust(width) for l in lines]
+    while lines[0] and all(l[0] == " " for l in lines):
+        lines = [l[1:] for l in lines]
+    return lines
+
+
+def bbox(rects):
+    return (min(x for x, _, _, _ in rects), min(y for _, y, _, _ in rects),
+            max(x + w for x, _, w, _ in rects), max(y + h for _, y, _, h in rects))
+
+
+def main():
+    art = ART_FILE.read_text(encoding="utf-8").split("\n")
+    while art and art[-1] == "":
+        art.pop()
+
+    wm = render([l[:SPLIT] for l in art], WM_W, WM_H)
+    sk = render(trim_left([l[SPLIT:] for l in art]), SK_W, SK_H)
+
+    wx0, wy0, wx1, wy1 = bbox(wm)
+    sx0, sy0, sx1, sy1 = bbox(sk)
+    tx = round((wx1 + GAP) - sx0)                       # skull sits after wordmark + gap
+    ty = round((wy0 + wy1) / 2 - (sy0 + sy1) / 2)       # vertically centered on wordmark
+    sk = [(x + tx, y + ty, w, h) for x, y, w, h in sk]
+
+    rects = wm + sk
+    bx0, by0, bx1, by1 = bbox(rects)
+    rects = [(x - bx0, y - by0, w, h) for x, y, w, h in rects]
+    for rect in rects:
+        assert all(isinstance(v, int) for v in rect), rect
+    W, H = bx1 - bx0, by1 - by0
+
+    body = "\n".join(f'  <rect x="{x}" y="{y}" width="{w}" height="{h}"/>' for x, y, w, h in rects)
+    svg = (f'<svg class="ascii-logo" viewBox="0 0 {W} {H}" fill="currentColor"\n'
+           f'     shape-rendering="crispEdges" role="img" aria-hidden="true"\n'
+           f'     focusable="false" xmlns="http://www.w3.org/2000/svg">\n{body}\n</svg>\n')
     OUT.write_text(svg, encoding="utf-8")
-    print(f"rows={len(lines)} cols={max_cols} cells_filled={len(rects)} "
-          f"rects_after_merge={len(merged)} bytes={len(svg)}")
+    print(f"wordmark={WM_W}x{WM_H} skull={SK_W}x{SK_H} gap={GAP}")
+    print(f"wordmark bbox=({wx0},{wy0},{wx1},{wy1})  skull→translate=({tx},{ty})")
+    print(f"viewBox=0 0 {W} {H}  aspect={W/H:.2f}  rects={len(rects)}  bytes={len(svg)}")
     print(f"wrote {OUT.relative_to(ROOT)}")
 
 
