@@ -391,8 +391,8 @@ code, kbd, samp { font-family: var(--mono); }
 
 /* ASCII logotype block */
 .ascii-logo {
-  font-family: var(--mono); color: var(--accent); white-space: pre; line-height: 1.05;
-  font-size: clamp(7px, 1.5vw, 12px); font-weight: 700; overflow: hidden; margin-bottom: 14px;
+  font-family: var(--mono); color: var(--accent); white-space: pre; line-height: 1;
+  font-size: clamp(7px, 2.2vw, 12px); font-weight: 700; overflow: hidden; margin-bottom: 14px;
   text-shadow: 0 0 18px oklch(from var(--accent) l c h / 0.35);
 }
 
@@ -548,9 +548,4 @@ kbd {
   .topbar__tools { margin-left: auto; }
   .palette-trigger__k { display: none; }
   .palette-trigger__menu { display: inline; }
-  /* Hero ASCII emblem: center the CODESTRUX wordmark + skull as one
-     fit-to-width unit on phones so it reads as a balanced, symmetric block
-     (by default the <pre> is left-anchored in the full-width pane). */
-  .ascii-logo { width: fit-content; margin-inline: auto; font-size: clamp(7px, 2.1vw, 11px); line-height: 1.1; }
-  .hero__body { align-items: center; text-align: center; }
 }
