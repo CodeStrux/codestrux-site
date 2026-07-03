@@ -21,7 +21,7 @@ permalink: /about/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> whoami</h2>
     <h3>Alejandro Araya Jiménez</h3>
-    <p class="card-meta">System Development Engineer · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
+    <p class="card-meta">System Development Engineer · co-fouder · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
     <p>System Development Engineer at Amazon (Enterprise Service Delivery), previously a Finance BI Engineer at Amazon, with earlier backend and IT/development work in Costa Rica. Works across AWS (Lambda, CDK, Glue, Redshift, QuickSight, Batch, Lake Formation, S3, Bedrock), data pipelines and BI, Java/Spring, TypeScript, React and Next.js, and Docker/Kubernetes.</p>
   </div>
 </section>
@@ -31,8 +31,10 @@ permalink: /about/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> whoami</h2>
     <h3>Alvaro Araya Obando</h3>
-    <p class="card-meta">Backend &amp; e-invoicing engineer · <a href="mailto:aao@codestrux.tech">aao@codestrux.tech</a></p>
-    <p>Author of FacturaCR (ce-je), our Jakarta EE electronic-invoicing engine for Costa Rica. Focused on Java and Jakarta EE backends and the Hacienda e-invoicing domain.</p>
+    <p class="card-meta">Backend and Infrastructure Engineer · co-founder · <a href="mailto:aao@codestrux.tech">aao@codestrux.tech</a></p>
+    <p>Alvaro Araya Obando is Co-Founder of Codestrux Tech, a software studio focused on the architecture and implementation of cloud-native, scalable, high-availability applications. Through Codestrux, he provides consulting services to private companies and government institutions on the design and implementation of open-source software architectures. He is the author of codestrux-ce, the company's electronic-invoicing engine for Costa Rica.</p>
+    <p>A senior software developer and network administrator, Alvaro has worked with open-source software since 1998. Java is his primary development language — he has taught Java Web and Java Enterprise courses. His dual background in development and systems administration allows him to deliver end-to-end solutions across on-premises and cloud environments built on Linux and BSD platforms. His expertise also extends to cybersecurity with a focus on secure software development, and to the implementation of VoIP services.</p>
+    <p>In July 2019, he won first place in the Hackathon on Improving Public Financial Management Through Technology, organized by Costa Rica's Ministry of Finance and the International Monetary Fund, with a solution built entirely on open-source software.</p>
   </div>
 </section>
 
