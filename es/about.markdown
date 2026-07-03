@@ -21,7 +21,7 @@ permalink: /es/about/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> whoami</h2>
     <h3>Alejandro Araya Jiménez</h3>
-    <p class="card-meta">System Development Engineer · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
+    <p class="card-meta">System Development Engineer · co-fundador · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
     <p>System Development Engineer en Amazon (Enterprise Service Delivery), antes Finance BI Engineer en Amazon, con trabajo previo de backend y de TI/desarrollo en Costa Rica. Trabaja con AWS (Lambda, CDK, Glue, Redshift, QuickSight, Batch, Lake Formation, S3, Bedrock), pipelines de datos y BI, Java/Spring, TypeScript, React y Next.js, y Docker/Kubernetes.</p>
   </div>
 </section>
@@ -31,8 +31,10 @@ permalink: /es/about/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> whoami</h2>
     <h3>Alvaro Araya Obando</h3>
-    <p class="card-meta">Ingeniero de backend y facturación electrónica · <a href="mailto:aao@codestrux.tech">aao@codestrux.tech</a></p>
-    <p>Autor de FacturaCR (ce-je), nuestro motor de facturación electrónica en Jakarta EE para Costa Rica. Enfocado en backends de Java y Jakarta EE y en el dominio de la facturación electrónica ante Hacienda.</p>
+    <p class="card-meta">Ingeniero de Backend e Infraestructura · co-fundador · <a href="mailto:aao@codestrux.tech">aao@codestrux.tech</a></p>
+    <p>Alvaro Araya Obando es cofundador de Codestrux Tech, un estudio de software enfocado en la arquitectura e implementación de aplicaciones nativas de la nube, escalables y de alta disponibilidad. A través de Codestrux, brinda servicios de consultoría a empresas privadas e instituciones gubernamentales en el diseño e implementación de arquitecturas de software basadas en código abierto. Es el autor de codestrux-ce, el motor de facturación electrónica de la compañía para Costa Rica.</p>
+    <p>Desarrollador de software senior y administrador de redes, Alvaro trabaja con software de código abierto desde 1998. Java es su principal lenguaje de desarrollo — ha impartido cursos de Java Web y Java Enterprise. Su doble perfil en desarrollo y administración de sistemas le permite entregar soluciones integrales en entornos on-premises y en la nube, construidas sobre plataformas Linux y BSD. Su experiencia se extiende además a la ciberseguridad con enfoque en el desarrollo seguro de software, y a la implementación de servicios de VoIP.</p>
+    <p>En julio de 2019 obtuvo el primer lugar en el Hackathon sobre Mejora de la Gestión Financiera Pública a través de la Tecnología, organizado por el Ministerio de Hacienda de Costa Rica y el Fondo Monetario Internacional, con una solución construida completamente sobre software de código abierto.</p>
   </div>
 </section>
 
