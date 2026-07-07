@@ -21,8 +21,10 @@ permalink: /about/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> whoami</h2>
     <h3>Alejandro Araya Jiménez</h3>
-    <p class="card-meta">System Development Engineer · co-fouder · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
-    <p>System Development Engineer at Amazon (Enterprise Service Delivery), previously a Finance BI Engineer at Amazon, with earlier backend and IT/development work in Costa Rica. Works across AWS (Lambda, CDK, Glue, Redshift, QuickSight, Batch, Lake Formation, S3, Bedrock), data pipelines and BI, Java/Spring, TypeScript, React and Next.js, and Docker/Kubernetes.</p>
+    <p class="card-meta">AI &amp; Systems Developer · co-founder · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
+    <p>Alejandro Araya Jiménez is co-founder of CodeStrux Tech, where most of his work today is building AI systems. He built the AI layer of Stratos, the studio's WhatsApp Business inbox for LATAM SMBs — a Claude-powered agent that answers customer conversations across text, transcribed voice notes, and images, working alongside a live agent inbox, with agent actions logged to an audit trail. He has also taken an AI customer-service agent live inside a client platform, and shipped an AI support portal that routes questions through tiered open-weight models.</p>
+    <p>He is the author of relay-mesh, CodeStrux's open-source multi-agent orchestrator (<a href="https://github.com/CodeStrux/relay-mesh" rel="noopener">github.com/CodeStrux/relay-mesh</a>): it fans a goal out to a fleet of parallel agents — recon, planning, execution, verification — running on open-weight models via OpenRouter, coordinated through a filesystem relay protocol with a mandatory human approval gate before anything executes. The studio itself builds agent-first: CodeStrux products are developed through multi-agent workflows — planning sessions, adversarial design reviews, parallel implementation — with the house stack and design languages codified as portable skills for coding agents.</p>
+    <p>Previously he was a System Development Engineer at Amazon (Enterprise Service Delivery) and, before that, a Finance BI Engineer at Amazon, with earlier backend and IT/development work in Costa Rica. He works across AWS (Lambda, CDK, Glue, Redshift, QuickSight, Batch, Lake Formation, S3, Bedrock), data pipelines and BI, Java/Spring, TypeScript, React and Next.js, and Docker/Kubernetes.</p>
   </div>
 </section>
 
