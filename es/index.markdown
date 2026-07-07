@@ -25,6 +25,7 @@ permalink: /es/
     <p class="hero__cta">
       <a class="btn" href="/es/projects/">ls projects</a>
       <a class="btn btn--ghost" href="mailto:contact@codestrux.tech">contact</a>
+      <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a>
     </p>
   </div>
 </section>

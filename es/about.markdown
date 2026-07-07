@@ -53,6 +53,6 @@ permalink: /es/about/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> mail</h2>
     <p>Nos encantaría conocer su proyecto.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a></p>
+    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
   </div>
 </section>
