@@ -113,6 +113,6 @@ permalink: /services/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> ./start.sh</h2>
     <p>Every engagement is different. Tell us what you are building and we will tell you how we can help.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a></p>
+    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
   </div>
 </section>

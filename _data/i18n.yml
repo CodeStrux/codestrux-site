@@ -44,6 +44,7 @@ en:
     tagline: "A studio from Cartago, Costa Rica. We build and run infrastructure and software."
     legal: "Legal"
     contact: "Contact"
+    whatsapp: "WhatsApp"
     nav_heading: "Navigate"
     built: "Built with Jekyll. No trackers."
   legal_links:
@@ -89,6 +90,7 @@ es-CR:
     tagline: "Un estudio desde Cartago, Costa Rica. Construimos y operamos infraestructura y software."
     legal: "Legal"
     contact: "Contacto"
+    whatsapp: "WhatsApp"
     nav_heading: "Navegar"
     built: "Hecho con Jekyll. Sin rastreadores."
   legal_links:
