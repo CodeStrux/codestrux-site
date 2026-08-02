@@ -89,6 +89,7 @@
     { id: 'help',    cmd: S.help || 'help',   label: S.helpTitle || 'help', icon: '?', run: showHelp },
     { id: 'theme',   cmd: S.theme || 'theme', label: '', icon: '◐', run: function () { toggleTheme(); echo((S.theme || 'theme') + ' → ' + (currentTheme() === 'dark' ? (S.themeDark || 'dark') : (S.themeLight || 'light'))); } },
     { id: 'stratos', cmd: S.stratos || 'open stratos', label: 'stratos.talk', icon: '↗', href: S.stratosHref },
+    { id: 'paramo',  cmd: S.paramo || 'open paramo', label: 'paramo.codestrux.tech', icon: '↗', href: S.paramoHref },
     { id: 'contact', cmd: S.contact || 'contact', label: 'email', icon: '@', href: S.contactHref },
     { id: 'clear',   cmd: S.clear || 'clear', label: '', icon: '⌫', run: function () { clearOutput(); inputEl.value = ''; render(''); } }
   ];

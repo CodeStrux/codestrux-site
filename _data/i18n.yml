@@ -14,6 +14,7 @@ en:
     home: "home"
     about: "about"
     services: "services"
+    fde: "fde"
     projects: "projects"
   shell:
     # The prompt rendered before command-as-heading kickers, e.g.
@@ -63,6 +64,7 @@ es-CR:
     home: "inicio"
     about: "nosotros"
     services: "servicios"
+    fde: "fde"
     projects: "proyectos"
   shell:
     user: "codestrux"

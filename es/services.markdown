@@ -112,7 +112,8 @@ permalink: /es/services/
   <div class="pane__bar"><span class="pane__path">services/fde</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> fde <span class="flag">--embed</span></h2>
-    <p>Los Forward Deployed Engineers se integran con su equipo — en sus repositorios y flujos de trabajo — y entregan sistemas de IA en producción sobre datos reales. Cada proyecto lo atendemos en pareja: un ingeniero de IA para agentes, recuperación, evaluaciones e integración, y un ingeniero de industria aplicada que ya habla el dominio. El trabajo se mantiene acotado: delimitar el problema, probarlo en un prototipo, llevarlo a producción y entregarlo a responsables nombrados. Trabajamos primero de forma remota desde Costa Rica con cuentas en LATAM y nearshore, con sprints cortos en sitio cuando el trabajo lo requiere.</p>
+    <p>Los Forward Deployed Engineers se integran con su equipo y entregan IA en producción — un ingeniero de IA en pareja con un ingeniero de industria aplicada, en un camino acotado hasta el handoff. Lea la sección FDE completa, o gestione embeds en <a href="https://paramo.codestrux.tech" rel="noopener">Paramo</a>.</p>
+    <p class="hero__cta"><a class="btn" href="/es/fde/">ls fde/</a> <a class="btn btn--ghost" href="https://paramo.codestrux.tech" rel="noopener">open paramo</a></p>
   </div>
 </section>
 

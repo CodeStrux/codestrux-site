@@ -26,6 +26,11 @@ items:
     path: /services/
     cmd: "ls services/"
     icon: "+"
+  - key: fde
+    label: fde
+    path: /fde/
+    cmd: "ls fde/"
+    icon: "^"
   - key: projects
     label: projects
     path: /projects/
