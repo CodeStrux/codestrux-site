@@ -44,7 +44,7 @@ permalink: /about/
   <div class="pane__bar"><span class="pane__path">~/about/how-we-work</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">how-we-work.md</span></h2>
-    <p>Capabilities at CodeStrux Tech are pooled, not split by person — together we cover infrastructure and operations, cloud and data, backends and frontends, fintech compliance, and AI tooling. We collaborate directly with the people we build for, keep our systems open and maintainable, and prefer durable engineering over throwaway work.</p>
+    <p>Capabilities at CodeStrux Tech are pooled, not split by person — together we cover infrastructure and operations, cloud and data, backends and frontends, fintech compliance, and AI tooling. For AI embeds we work as Forward Deployed Engineers: an AI engineer paired with an applied industry engineer, shipping to production and handing off to named owners — see <a href="/services/">services</a>. We collaborate directly with the people we build for, keep our systems open and maintainable, and prefer durable engineering over throwaway work.</p>
   </div>
 </section>
 
