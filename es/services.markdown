@@ -108,6 +108,14 @@ permalink: /es/services/
   </div>
 </section>
 
+<section class="pane pane--col-2" aria-label="Ingenieros desplegados en campo">
+  <div class="pane__bar"><span class="pane__path">services/fde</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> fde <span class="flag">--embed</span></h2>
+    <p>Los Forward Deployed Engineers se integran con su equipo — en sus repositorios y flujos de trabajo — y entregan sistemas de IA en producción sobre datos reales. Cada proyecto lo atendemos en pareja: un ingeniero de IA para agentes, recuperación, evaluaciones e integración, y un ingeniero de industria aplicada que ya habla el dominio. El trabajo se mantiene acotado: delimitar el problema, probarlo en un prototipo, llevarlo a producción y entregarlo a responsables nombrados. Trabajamos primero de forma remota desde Costa Rica con cuentas en LATAM y nearshore, con sprints cortos en sitio cuando el trabajo lo requiere.</p>
+  </div>
+</section>
+
 <section class="pane pane--col-4" aria-label="¿Listo para empezar?">
   <div class="pane__bar"><span class="pane__path">~/start</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">

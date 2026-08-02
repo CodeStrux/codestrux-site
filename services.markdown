@@ -108,6 +108,14 @@ permalink: /services/
   </div>
 </section>
 
+<section class="pane pane--col-2" aria-label="Forward Deployed Engineers">
+  <div class="pane__bar"><span class="pane__path">services/fde</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> fde <span class="flag">--embed</span></h2>
+    <p>Forward Deployed Engineers embed with your team — in your repos and workflows — and ship production AI systems on real data. We staff each engagement as a pair: an AI engineer for agents, retrieval, evaluations, and integration, and an applied industry engineer who already speaks your domain. Work stays bounded: scope the problem, prove it on a prototype, put it in production, then hand it to named owners. We work remote-first from Costa Rica across LATAM and nearshore accounts, with short on-site sprints when the work needs it.</p>
+  </div>
+</section>
+
 <section class="pane pane--col-4" aria-label="Ready to start">
   <div class="pane__bar"><span class="pane__path">~/start</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
