@@ -50,7 +50,7 @@ permalink: /
   <div class="pane__bar"><span class="pane__path">~/stack</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> ls <span class="arg">stack/</span></h2>
-    <p>AWS and GCP, serverless and containers, ETL and BI pipelines, and production backends in Java (Jakarta EE, Spring Boot) and TypeScript (React, Next.js).</p>
+    <p>AWS, Claudflare, Azure and GCP, serverless and containers, ETL and BI pipelines, and production backends in Java (Jakarta EE, Spring Boot) and TypeScript (React, Next.js).</p>
     <ul class="tags" aria-label="Stack">
       <li>AWS</li><li>GCP</li><li>Java</li><li>Spring Boot</li><li>Jakarta EE</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Docker</li><li>Kubernetes</li>
     </ul>

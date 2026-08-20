@@ -3,7 +3,7 @@
 # CodeStrux Tech brand site. This is the PRIMARY data-deletion artifact: an
 # instructions URL referenced from the Privacy Policy, which satisfies Meta's
 # data-deletion requirement (no callback needed). Entity = "CodeStrux Tech";
-# platform / Meta app = "CodeStrux Tech App"; address = San Nicolás, Cartago.
+# platform / Meta app = "CodeStrux Tech App"; address = Cartago.
 # Verified-request timeline: within 30 days (as drafted). Section ids are
 # shared with the es-CR block.
 en:
@@ -48,7 +48,7 @@ en:
     - id: "contact"
       heading: "Contact"
       paragraphs:
-        - "Data deletion requests and questions: privacy@codestrux.tech. Postal address: San Nicolás, Cartago 30104, Costa Rica."
+        - "Data deletion requests and questions: privacy@codestrux.tech. Postal address: Cartago 30104, Costa Rica."
 
 es-CR:
   kind: "data-deletion"
@@ -92,4 +92,4 @@ es-CR:
     - id: "contact"
       heading: "Contacto"
       paragraphs:
-        - "Solicitudes de eliminación de datos y consultas: privacy@codestrux.tech. Dirección postal: San Nicolás, Cartago 30104, Costa Rica."
+        - "Solicitudes de eliminación de datos y consultas: privacy@codestrux.tech. Dirección postal: Cartago 30104, Costa Rica."

@@ -36,7 +36,7 @@ permalink: /services/
   <div class="pane__bar"><span class="pane__path">services/cloud</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> cloud</h2>
-    <p>Cloud-native systems on AWS and GCP — serverless functions, containers, managed data services, and infrastructure as code. We size for the workload and keep an eye on cost as well as availability.</p>
+    <p>Cloud-native systems on AWS, Azure, Cloudflare and GCP — serverless functions, containers, managed data services, and infrastructure as code. We size for the workload and keep an eye on cost as well as availability.</p>
   </div>
 </section>
 

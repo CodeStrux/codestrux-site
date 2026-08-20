@@ -12,7 +12,7 @@ permalink: /es/about/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat about.md</span></p>
     <h1 class="hero__heading">Sobre CodeStrux Tech</h1>
-    <p class="hero__sub">Un estudio con sede en San Nicolás, Cartago, Costa Rica. Las mismas personas que diseñan un sistema son quienes lo construyen, lo despliegan y lo mantienen funcionando — tratamos la infraestructura y el software como una sola disciplina.</p>
+    <p class="hero__sub">Un estudio con sede en Cartago, Costa Rica. Las mismas personas que diseñan un sistema son quienes lo construyen, lo despliegan y lo mantienen funcionando — tratamos la infraestructura y el software como una sola disciplina.</p>
   </div>
 </section>
 

@@ -12,7 +12,7 @@ permalink: /about/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat about.md</span></p>
     <h1 class="hero__heading">About CodeStrux Tech</h1>
-    <p class="hero__sub">A studio based in San Nicolás, Cartago, Costa Rica. The people who design a system are the ones who build it, deploy it, and keep it running — we treat infrastructure and software as one discipline.</p>
+    <p class="hero__sub">A studio based in Cartago, Costa Rica. The people who design a system are the ones who build it, deploy it, and keep it running — we treat infrastructure and software as one discipline.</p>
   </div>
 </section>
 

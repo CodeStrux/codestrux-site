@@ -1,7 +1,7 @@
 # Privacy Policy — ported from the Stratos UI draft
 # (stratos-whatsapp-ui/src/content/legal/privacy.ts) and adapted for the
 # CodeStrux Tech brand site. Entity = "CodeStrux Tech"; the Meta app /
-# platform = "CodeStrux Tech App"; address = San Nicolás, Cartago.
+# platform = "CodeStrux Tech App"; address = Cartago.
 # Section ids are shared with the es-CR block so in-page anchors match.
 # This is the document pinned as the Privacy Policy URL in Meta App Settings.
 en:
@@ -94,7 +94,7 @@ en:
     - id: "contact"
       heading: "Contact us"
       paragraphs:
-        - "For privacy questions or to exercise your rights, contact CodeStrux Tech at privacy@codestrux.tech, or by post at San Nicolás, Cartago 30104, Costa Rica."
+        - "For privacy questions or to exercise your rights, contact CodeStrux Tech at privacy@codestrux.tech, or by post at Cartago 30104, Costa Rica."
 
 es-CR:
   kind: "privacy"
@@ -186,4 +186,4 @@ es-CR:
     - id: "contact"
       heading: "Contáctenos"
       paragraphs:
-        - "Para consultas de privacidad o para ejercer sus derechos, contacte a CodeStrux Tech en privacy@codestrux.tech, o por correo postal en San Nicolás, Cartago 30104, Costa Rica."
+        - "Para consultas de privacidad o para ejercer sus derechos, contacte a CodeStrux Tech en privacy@codestrux.tech, o por correo postal en Cartago 30104, Costa Rica."

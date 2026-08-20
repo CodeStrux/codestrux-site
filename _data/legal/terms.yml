@@ -1,8 +1,8 @@
 # Terms of Service — ported from the Stratos UI draft
 # (stratos-whatsapp-ui/src/content/legal/terms.ts) and adapted for the
 # CodeStrux Tech brand site. Entity = "CodeStrux Tech"; platform / Meta app =
-# "CodeStrux Tech App"; jurisdiction = Costa Rica; address = San Nicolás,
-# Cartago. Section ids are shared with the es-CR block. Pinned as the Terms of
+# "CodeStrux Tech App"; jurisdiction = Costa Rica; address = Cartago.
+# Section ids are shared with the es-CR block. Pinned as the Terms of
 # Service URL in Meta App Settings.
 en:
   kind: "terms"
@@ -79,7 +79,7 @@ en:
     - id: "contact"
       heading: "Contact us"
       paragraphs:
-        - "Questions about these Terms can be sent to CodeStrux Tech at support@codestrux.tech, or by post at San Nicolás, Cartago 30104, Costa Rica."
+        - "Questions about these Terms can be sent to CodeStrux Tech at support@codestrux.tech, or by post at Cartago 30104, Costa Rica."
 
 es-CR:
   kind: "terms"
@@ -156,4 +156,4 @@ es-CR:
     - id: "contact"
       heading: "Contáctenos"
       paragraphs:
-        - "Las consultas sobre estos Términos pueden enviarse a CodeStrux Tech a support@codestrux.tech, o por correo postal en San Nicolás, Cartago 30104, Costa Rica."
+        - "Las consultas sobre estos Términos pueden enviarse a CodeStrux Tech a support@codestrux.tech, o por correo postal Cartago 30104, Costa Rica."
