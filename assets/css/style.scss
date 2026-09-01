@@ -10,7 +10,7 @@
 
 /* ============================================================ *
  *  CodeStrux — "bento terminal" design language
- *  Dark default + light "paper" toggle · emerald accent in both
+ *  Dark navy default + light "ice" toggle · bone accent on navy, navy on ice
  *  JetBrains Mono everywhere · Fraunces only for the Stratos wordmark
  *  Soft-rounded panes (10px) with window "traffic-light" dots
  * ============================================================ */
@@ -64,54 +64,56 @@
 }
 
 :root[data-theme="dark"] {
-  --bg:        oklch(0.17 0.02 158);
-  --bg-pane:   oklch(0.21 0.022 158);
-  --bg-inset:  oklch(0.235 0.024 158);
-  --bg-bar:    oklch(0.245 0.025 158);
-  --fg:        oklch(0.94 0.012 148);
-  --fg-dim:    oklch(0.72 0.016 150);
-  --fg-faint:  oklch(0.66 0.018 152);   /* lifted so 12px chrome text clears AA */
-  --rule:      oklch(0.32 0.022 156);
-  --rule-soft: oklch(0.27 0.02 156);
-  --accent:        oklch(0.72 0.16 152);
-  --accent-strong: oklch(0.80 0.16 152);
-  --accent-ink:    oklch(0.17 0.04 158);   /* text on an accent fill */
-  --amber:   oklch(0.80 0.13 80);
-  --cyan:    oklch(0.78 0.10 210);
-  --magenta: oklch(0.74 0.16 0);
+  --bg:        oklch(0.17 0.025 258);
+  --bg-pane:   oklch(0.21 0.028 258);
+  --bg-inset:  oklch(0.235 0.03 258);
+  --bg-bar:    oklch(0.245 0.03 258);
+  --fg:        oklch(0.94 0.012 250);
+  --fg-dim:    oklch(0.72 0.016 252);
+  --fg-faint:  oklch(0.66 0.018 254);   /* lifted so 12px chrome text clears AA */
+  --rule:      oklch(0.32 0.03 258);
+  --rule-soft: oklch(0.27 0.028 258);
+  /* Bone accent: warm hue 90 against the cool blue-white --fg, so accented
+     text reads "lit up" at the same lightness. */
+  --accent:        oklch(0.92 0.04 90);
+  --accent-strong: oklch(0.96 0.04 90);
+  --accent-ink:    oklch(0.18 0.045 258);  /* deep navy ink on a bone fill */
+  --amber:   oklch(0.78 0.10 85);
+  --cyan:    oklch(0.80 0.09 235);
+  --magenta: oklch(0.72 0.06 262);
   --dot-a: var(--accent);
   --dot-b: var(--amber);
   --dot-c: var(--magenta);
-  --glow: 0 0 0 1px var(--rule), 0 1px 0 0 oklch(0.30 0.03 158 / 0.5) inset, 0 8px 30px -18px oklch(0.72 0.16 152 / 0.45);
-  --shadow-pop: 0 0 0 1px var(--accent), 0 0 24px -6px oklch(0.72 0.16 152 / 0.5);
-  --bg-topbar: oklch(0.17 0.02 158 / 0.82);   /* --bg at 0.82 — precomputed, see .topbar */
+  --glow: 0 0 0 1px var(--rule), 0 1px 0 0 oklch(0.30 0.035 258 / 0.5) inset, 0 8px 30px -18px oklch(0.92 0.04 90 / 0.35);
+  --shadow-pop: 0 0 0 1px var(--accent), 0 0 24px -6px oklch(0.92 0.04 90 / 0.4);
+  --bg-topbar: oklch(0.17 0.025 258 / 0.82);  /* --bg at 0.82 — precomputed, see .topbar */
   color-scheme: dark;
 }
 
 :root[data-theme="light"] {
-  --bg:        oklch(0.972 0.012 148);
-  --bg-pane:   oklch(0.995 0.004 148);
-  --bg-inset:  oklch(0.955 0.012 148);
-  --bg-bar:    oklch(0.945 0.016 150);
-  --fg:        oklch(0.215 0.055 158);
-  --fg-dim:    oklch(0.42 0.034 152);
-  --fg-faint:  oklch(0.48 0.03 152);    /* darkened so 12px chrome text clears AA */
-  --rule:      oklch(0.86 0.018 150);
-  --rule-soft: oklch(0.90 0.014 150);
-  /* Accent darkened to clear AA (>=4.5) for emerald body-text links / sigils
-     on the near-white pane; the button below puts dark ink on the fill. */
-  --accent:        oklch(0.505 0.16 152);
-  --accent-strong: oklch(0.44 0.15 152);
-  --accent-ink:    oklch(0.16 0.04 158);   /* dark forest ink ON the accent fill */
-  --amber:   oklch(0.52 0.13 70);
-  --cyan:    oklch(0.52 0.10 220);
-  --magenta: oklch(0.55 0.18 0);
+  --bg:        oklch(0.972 0.012 250);
+  --bg-pane:   oklch(0.995 0.003 250);  /* C 0.004 clips sRGB blue at this L/hue */
+  --bg-inset:  oklch(0.955 0.012 250);
+  --bg-bar:    oklch(0.945 0.016 250);
+  --fg:        oklch(0.215 0.055 258);
+  --fg-dim:    oklch(0.42 0.04 256);
+  --fg-faint:  oklch(0.48 0.035 254);   /* darkened so 12px chrome text clears AA */
+  --rule:      oklch(0.86 0.02 252);
+  --rule-soft: oklch(0.90 0.015 252);
+  /* Accent darkened to clear AA (>=4.5) for navy body-text links / sigils
+     on the near-white pane; the button below puts bone ink on the fill. */
+  --accent:        oklch(0.45 0.12 258);
+  --accent-strong: oklch(0.38 0.12 258);
+  --accent-ink:    oklch(0.97 0.02 95);    /* bone text ON the navy fill */
+  --amber:   oklch(0.50 0.10 85);
+  --cyan:    oklch(0.48 0.09 240);
+  --magenta: oklch(0.48 0.05 262);
   --dot-a: var(--accent);
   --dot-b: var(--amber);
   --dot-c: var(--magenta);
-  --glow: 0 1px 2px oklch(0.215 0.055 158 / 0.06), 0 6px 20px -12px oklch(0.215 0.055 158 / 0.22);
-  --shadow-pop: 0 0 0 1px var(--accent), 0 8px 24px -12px oklch(0.56 0.18 152 / 0.4);
-  --bg-topbar: oklch(0.972 0.012 148 / 0.82); /* --bg at 0.82 — precomputed, see .topbar */
+  --glow: 0 1px 2px oklch(0.215 0.055 258 / 0.06), 0 6px 20px -12px oklch(0.215 0.055 258 / 0.22);
+  --shadow-pop: 0 0 0 1px var(--accent), 0 8px 24px -12px oklch(0.45 0.12 258 / 0.4);
+  --bg-topbar: oklch(0.972 0.012 250 / 0.82); /* --bg at 0.82 — precomputed, see .topbar */
   color-scheme: light;
 }
 
@@ -151,19 +153,19 @@ body::before {
 }
 :root[data-theme="dark"] body::before {
   background-image:
-    radial-gradient(oklch(0.5 0.02 152 / 0.04) 1px, transparent 1px),
-    radial-gradient(oklch(0.5 0.02 152 / 0.024) 1px, transparent 1px);
+    radial-gradient(oklch(0.5 0.02 258 / 0.04) 1px, transparent 1px),
+    radial-gradient(oklch(0.5 0.02 258 / 0.024) 1px, transparent 1px);
 }
 :root[data-theme="light"] body::before {
   background-image:
-    radial-gradient(oklch(0.5 0.02 152 / 0.5) 1px, transparent 1px),
-    radial-gradient(oklch(0.5 0.02 152 / 0.3) 1px, transparent 1px);
+    radial-gradient(oklch(0.5 0.02 258 / 0.5) 1px, transparent 1px),
+    radial-gradient(oklch(0.5 0.02 258 / 0.3) 1px, transparent 1px);
 }
 :root[data-theme="dark"] body::after {
   content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background:
-    radial-gradient(120% 80% at 50% -10%, oklch(0.72 0.16 152 / 0.07), transparent 60%),
-    radial-gradient(90% 60% at 100% 110%, oklch(0.78 0.10 210 / 0.05), transparent 55%);
+    radial-gradient(120% 80% at 50% -10%, oklch(0.92 0.04 90 / 0.05), transparent 60%),
+    radial-gradient(90% 60% at 100% 110%, oklch(0.80 0.09 235 / 0.05), transparent 55%);
 }
 /* CRT-ish scanlines — dark only, extremely faint, motion-safe. */
 .scanlines { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
@@ -299,7 +301,7 @@ code, kbd, samp { font-family: var(--mono); }
 .pane--col-4, .pane--full { grid-column: 1 / -1; }
 .pane--row-2 { grid-row: span 2; }
 .pane--feature { border-color: oklch(from var(--accent) l c h / 0.5); }
-:root[data-theme="dark"] .pane--feature { box-shadow: 0 0 0 1px oklch(from var(--accent) l c h / 0.45), 0 10px 40px -20px oklch(0.72 0.16 152 / 0.6); }
+:root[data-theme="dark"] .pane--feature { box-shadow: 0 0 0 1px oklch(from var(--accent) l c h / 0.45), 0 10px 40px -20px oklch(0.92 0.04 90 / 0.5); }
 
 .pane__bar {
   display: flex; align-items: center; gap: 10px;
@@ -409,7 +411,7 @@ code, kbd, samp { font-family: var(--mono); }
 /* ASCII logotype block */
 .ascii-logo {
   display: block; width: min(100%, 360px); height: auto; margin-bottom: 14px;
-  color: var(--accent); /* SVG <rect>s inherit fill: currentColor → emerald in both themes */
+  color: var(--accent); /* SVG <rect>s inherit fill: currentColor → bone (dark) / navy (light) */
   filter: drop-shadow(0 0 18px oklch(from var(--accent) l c h / 0.35));
 }
 
