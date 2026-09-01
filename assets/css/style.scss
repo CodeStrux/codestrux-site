@@ -84,8 +84,7 @@
   --dot-c: var(--magenta);
   --glow: 0 0 0 1px var(--rule), 0 1px 0 0 oklch(0.30 0.03 158 / 0.5) inset, 0 8px 30px -18px oklch(0.72 0.16 152 / 0.45);
   --shadow-pop: 0 0 0 1px var(--accent), 0 0 24px -6px oklch(0.72 0.16 152 / 0.5);
-  --grain-op: 0.04;
-  --scan-op: 0.05;
+  --bg-topbar: oklch(0.17 0.02 158 / 0.82);   /* --bg at 0.82 — precomputed, see .topbar */
   color-scheme: dark;
 }
 
@@ -112,8 +111,7 @@
   --dot-c: var(--magenta);
   --glow: 0 1px 2px oklch(0.215 0.055 158 / 0.06), 0 6px 20px -12px oklch(0.215 0.055 158 / 0.22);
   --shadow-pop: 0 0 0 1px var(--accent), 0 8px 24px -12px oklch(0.56 0.18 152 / 0.4);
-  --grain-op: 0.5;
-  --scan-op: 0;
+  --bg-topbar: oklch(0.972 0.012 148 / 0.82); /* --bg at 0.82 — precomputed, see .topbar */
   color-scheme: light;
 }
 
@@ -139,14 +137,27 @@ body {
   overflow-x: hidden;
   transition: background-color var(--speed) var(--ease), color var(--speed) var(--ease);
 }
-/* Subtle terminal grain/glow background (echoes Stratos paper grain). */
+/* Subtle terminal grain/glow background (echoes Stratos paper grain).
+   IMPORTANT: these full-viewport fixed layers must get their paint from
+   data-theme-SCOPED rules with literal colors, never from a var() whose value
+   changes with the theme. Engines can fail to re-invalidate composited fixed
+   layers when only a custom property changes, leaving a stale sheet of the
+   previous theme's grain behind the page after a toggle; swapping the matched
+   rule via the attribute selector repaints reliably. */
 body::before {
   content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none;
-  background-image:
-    radial-gradient(oklch(0.5 0.02 152 / var(--grain-op)) 1px, transparent 1px),
-    radial-gradient(oklch(0.5 0.02 152 / calc(var(--grain-op) * 0.6)) 1px, transparent 1px);
   background-size: 4px 4px, 9px 9px;
   background-position: 0 0, 1px 2px;
+}
+:root[data-theme="dark"] body::before {
+  background-image:
+    radial-gradient(oklch(0.5 0.02 152 / 0.04) 1px, transparent 1px),
+    radial-gradient(oklch(0.5 0.02 152 / 0.024) 1px, transparent 1px);
+}
+:root[data-theme="light"] body::before {
+  background-image:
+    radial-gradient(oklch(0.5 0.02 152 / 0.5) 1px, transparent 1px),
+    radial-gradient(oklch(0.5 0.02 152 / 0.3) 1px, transparent 1px);
 }
 :root[data-theme="dark"] body::after {
   content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
@@ -155,8 +166,9 @@ body::before {
     radial-gradient(90% 60% at 100% 110%, oklch(0.78 0.10 210 / 0.05), transparent 55%);
 }
 /* CRT-ish scanlines — dark only, extremely faint, motion-safe. */
-.scanlines { position: fixed; inset: 0; z-index: -1; pointer-events: none;
-  background-image: repeating-linear-gradient(to bottom, oklch(0 0 0 / var(--scan-op)) 0 1px, transparent 1px 3px); }
+.scanlines { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
+:root[data-theme="dark"] .scanlines {
+  background-image: repeating-linear-gradient(to bottom, oklch(0 0 0 / 0.05) 0 1px, transparent 1px 3px); }
 
 img { max-width: 100%; display: block; }
 a { color: var(--accent); text-decoration: none; }
@@ -194,7 +206,9 @@ code, kbd, samp { font-family: var(--mono); }
 
 .topbar {
   position: sticky; top: 0; z-index: 50;
-  background: oklch(from var(--bg) l c h / 0.82);
+  /* Per-theme token, not oklch(from var(--bg) …): WebKit resolves relative
+     color syntax against a stale var after a data-theme flip. */
+  background: var(--bg-topbar);
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--rule);
 }
