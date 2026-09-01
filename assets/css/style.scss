@@ -512,7 +512,7 @@ code, kbd, samp { font-family: var(--mono); }
 .social-links { list-style: none; padding: 0; display: flex; gap: 10px; }
 .social-links a { color: var(--fg-dim); display: inline-flex; padding: 6px; border: 1px solid var(--rule); border-radius: var(--radius-chip); transition: color var(--speed) var(--ease), border-color var(--speed) var(--ease); }
 .social-links a:hover { color: var(--accent); border-color: var(--accent); }
-.site-footer__rule { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.site-footer__rule { margin-top: 30px; padding: 18px clamp(18px, 2.4vw, 26px) clamp(16px, 2vw, 22px); border-top: 1px solid var(--rule); }
 .footer-meta { color: var(--fg-faint); font-size: 12px; }
 
 /* ============================================================ *
