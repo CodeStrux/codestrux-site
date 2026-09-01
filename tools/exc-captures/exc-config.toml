@@ -8,12 +8,12 @@ theme = "dark"
 
 # CodeStrux site tokens (converted from assets/css/style.scss OKLCH):
 [theme]
-accent      = "#42c070"   # --accent  oklch(0.72 0.16 152)
-border      = "#2a362e"   # --rule
-text        = "#e6ede7"   # --fg
-muted       = "#9ea89f"   # --fg-dim
-selected_bg = "#42c070"
-selected_fg = "#001408"   # --accent-ink
+accent      = "#efe4c7"   # --accent  oklch(0.92 0.04 90) — bone
+border      = "#293342"   # --rule
+text        = "#e5ecf3"   # --fg
+muted       = "#9ea5af"   # --fg-dim
+selected_bg = "#efe4c7"
+selected_fg = "#051125"   # --accent-ink
 
 [[profiles]]
 name = "system"
