@@ -352,6 +352,9 @@ code, kbd, samp { font-family: var(--mono); }
 }
 .hero__heading .hl { color: var(--accent); }
 .hero__sub { color: var(--fg-dim); font-size: clamp(0.98rem, 1.4vw, 1.08rem); max-width: 56ch; }
+/* Button rows: real gaps in both axes so wrapped buttons (small screens)
+   don't sit on top of each other. */
+.hero__cta { display: flex; flex-wrap: wrap; gap: 10px 12px; }
 .hero__body p + p { margin-top: 14px; }
 
 /* ============================================================ *
