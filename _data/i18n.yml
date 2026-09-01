@@ -28,7 +28,7 @@ en:
   theme:
     toggle: "Toggle theme"   # aria-label / tooltip on the theme button
     dark: "dark"
-    light: "paper"
+    light: "ice"
   palette:
     open: "Open command palette"
     placeholder: "Type a command or page name…"
@@ -77,7 +77,7 @@ es-CR:
   theme:
     toggle: "Cambiar tema"
     dark: "oscuro"
-    light: "papel"
+    light: "hielo"
   palette:
     open: "Abrir paleta de comandos"
     placeholder: "Escriba un comando o el nombre de una página…"
