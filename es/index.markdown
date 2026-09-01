@@ -70,7 +70,21 @@ permalink: /es/
   </div>
 </section>
 
-<section class="pane pane--col-4" aria-label="Trabajemos juntos">
+<section class="pane pane--feature pane--col-2 product-exc" aria-label="exc — el menú de todo para su terminal">
+  <div class="pane__bar"><span class="pane__path">~/projects/exc</span><span class="pane__status">v0.6.0</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">exc</span></p>
+    <h2 class="hero__heading">exc<span class="hl">.</span></h2>
+    <p class="card-meta">el menú de todo para su terminal</p>
+    <p>Un selector de comandos buscable y manejado por teclado, escrito en Rust: un archivo TOML con comandos, perfiles y parámetros con prompt, y un encabezado de información del host en vivo. Código abierto, MIT.</p>
+    <ul class="tags" aria-label="Capacidades de exc">
+      <li>Rust</li><li>TUI</li><li>config TOML</li><li>filtro regex</li><li>sysinfo</li>
+    </ul>
+    <p class="hero__cta"><a class="btn" href="/es/exc/">open exc</a> <a class="btn btn--ghost" href="https://github.com/codestrux/codestrux-exc-launcher" rel="noopener">github</a></p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Trabajemos juntos">
   <div class="pane__bar"><span class="pane__path">~/contact</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">contact.md</span></h2>

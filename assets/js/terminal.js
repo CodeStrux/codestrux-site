@@ -64,6 +64,20 @@
   if (document.readyState !== 'loading') { runBoot(); }
   else { document.addEventListener('DOMContentLoaded', runBoot); }
 
+  /* ---------- 2b. Demo video autoplay (gated by prefers-reduced-motion) ----------
+     Markup ships without an `autoplay` attribute, so JS-off and reduced-motion
+     both fall back to poster + native controls (the pause affordance). */
+  function runVideos() {
+    if (reduceMotion) { return; }
+    Array.prototype.forEach.call(document.querySelectorAll('video[data-autoplay]'), function (v) {
+      v.muted = true; // required for programmatic play in some engines
+      var p = v.play();
+      if (p && typeof p.catch === 'function') { p.catch(function () {}); }
+    });
+  }
+  if (document.readyState !== 'loading') { runVideos(); }
+  else { document.addEventListener('DOMContentLoaded', runVideos); }
+
   /* ---------- 3. Command palette + mini-shell ---------- */
   var paletteEl = document.getElementById('command-palette');
   var dataEl = document.getElementById('palette-commands');

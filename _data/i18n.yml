@@ -16,6 +16,7 @@ en:
     services: "services"
     fde: "fde"
     projects: "projects"
+    exc: "exc"
   shell:
     # The prompt rendered before command-as-heading kickers, e.g.
     # `codestrux@cartago:~$`. host/user are not localized.
@@ -66,6 +67,7 @@ es-CR:
     services: "servicios"
     fde: "fde"
     projects: "proyectos"
+    exc: "exc"
   shell:
     user: "codestrux"
     host: "cartago"

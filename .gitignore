@@ -6,3 +6,4 @@ _site
 vendor
 .bundle
 .playwright-mcp
+tools/exc-captures/out/

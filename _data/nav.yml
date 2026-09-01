@@ -36,3 +36,8 @@ items:
     path: /projects/
     cmd: "ls projects/"
     icon: "#"
+  - key: exc
+    label: exc
+    path: /exc/
+    cmd: "exc"
+    icon: ">"
