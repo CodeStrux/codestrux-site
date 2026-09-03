@@ -80,7 +80,7 @@ permalink: /es/
     <ul class="tags" aria-label="Capacidades de exc">
       <li>Rust</li><li>TUI</li><li>config TOML</li><li>filtro regex</li><li>sysinfo</li>
     </ul>
-    <p class="hero__cta"><a class="btn" href="/es/exc/">open exc</a> <a class="btn btn--ghost" href="https://github.com/codestrux/codestrux-exc-launcher" rel="noopener">github</a></p>
+    <p class="hero__cta"><a class="btn" href="/es/exc/">open exc</a> <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">github</a></p>
   </div>
 </section>
 

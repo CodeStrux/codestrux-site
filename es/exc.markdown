@@ -16,7 +16,7 @@ permalink: /es/exc/
     <p class="hero__sub">Un solo archivo TOML con comandos, perfiles y parámetros — servido en un selector buscable y manejado por teclado, con un encabezado de información del host en vivo. Escrito en Rust; se instala como un único binario llamado <code>exc</code>.</p>
     <p class="hero__cta">
       <a class="btn" href="https://crates.io/crates/exc-launcher" rel="noopener">cargo install exc-launcher</a>
-      <a class="btn btn--ghost" href="https://github.com/codestrux/codestrux-exc-launcher" rel="noopener">github</a>
+      <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">github</a>
     </p>
     <figure class="shot shot--hero">
       <img src="/assets/img/exc/picker.png" alt="El selector de exc: una cuadrícula numerada de comandos bajo un encabezado con información del host" width="2400" height="1500" fetchpriority="high" decoding="async" />
@@ -139,8 +139,8 @@ src/hostinfo/platform/macos/iokit_ffi.rs</code></pre>
     <p class="card-meta">author: aao@codestrux.tech</p>
     <p class="hero__cta">
       <a class="btn" href="https://crates.io/crates/exc-launcher" rel="noopener">cargo install exc-launcher</a>
-      <a class="btn btn--ghost" href="https://github.com/codestrux/codestrux-exc-launcher" rel="noopener">github</a>
-      <a class="btn btn--ghost" href="https://github.com/codestrux/codestrux-exc-launcher/blob/main/EXAMPLES.md" rel="noopener">EXAMPLES.md</a>
+      <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">github</a>
+      <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher/blob/main/EXAMPLES.md" rel="noopener">EXAMPLES.md</a>
     </p>
   </div>
 </section>
