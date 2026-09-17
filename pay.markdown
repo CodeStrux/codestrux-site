@@ -75,21 +75,7 @@ permalink: /pay/
   </div>
 </section>
 
-<section class="pane pane--col-2" aria-label="Official MoonPay pages">
-  <div class="pane__bar"><span class="pane__path">pay/links</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> ls <span class="arg">moonpay/</span></h2>
-    <ul>
-      <li><a href="https://www.moonpay.com/" rel="noopener">MoonPay</a></li>
-      <li><a href="https://www.moonpay.com/buy/usdc" rel="noopener">Buy USDC</a></li>
-      <li><a href="https://support.moonpay.com/en/articles/383332-how-to-verify-your-moonpay-account" rel="noopener">Verify your account</a></li>
-      <li><a href="https://support.moonpay.com/en/articles/466267-moonpay-commerce-faqs" rel="noopener">Commerce: how card payments work</a></li>
-      <li><a href="https://support.moonpay.com/en/articles/466361-moonpay-commerce-integration-troubleshooting-guide" rel="noopener">If your card was charged but the merchant did not get paid</a></li>
-    </ul>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Get a charge">
+<section class="pane pane--col-4" aria-label="Get a charge">
   <div class="pane__bar"><span class="pane__path">~/start</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> mail</h2>
