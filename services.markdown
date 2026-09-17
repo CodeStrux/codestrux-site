@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Services"
+description: "CodeStrux builds and operates the full stack: Linux and Proxmox, cloud, ETL, Java and TypeScript, Costa Rican e-invoicing, WhatsApp Business, and metadata-only AI on confidential systems."
 lang: en
 ref: services
 alt_url: /es/services/
@@ -12,7 +13,7 @@ permalink: /services/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">ls services/</span></p>
     <h1 class="hero__heading">What we do</h1>
-    <p class="hero__sub">We build and operate the full stack — the machines, the platforms on top of them, and the software they run. Capabilities are pooled across the team, so a single engagement can span infrastructure, data, backend, frontend, and compliance without handing off between vendors.</p>
+    <p class="hero__sub">We build and operate the full stack — the machines, the platforms on top of them, and the software they run. One engagement can span infrastructure, data, backend, frontend, compliance, and confidential AI without handing off between vendors.</p>
   </div>
 </section>
 
@@ -100,20 +101,12 @@ permalink: /services/
   </div>
 </section>
 
-<section class="pane" aria-label="AI and agent tooling">
+<section class="pane pane--col-2" aria-label="AI on confidential data">
   <div class="pane__bar"><span class="pane__path">services/ai</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> agent</h2>
-    <p>We build with modern AI and agent frameworks and integrate them into real backends and workflows.</p>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Forward Deployed Engineers">
-  <div class="pane__bar"><span class="pane__path">services/fde</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> fde <span class="flag">--embed</span></h2>
-    <p>Forward Deployed Engineers embed with your team and ship production AI — an AI engineer paired with an applied industry engineer, on a bounded path to handoff. Read the full FDE section, or manage embeds in <a href="https://paramo.codestrux.tech" rel="noopener">Paramo</a>.</p>
-    <p class="hero__cta"><a class="btn" href="/fde/">ls fde/</a> <a class="btn btn--ghost" href="https://paramo.codestrux.tech" rel="noopener">open paramo</a></p>
+    <h2 class="cmd-head"><span class="sigil">$</span> agent <span class="flag">--metadata</span></h2>
+    <p>We use AI for speed on systems that cannot leak into a vendor model. Agents see metadata only — schemas, shapes, volumes — and propose an extraction script. The CodeStrux Tech team approves it; the script runs where the data already lives. The model never receives the payload. Read the full loop on <a href="/security/">security</a>.</p>
+    <p class="hero__cta"><a class="btn" href="/security/">cat security.md</a></p>
   </div>
 </section>
 
@@ -121,7 +114,7 @@ permalink: /services/
   <div class="pane__bar"><span class="pane__path">~/start</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> ./start.sh</h2>
-    <p>Every engagement is different. Tell us what you are building and we will tell you how we can help.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
+    <p>Every engagement is different. Tell us what you are building and we will tell you how we can help. When we bill, we send a MoonPay Commerce charge — <a href="/pay/">how to pay</a>.</p>
+    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a> <a class="btn btn--ghost" href="/pay/">cat pay.md</a></p>
   </div>
 </section>

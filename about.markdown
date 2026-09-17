@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "About"
+description: "CodeStrux Tech is Alvaro Araya Obando and Alejandro Araya Jiménez — a Cartago studio that designs, ships, and operates infrastructure and software. Humans approve every AI-proposed script before it runs on confidential data."
 lang: en
 ref: about
 alt_url: /es/about/
@@ -44,7 +45,7 @@ permalink: /about/
   <div class="pane__bar"><span class="pane__path">~/about/how-we-work</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">how-we-work.md</span></h2>
-    <p>Capabilities at CodeStrux Tech are pooled, not split by person — together we cover infrastructure and operations, cloud and data, backends and frontends, fintech compliance, and AI tooling. For AI embeds we work as Forward Deployed Engineers: an AI engineer paired with an applied industry engineer, shipping to production and handing off to named owners — see <a href="/fde/">fde</a>. We collaborate directly with the people we build for, keep our systems open and maintainable, and prefer durable engineering over throwaway work.</p>
+    <p>Capabilities at CodeStrux Tech are pooled, not split by person — together we cover infrastructure and operations, cloud and data, backends and frontends, fintech compliance, and AI tooling. On confidential systems, the CodeStrux Tech team is the human gate: agents propose extraction scripts from metadata only; we review them against human criteria before anything runs. See <a href="/security/">security</a>. We collaborate directly with the people we build for, keep our systems open and maintainable, and prefer durable engineering over throwaway work.</p>
   </div>
 </section>
 
@@ -53,6 +54,6 @@ permalink: /about/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> mail</h2>
     <p>We would be glad to hear about your project.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
+    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
   </div>
 </section>

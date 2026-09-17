@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Servicios"
+description: "CodeStrux construye y opera el stack completo: Linux y Proxmox, nube, ETL, Java y TypeScript, facturación electrónica de Costa Rica, WhatsApp Business e IA solo con metadatos en sistemas confidenciales."
 lang: es-CR
 ref: services
 alt_url: /services/
@@ -12,7 +13,7 @@ permalink: /es/services/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">ls services/</span></p>
     <h1 class="hero__heading">Qué hacemos</h1>
-    <p class="hero__sub">Construimos y operamos el stack completo — las máquinas, las plataformas que corren sobre ellas y el software que ejecutan. Nuestras capacidades son compartidas en el equipo, así que un solo proyecto puede abarcar infraestructura, datos, backend, frontend y cumplimiento sin traspasos entre proveedores.</p>
+    <p class="hero__sub">Construimos y operamos el stack completo — las máquinas, las plataformas que corren sobre ellas y el software que ejecutan. Un solo proyecto puede abarcar infraestructura, datos, backend, frontend, cumplimiento e IA confidencial sin traspasos entre proveedores.</p>
   </div>
 </section>
 
@@ -100,20 +101,12 @@ permalink: /es/services/
   </div>
 </section>
 
-<section class="pane" aria-label="IA y herramientas de agentes">
+<section class="pane pane--col-2" aria-label="IA sobre datos confidenciales">
   <div class="pane__bar"><span class="pane__path">services/ai</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> agent</h2>
-    <p>Construimos con frameworks modernos de IA y de agentes y los integramos en backends y flujos de trabajo reales.</p>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Ingenieros desplegados en campo">
-  <div class="pane__bar"><span class="pane__path">services/fde</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> fde <span class="flag">--embed</span></h2>
-    <p>Los Forward Deployed Engineers se integran con su equipo y entregan IA en producción — un ingeniero de IA en pareja con un ingeniero de industria aplicada, en un camino acotado hasta el handoff. Lea la sección FDE completa, o gestione embeds en <a href="https://paramo.codestrux.tech" rel="noopener">Paramo</a>.</p>
-    <p class="hero__cta"><a class="btn" href="/es/fde/">ls fde/</a> <a class="btn btn--ghost" href="https://paramo.codestrux.tech" rel="noopener">open paramo</a></p>
+    <h2 class="cmd-head"><span class="sigil">$</span> agent <span class="flag">--metadata</span></h2>
+    <p>Usamos IA para ir rápido en sistemas que no pueden filtrarse a un modelo de un proveedor. Los agentes ven solo metadatos — esquemas, formas, volúmenes — y proponen un script de extracción. El equipo de CodeStrux Tech lo aprueba; el script corre donde ya viven los datos. El modelo nunca recibe la carga. Lea el ciclo completo en <a href="/es/security/">seguridad</a>.</p>
+    <p class="hero__cta"><a class="btn" href="/es/security/">cat security.md</a></p>
   </div>
 </section>
 
@@ -121,7 +114,7 @@ permalink: /es/services/
   <div class="pane__bar"><span class="pane__path">~/start</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> ./start.sh</h2>
-    <p>Cada proyecto es distinto. Cuéntenos qué está construyendo y le diremos cómo podemos ayudar.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
+    <p>Cada proyecto es distinto. Cuéntenos qué está construyendo y le diremos cómo podemos ayudar. Cuando facturamos, enviamos un cargo de MoonPay Commerce — <a href="/es/pay/">cómo pagar</a>.</p>
+    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
   </div>
 </section>

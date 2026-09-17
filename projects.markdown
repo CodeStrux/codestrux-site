@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Projects"
+description: "Products CodeStrux designs, builds, and operates: Stratos WhatsApp, CodeStrux Learn (USDC courses), arayaj.photo, FacturaCR e-invoicing, and exc."
 lang: en
 ref: projects
 alt_url: /es/projects/
@@ -12,7 +13,7 @@ permalink: /projects/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">ls projects/</span></p>
     <h1 class="hero__heading">What we have built</h1>
-    <p class="hero__sub">A look at the products we design, build, and operate. These are our own projects — the work shows the range of the stack we cover, from messaging platforms to e-invoicing to developer tooling.</p>
+    <p class="hero__sub">Our own products — evidence of the stack we cover, from messaging and classrooms to photography, e-invoicing, and developer tooling. Not a catalog of embeds: these are systems we design, ship, and keep running.</p>
   </div>
 </section>
 
@@ -23,6 +24,26 @@ permalink: /projects/
     <p class="card-meta">Audio-first WhatsApp Business inbox for LATAM SMBs</p>
     <p>A real-time WhatsApp Business inbox built for small and mid-sized businesses in Latin America. It delivers messages over SSE, transcribes Spanish voice notes, suggests replies, and runs vertical AI agents.</p>
     <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">open stratos</a></p>
+  </div>
+</section>
+
+<section class="pane pane--feature pane--col-4" aria-label="CodeStrux Learn">
+  <div class="pane__bar"><span class="pane__path">projects/learn</span><span class="pane__status">running · learn.codestrux.tech</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head">Learn</h2>
+    <p class="card-meta">the CodeStrux classroom</p>
+    <p>Catalog, accounts, and LMS. Courses unlock with USDC through MoonPay Commerce.</p>
+    <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/pay/">cat pay.md</a></p>
+  </div>
+</section>
+
+<section class="pane pane--feature pane--col-4" aria-label="arayaj.photo">
+  <div class="pane__bar"><span class="pane__path">projects/photo</span><span class="pane__status">running · arayaj.photo</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head">arayaj.photo</h2>
+    <p class="card-meta">photography portfolio</p>
+    <p>A bilingual photography portfolio: albums, quotes, and USDC checkout through MoonPay Commerce.</p>
+    <p class="hero__cta"><a class="btn" href="https://arayaj.photo" rel="noopener">open photo</a> <a class="btn btn--ghost" href="/pay/">cat pay.md</a></p>
   </div>
 </section>
 
@@ -39,7 +60,7 @@ permalink: /projects/
   <div class="pane__bar"><span class="pane__path">~/build</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> make <span class="arg">contact</span></h2>
-    <p>Interested in something similar, or want to know more about how these are put together? Email us at <a href="mailto:contact@codestrux.tech">contact@codestrux.tech</a>.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
+    <p>Interested in something similar, or want to know more about how these are put together? Email us at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
   </div>
 </section>

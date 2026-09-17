@@ -1,0 +1,29 @@
+---
+# Standalone HTML. No parent layout — do not wrap in default.html.
+---
+<!doctype html>
+{%- comment -%}
+  Minimal redirect stub (no site chrome). Used so retired permalinks such as
+  /fde/ keep working: canonical + meta refresh + a real <a>. GitHub Pages
+  will not emit an HTTP 301; this is the fallback.
+{%- endcomment -%}
+{%- assign dest = page.redirect_to -%}
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+  <link rel="canonical" href="{{ dest | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ dest | relative_url }}">
+</head>
+<body>
+  <p>
+    {%- if page.lang == "es-CR" -%}
+    Esta página se movió a
+    {%- else -%}
+    This page has moved to
+    {%- endif %}
+    <a href="{{ dest | relative_url }}">{{ dest }}</a>.
+  </p>
+</body>
+</html>

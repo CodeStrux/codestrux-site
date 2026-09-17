@@ -22,18 +22,19 @@ url: "https://codestrux.tech"
 lang: en
 author:
   name: CodeStrux Tech
-  email: contact@codestrux.tech
+  email: aaj@codestrux.tech
 description: >- # this means to ignore newlines until "baseurl:"
   CodeStrux Tech is a studio in Cartago, Costa Rica. We build and
-  run both infrastructure and software — Linux and virtualization, open source,
-  cloud and serverless, data pipelines, Java and TypeScript backends and
-  frontends, e-invoicing, WhatsApp automation, and AI tooling.
+  run infrastructure and software — including on confidential systems, with
+  metadata-only AI, Linux and virtualization, cloud and data pipelines, Java and
+  TypeScript, e-invoicing, and WhatsApp automation.
 show_excerpts: false # set to true to show excerpts on the homepage
 heading: We build and run infrastructure and software.
 subheading: >
   CodeStrux Tech is a studio from Cartago, Costa Rica. We design, build,
   and operate the whole stack — Linux and virtualization, open source, cloud, data
-  pipelines, backends and frontends, e-invoicing, messaging automation, and AI tooling.
+  pipelines, backends and frontends, e-invoicing, messaging automation, and AI that
+  never sees confidential payloads.
 
 # Nav is rendered from _data/nav.yml + _data/i18n.yml by the local
 # _includes/header.html (and the ⌘K command palette), so there is no
@@ -43,7 +44,8 @@ subheading: >
 # inject these from its own block).
 social:
   github: CodeStrux
-  linkedin: alvaroaraya
+  linkedin: codestrux
+  instagram: codestrux.tech
   whatsapp: "50671789868"
 
 # Build settings — clean-room layouts + fresh SCSS, no gem theme.

@@ -14,9 +14,10 @@ en:
     home: "home"
     about: "about"
     services: "services"
-    fde: "fde"
+    security: "security"
     projects: "projects"
     exc: "exc"
+    pay: "pay"
   shell:
     # The prompt rendered before command-as-heading kickers, e.g.
     # `codestrux@cartago:~$`. host/user are not localized.
@@ -43,7 +44,7 @@ en:
     line: "booting codestrux.tech …"
     ready: "ready."
   footer:
-    tagline: "A studio from Cartago, Costa Rica. We build and run infrastructure and software."
+    tagline: "A studio from Cartago, Costa Rica. We build and run infrastructure and software — including on confidential systems."
     legal: "Legal"
     contact: "Contact"
     whatsapp: "WhatsApp"
@@ -65,9 +66,10 @@ es-CR:
     home: "inicio"
     about: "nosotros"
     services: "servicios"
-    fde: "fde"
+    security: "seguridad"
     projects: "proyectos"
     exc: "exc"
+    pay: "pagar"
   shell:
     user: "codestrux"
     host: "cartago"
@@ -91,7 +93,7 @@ es-CR:
     line: "arrancando codestrux.tech …"
     ready: "listo."
   footer:
-    tagline: "Un estudio desde Cartago, Costa Rica. Construimos y operamos infraestructura y software."
+    tagline: "Un estudio desde Cartago, Costa Rica. Construimos y operamos infraestructura y software — también sobre sistemas confidenciales."
     legal: "Legal"
     contact: "Contacto"
     whatsapp: "WhatsApp"

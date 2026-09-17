@@ -26,10 +26,10 @@ items:
     path: /services/
     cmd: "ls services/"
     icon: "+"
-  - key: fde
-    label: fde
-    path: /fde/
-    cmd: "ls fde/"
+  - key: security
+    label: security
+    path: /security/
+    cmd: "cat security.md"
     icon: "^"
   - key: projects
     label: projects
@@ -41,3 +41,8 @@ items:
     path: /exc/
     cmd: "exc"
     icon: ">"
+  - key: pay
+    label: pay
+    path: /pay/
+    cmd: "cat pay.md"
+    icon: "$"

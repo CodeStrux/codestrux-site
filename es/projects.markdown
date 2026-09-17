@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Proyectos"
+description: "Productos que CodeStrux diseña, construye y opera: Stratos WhatsApp, CodeStrux Learn (cursos en USDC), arayaj.photo, FacturaCR y exc."
 lang: es-CR
 ref: projects
 alt_url: /projects/
@@ -12,7 +13,7 @@ permalink: /es/projects/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">ls projects/</span></p>
     <h1 class="hero__heading">Lo que hemos construido</h1>
-    <p class="hero__sub">Un vistazo a los productos que diseñamos, construimos y operamos. Son nuestros propios proyectos — el trabajo muestra el alcance del stack que cubrimos, desde plataformas de mensajería hasta facturación electrónica y herramientas para desarrolladores.</p>
+    <p class="hero__sub">Nuestros propios productos — evidencia del stack que cubrimos, desde mensajería y aulas hasta fotografía, facturación electrónica y herramientas para desarrolladores. No es un catálogo de embeds: son sistemas que diseñamos, entregamos y mantenemos funcionando.</p>
   </div>
 </section>
 
@@ -23,6 +24,26 @@ permalink: /es/projects/
     <p class="card-meta">Bandeja de WhatsApp Business centrada en audio para pymes de LATAM</p>
     <p>Una bandeja de entrada de WhatsApp Business en tiempo real, pensada para pequeñas y medianas empresas en América Latina. Entrega mensajes por SSE, transcribe notas de voz en español, sugiere respuestas y ejecuta agentes de IA verticales.</p>
     <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">open stratos</a></p>
+  </div>
+</section>
+
+<section class="pane pane--feature pane--col-4" aria-label="CodeStrux Learn">
+  <div class="pane__bar"><span class="pane__path">projects/learn</span><span class="pane__status">en línea · learn.codestrux.tech</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head">Learn</h2>
+    <p class="card-meta">el aula de CodeStrux</p>
+    <p>Catálogo, cuentas y LMS. Los cursos se desbloquean con USDC a través de MoonPay Commerce.</p>
+    <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
+  </div>
+</section>
+
+<section class="pane pane--feature pane--col-4" aria-label="arayaj.photo">
+  <div class="pane__bar"><span class="pane__path">projects/photo</span><span class="pane__status">en línea · arayaj.photo</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head">arayaj.photo</h2>
+    <p class="card-meta">portafolio fotográfico</p>
+    <p>Un portafolio fotográfico bilingüe: álbumes, cotizaciones y checkout en USDC a través de MoonPay Commerce.</p>
+    <p class="hero__cta"><a class="btn" href="https://arayaj.photo" rel="noopener">open photo</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
   </div>
 </section>
 
@@ -39,7 +60,7 @@ permalink: /es/projects/
   <div class="pane__bar"><span class="pane__path">~/build</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> make <span class="arg">contact</span></h2>
-    <p>¿Le interesa algo similar o quiere saber más sobre cómo están hechos? Escríbanos a <a href="mailto:contact@codestrux.tech">contact@codestrux.tech</a>.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
+    <p>¿Le interesa algo similar o quiere saber más sobre cómo están hechos? Escríbanos a <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
   </div>
 </section>

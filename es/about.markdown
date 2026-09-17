@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Nosotros"
+description: "CodeStrux Tech es Alvaro Araya Obando y Alejandro Araya Jiménez — un estudio en Cartago que diseña, entrega y opera infraestructura y software. Las personas aprueban cada script propuesto por IA antes de correrlo sobre datos confidenciales."
 lang: es-CR
 ref: about
 alt_url: /about/
@@ -44,7 +45,7 @@ permalink: /es/about/
   <div class="pane__bar"><span class="pane__path">~/about/how-we-work</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">how-we-work.md</span></h2>
-    <p>En CodeStrux Tech las capacidades son compartidas, no divididas por persona — juntos cubrimos infraestructura y operaciones, nube y datos, backends y frontends, cumplimiento fintech y herramientas de IA. En embeds de IA trabajamos como Forward Deployed Engineers: un ingeniero de IA en pareja con un ingeniero de industria aplicada, entregando a producción y pasando el control a responsables nombrados — ver <a href="/es/fde/">fde</a>. Colaboramos de forma directa con las personas para quienes construimos, mantenemos nuestros sistemas abiertos y mantenibles, y preferimos la ingeniería duradera sobre el trabajo desechable.</p>
+    <p>En CodeStrux Tech las capacidades son compartidas, no divididas por persona — juntos cubrimos infraestructura y operaciones, nube y datos, backends y frontends, cumplimiento fintech y herramientas de IA. En sistemas confidenciales, el equipo de CodeStrux Tech es la puerta humana: los agentes proponen scripts de extracción a partir de metadatos; los revisamos con criterio humano antes de que algo se ejecute. Vea <a href="/es/security/">seguridad</a>. Colaboramos de forma directa con las personas para quienes construimos, mantenemos nuestros sistemas abiertos y mantenibles, y preferimos la ingeniería duradera sobre el trabajo desechable.</p>
   </div>
 </section>
 
@@ -53,6 +54,6 @@ permalink: /es/about/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> mail</h2>
     <p>Nos encantaría conocer su proyecto.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:contact@codestrux.tech">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
+    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
   </div>
 </section>
