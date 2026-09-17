@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Confidential AI"
-description: "CodeStrux uses AI on confidential systems without sending payloads to the model. Agents see metadata only. The CodeStrux Tech team approves the script; it runs where the data already lives."
+description: "CodeStrux uses AI on confidential systems without sending payloads to the model, runs environment security testing, and teaches safe coding in live sessions."
 lang: en
 ref: security
 alt_url: /es/security/
@@ -46,6 +46,23 @@ permalink: /security/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> why</h2>
     <p>This is how we take full advantage of LLMs — the speed of a proposed script, the coverage of a well-shaped extract — without putting confidential data in model context, and without a data-exfiltration path through the agent. The model helps us write the tool. The tool never reports the records back to the model.</p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Environment security testing">
+  <div class="pane__bar"><span class="pane__path">security/env</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> probe <span class="flag">--env</span></h2>
+    <p>We also do environment security testing: hosts, networks, identity, secrets, and the path to prod. Same discipline as the metadata loop — look at what is actually running, report exposure, fix with the team that operates the box.</p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Live courses on safe coding">
+  <div class="pane__bar"><span class="pane__path">security/learn</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> learn <span class="flag">--live</span></h2>
+    <p>The classroom version is live: we sell session courses so people learn safe coding practices. Unlock on <a href="https://learn.codestrux.tech" rel="noopener">CodeStrux Learn</a> with USDC.</p>
+    <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a></p>
   </div>
 </section>
 

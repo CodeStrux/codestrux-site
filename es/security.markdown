@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "IA confidencial"
-description: "CodeStrux usa IA en sistemas confidenciales sin enviar cargas al modelo. Los agentes ven solo metadatos. El equipo de CodeStrux Tech aprueba el script; corre donde ya viven los datos."
+description: "CodeStrux usa IA en sistemas confidenciales sin enviar cargas al modelo, hace pruebas de seguridad de entornos y enseña código seguro en sesiones en vivo."
 lang: es-CR
 ref: security
 alt_url: /security/
@@ -46,6 +46,23 @@ permalink: /es/security/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> why</h2>
     <p>Así aprovechamos los LLM al máximo — la velocidad de un script propuesto, la cobertura de un extracto bien formado — sin poner datos confidenciales en el contexto del modelo, y sin una vía de exfiltración a través del agente. El modelo nos ayuda a escribir la herramienta. La herramienta nunca reporta los registros de vuelta al modelo.</p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Pruebas de seguridad de entornos">
+  <div class="pane__bar"><span class="pane__path">security/env</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> probe <span class="flag">--env</span></h2>
+    <p>También hacemos pruebas de seguridad de entornos: hosts, redes, identidad, secretos y el camino a producción. La misma disciplina que el ciclo de metadatos — mirar lo que realmente corre, reportar la exposición, corregir con el equipo que opera la máquina.</p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Cursos en vivo de código seguro">
+  <div class="pane__bar"><span class="pane__path">security/learn</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> learn <span class="flag">--live</span></h2>
+    <p>La versión de aula es en vivo: vendemos cursos en sesión para que la gente aprenda prácticas de código seguro. Se desbloquean en <a href="https://learn.codestrux.tech" rel="noopener">CodeStrux Learn</a> con USDC.</p>
+    <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a></p>
   </div>
 </section>
 

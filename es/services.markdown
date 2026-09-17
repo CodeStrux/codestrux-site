@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Servicios"
-description: "CodeStrux construye y opera el stack completo: Linux y Proxmox, nube, ETL, Java y TypeScript, facturación electrónica de Costa Rica, WhatsApp Business e IA solo con metadatos en sistemas confidenciales."
+description: "CodeStrux construye y opera el stack completo: Linux y Proxmox, nube, ETL, Java y TypeScript, pruebas de seguridad de entornos, cursos en vivo de código seguro, facturación electrónica de Costa Rica, WhatsApp Business e IA solo con metadatos en sistemas confidenciales."
 lang: es-CR
 ref: services
 alt_url: /services/
@@ -107,6 +107,23 @@ permalink: /es/services/
     <h2 class="cmd-head"><span class="sigil">$</span> agent <span class="flag">--metadata</span></h2>
     <p>Usamos IA para ir rápido en sistemas que no pueden filtrarse a un modelo de un proveedor. Los agentes ven solo metadatos — esquemas, formas, volúmenes — y proponen un script de extracción. El equipo de CodeStrux Tech lo aprueba; el script corre donde ya viven los datos. El modelo nunca recibe la carga. Lea el ciclo completo en <a href="/es/security/">seguridad</a>.</p>
     <p class="hero__cta"><a class="btn" href="/es/security/">cat security.md</a></p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Pruebas de seguridad de entornos">
+  <div class="pane__bar"><span class="pane__path">services/env-sec</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> probe <span class="flag">--env</span></h2>
+    <p>Pruebas de seguridad de entornos: ejercitamos el stack que realmente corre — hosts, redes, identidad, secretos y el camino del laptop a producción — y reportamos lo que está expuesto. Un hallazgo es una conversación, no un informe público. No afirmamos que un sistema sea inquebrantable.</p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Cursos en vivo de código seguro">
+  <div class="pane__bar"><span class="pane__path">services/learn</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> learn <span class="flag">--live</span></h2>
+    <p>Vendemos cursos en sesiones en vivo para que la gente aprenda prácticas de código seguro — secretos, cargas y entornos que se quedan cerrados. Se entra a una sesión, no solo a una grabación. Se desbloquean en <a href="https://learn.codestrux.tech" rel="noopener">CodeStrux Learn</a> con USDC.</p>
+    <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
   </div>
 </section>
 

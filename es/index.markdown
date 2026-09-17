@@ -58,6 +58,7 @@ permalink: /es/
       <li>El equipo de CodeStrux Tech revisa ese script con criterio humano.</li>
       <li>El script aprobado corre donde ya viven los datos. Comparamos el extracto. Los agentes siguen sin recibir la carga.</li>
     </ol>
+    <p>También hacemos pruebas de seguridad de entornos en el stack que usted opera.</p>
     <p class="hero__cta"><a class="btn" href="/es/security/">cat security.md</a> <a class="btn btn--ghost" href="/es/services/">ls services/</a></p>
   </div>
 </section>
@@ -105,10 +106,10 @@ permalink: /es/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">open learn</span></p>
     <h2 class="hero__heading">Learn</h2>
-    <p class="card-meta">el aula de CodeStrux</p>
-    <p>Catálogo, cuentas y LMS. Los cursos se desbloquean con USDC a través de MoonPay Commerce.</p>
+    <p class="card-meta">sesiones en vivo de código seguro</p>
+    <p>Vendemos cursos en sesiones en vivo para que la gente aprenda prácticas de código seguro. Catálogo, cuentas y LMS — se desbloquean con USDC a través de MoonPay Commerce.</p>
     <ul class="tags" aria-label="Capacidades de Learn">
-      <li>cursos</li><li>USDC</li><li>MoonPay</li>
+      <li>sesiones en vivo</li><li>código seguro</li><li>USDC</li>
     </ul>
     <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
   </div>

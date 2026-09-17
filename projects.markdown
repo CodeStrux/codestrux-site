@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Projects"
-description: "Products CodeStrux designs, builds, and operates: Stratos WhatsApp, CodeStrux Learn (USDC courses), arayaj.photo, FacturaCR e-invoicing, and exc."
+description: "Products CodeStrux designs, builds, and operates: Stratos WhatsApp, CodeStrux Learn (live safe-coding sessions, USDC), arayaj.photo, FacturaCR e-invoicing, and exc."
 lang: en
 ref: projects
 alt_url: /es/projects/
@@ -31,8 +31,8 @@ permalink: /projects/
   <div class="pane__bar"><span class="pane__path">projects/learn</span><span class="pane__status">running · learn.codestrux.tech</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head">Learn</h2>
-    <p class="card-meta">the CodeStrux classroom</p>
-    <p>Catalog, accounts, and LMS. Courses unlock with USDC through MoonPay Commerce.</p>
+    <p class="card-meta">live sessions on safe coding</p>
+    <p>We sell live session courses so people learn safe coding practices. Catalog, accounts, and LMS — unlock with USDC through MoonPay Commerce.</p>
     <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/pay/">cat pay.md</a></p>
   </div>
 </section>

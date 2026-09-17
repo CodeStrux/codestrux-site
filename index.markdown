@@ -58,6 +58,7 @@ permalink: /
       <li>The CodeStrux Tech team reviews that script against human criteria.</li>
       <li>The approved script runs where the data already lives. We compare the extract. Agents still never receive the payload.</li>
     </ol>
+    <p>We also run environment security testing on the stack you operate.</p>
     <p class="hero__cta"><a class="btn" href="/security/">cat security.md</a> <a class="btn btn--ghost" href="/services/">ls services/</a></p>
   </div>
 </section>
@@ -105,10 +106,10 @@ permalink: /
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">open learn</span></p>
     <h2 class="hero__heading">Learn</h2>
-    <p class="card-meta">the CodeStrux classroom</p>
-    <p>Catalog, accounts, and LMS. Courses unlock with USDC through MoonPay Commerce.</p>
+    <p class="card-meta">live sessions on safe coding</p>
+    <p>We sell live session courses so people learn safe coding practices. Catalog, accounts, and LMS — unlock with USDC through MoonPay Commerce.</p>
     <ul class="tags" aria-label="Learn capabilities">
-      <li>courses</li><li>USDC</li><li>MoonPay</li>
+      <li>live sessions</li><li>safe coding</li><li>USDC</li>
     </ul>
     <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/pay/">cat pay.md</a></p>
   </div>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Services"
-description: "CodeStrux builds and operates the full stack: Linux and Proxmox, cloud, ETL, Java and TypeScript, Costa Rican e-invoicing, WhatsApp Business, and metadata-only AI on confidential systems."
+description: "CodeStrux builds and operates the full stack: Linux and Proxmox, cloud, ETL, Java and TypeScript, environment security testing, live courses on safe coding, Costa Rican e-invoicing, WhatsApp Business, and metadata-only AI on confidential systems."
 lang: en
 ref: services
 alt_url: /es/services/
@@ -107,6 +107,23 @@ permalink: /services/
     <h2 class="cmd-head"><span class="sigil">$</span> agent <span class="flag">--metadata</span></h2>
     <p>We use AI for speed on systems that cannot leak into a vendor model. Agents see metadata only — schemas, shapes, volumes — and propose an extraction script. The CodeStrux Tech team approves it; the script runs where the data already lives. The model never receives the payload. Read the full loop on <a href="/security/">security</a>.</p>
     <p class="hero__cta"><a class="btn" href="/security/">cat security.md</a></p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Environment security testing">
+  <div class="pane__bar"><span class="pane__path">services/env-sec</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> probe <span class="flag">--env</span></h2>
+    <p>Environment security testing: we exercise the stack you actually run — hosts, networks, identity, secrets, and the path from laptop to prod — and report what is exposed. A finding is a conversation, not a public write-up. We do not claim a system is unbreachable.</p>
+  </div>
+</section>
+
+<section class="pane pane--col-2" aria-label="Live courses on safe coding">
+  <div class="pane__bar"><span class="pane__path">services/learn</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> learn <span class="flag">--live</span></h2>
+    <p>We sell live session courses so people learn safe coding practices — secrets, payloads, and environments that stay closed. Join a session, not only a recording. Unlock on <a href="https://learn.codestrux.tech" rel="noopener">CodeStrux Learn</a> with USDC.</p>
+    <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/pay/">cat pay.md</a></p>
   </div>
 </section>
 
