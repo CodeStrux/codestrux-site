@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "CodeStrux Tech"
-description: "CodeStrux Tech es un estudio en Cartago, Costa Rica. Construimos y operamos infraestructura y software para sistemas confidenciales — IA solo con metadatos, Linux, pipelines de datos, Java, TypeScript, facturación electrónica y WhatsApp."
+description: "CodeStrux Tech es un estudio en Cartago, Costa Rica. Hacemos pentest de entornos, construimos y operamos infraestructura y software, y usamos IA solo con metadatos en sistemas confidenciales."
 lang: es-CR
 ref: home
 alt_url: /
@@ -22,7 +22,7 @@ permalink: /es/
       <span class="caret" aria-hidden="true"></span>
     </p>
     <h1 class="hero__heading">Construimos y operamos <span class="hl">infraestructura</span> y <span class="hl">software</span>.</h1>
-    <p class="hero__sub">Un estudio desde Cartago, Costa Rica. Desde el servidor Linux y el hipervisor hasta la API, el pipeline de datos, la aplicación web y el agente de IA — también sobre sistemas altamente confidenciales. Los agentes ven solo metadatos; las personas aprueban el script; los datos nunca entran al modelo.</p>
+    <p class="hero__sub">Un estudio desde Cartago, Costa Rica. Desde el servidor Linux y el hipervisor hasta la API, el pipeline de datos, la aplicación web y el agente de IA. Las pruebas de seguridad y de penetración son cómo nos ganamos el derecho de operar un stack. En sistemas confidenciales, los agentes ven solo metadatos; las personas aprueban el script; los datos nunca entran al modelo.</p>
     <p class="hero__cta">
       <a class="btn" href="/es/projects/">ls projects</a>
       <a class="btn btn--ghost" href="/es/security/">cat security.md</a>
@@ -47,18 +47,13 @@ permalink: /es/
   </div>
 </section>
 
-<section class="pane pane--feature pane--col-2" aria-label="IA confidencial">
-  <div class="pane__bar"><span class="pane__path">~/security</span><span class="pane__status">solo metadatos</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+<section class="pane pane--feature pane--col-2" aria-label="Pruebas de seguridad y de penetración">
+  <div class="pane__bar"><span class="pane__path">~/security</span><span class="pane__status">pentest</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat security.md</span></p>
-    <h2 class="hero__heading">Datos confidenciales. Los agentes no los ven.</h2>
-    <p>Abogamos por la seguridad de los datos en sistemas que no se pueden volcar a un modelo de un proveedor. El ciclo es corto:</p>
-    <ol>
-      <li>Los agentes consumen metadatos — esquemas, formas, volúmenes — y proponen un script de extracción.</li>
-      <li>El equipo de CodeStrux Tech revisa ese script con criterio humano.</li>
-      <li>El script aprobado corre donde ya viven los datos. Comparamos el extracto. Los agentes siguen sin recibir la carga.</li>
-    </ol>
-    <p>También hacemos pruebas de seguridad de entornos en el stack que usted opera.</p>
+    <h2 class="hero__heading">Pruebas de seguridad y de <span class="hl">penetración</span>.</h2>
+    <p>Esta es una fortaleza de CodeStrux. Hacemos pentest en los entornos que operamos y en los que nos contratan para probar — hosts, redes, identidad, secretos y el camino del laptop a producción. Los hallazgos se quedan con quien opera. Cerramos la exposición con el equipo dueño de la máquina.</p>
+    <p>En sistemas confidenciales, la misma disciplina: los agentes ven solo metadatos. El equipo de CodeStrux Tech aprueba el script. La carga nunca entra al modelo.</p>
     <p class="hero__cta"><a class="btn" href="/es/security/">cat security.md</a> <a class="btn btn--ghost" href="/es/services/">ls services/</a></p>
   </div>
 </section>

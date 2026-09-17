@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Services"
-description: "CodeStrux builds and operates the full stack: Linux and Proxmox, cloud, ETL, Java and TypeScript, environment security testing, live courses on safe coding, Costa Rican e-invoicing, WhatsApp Business, and metadata-only AI on confidential systems."
+description: "CodeStrux builds and operates the full stack: security and penetration tests, Linux and Proxmox, cloud, ETL, Java and TypeScript, live courses on safe coding, Costa Rican e-invoicing, WhatsApp Business, and metadata-only AI on confidential systems."
 lang: en
 ref: services
 alt_url: /es/services/
@@ -13,7 +13,7 @@ permalink: /services/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">ls services/</span></p>
     <h1 class="hero__heading">What we do</h1>
-    <p class="hero__sub">We build and operate the full stack — the machines, the platforms on top of them, and the software they run. One engagement can span infrastructure, data, backend, frontend, compliance, and confidential AI without handing off between vendors.</p>
+    <p class="hero__sub">We build and operate the full stack — the machines, the platforms on top of them, and the software they run. Security and penetration tests are a core engagement. One project can span infrastructure, data, backend, frontend, compliance, and confidential AI without handing off between vendors.</p>
   </div>
 </section>
 
@@ -30,6 +30,15 @@ permalink: /services/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> oss</h2>
     <p>We build on open source and support it. We prefer open, inspectable tooling, run self-hosted services where it makes sense, and release our own work under the CodeStrux organization on GitHub.</p>
+  </div>
+</section>
+
+<section class="pane pane--feature pane--col-4" aria-label="Security and penetration tests">
+  <div class="pane__bar"><span class="pane__path">services/pentest</span><span class="pane__status">core</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> pentest <span class="flag">--env</span></h2>
+    <p>Security and penetration tests are how we earn the right to operate a stack. We probe hosts, networks, identity, secrets, and the path from laptop to prod — the environment that is running, not a slide deck. Findings stay with the operators. We sit with the team that owns the box until exposure is closed. Read the practice on <a href="/security/">security</a>.</p>
+    <p class="hero__cta"><a class="btn" href="/security/">cat security.md</a></p>
   </div>
 </section>
 
@@ -107,14 +116,6 @@ permalink: /services/
     <h2 class="cmd-head"><span class="sigil">$</span> agent <span class="flag">--metadata</span></h2>
     <p>We use AI for speed on systems that cannot leak into a vendor model. Agents see metadata only — schemas, shapes, volumes — and propose an extraction script. The CodeStrux Tech team approves it; the script runs where the data already lives. The model never receives the payload. Read the full loop on <a href="/security/">security</a>.</p>
     <p class="hero__cta"><a class="btn" href="/security/">cat security.md</a></p>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Environment security testing">
-  <div class="pane__bar"><span class="pane__path">services/env-sec</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> probe <span class="flag">--env</span></h2>
-    <p>Environment security testing: we exercise the stack you actually run — hosts, networks, identity, secrets, and the path from laptop to prod — and report what is exposed. A finding is a conversation, not a public write-up. We do not claim a system is unbreachable.</p>
   </div>
 </section>
 

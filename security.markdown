@@ -1,19 +1,27 @@
 ---
 layout: page
-title: "Confidential AI"
-description: "CodeStrux uses AI on confidential systems without sending payloads to the model, runs environment security testing, and teaches safe coding in live sessions."
+title: "Security"
+description: "CodeStrux security and penetration tests on the environments we operate — hosts, networks, identity, secrets, laptop to prod — and AI on confidential systems without sending payloads to the model."
 lang: en
 ref: security
 alt_url: /es/security/
 permalink: /security/
 ---
 
-<section class="pane pane--col-4" aria-label="Confidential AI">
+<section class="pane pane--col-4" aria-label="Security">
   <div class="pane__bar"><span class="pane__path">~/security</span><span class="pane__status">$ cat security.md</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat security.md</span></p>
-    <h1 class="hero__heading">AI on confidential data — without the model seeing it.</h1>
-    <p class="hero__sub">We have worked on highly confidential systems. We advocate for data security. AI is how we move fast; payloads never go to the model.</p>
+    <h1 class="hero__heading">Security and penetration tests. Then AI that never sees the payload.</h1>
+    <p class="hero__sub">Pentest is a CodeStrux engagement, not a side note. We probe the stack you actually run. On confidential systems, agents see metadata only; the CodeStrux Tech team approves the script; the records never enter the model.</p>
+  </div>
+</section>
+
+<section class="pane pane--feature pane--col-4" aria-label="Security and penetration tests">
+  <div class="pane__bar"><span class="pane__path">security/pentest</span><span class="pane__status">core</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> pentest <span class="flag">--env</span></h2>
+    <p>Security and penetration tests are how we earn the right to operate a stack. We test hosts, networks, identity, secrets, and the path from laptop to prod — the environment that is running, not a slide deck. Findings stay with the operators. We sit with the team that owns the box until exposure is closed.</p>
   </div>
 </section>
 
@@ -49,15 +57,7 @@ permalink: /security/
   </div>
 </section>
 
-<section class="pane pane--col-2" aria-label="Environment security testing">
-  <div class="pane__bar"><span class="pane__path">security/env</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> probe <span class="flag">--env</span></h2>
-    <p>We also do environment security testing: hosts, networks, identity, secrets, and the path to prod. Same discipline as the metadata loop — look at what is actually running, report exposure, fix with the team that operates the box.</p>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Live courses on safe coding">
+<section class="pane pane--col-4" aria-label="Live courses on safe coding">
   <div class="pane__bar"><span class="pane__path">security/learn</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> learn <span class="flag">--live</span></h2>
@@ -70,7 +70,7 @@ permalink: /security/
   <div class="pane__bar"><span class="pane__path">~/start</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> ./start.sh</h2>
-    <p>Need this loop on a system you cannot expose to a vendor model? Tell us what you are building. See <a href="/services/">services</a> for the rest of the stack, or <a href="/pay/">how to pay</a> when you are ready to settle.</p>
+    <p>Need a pentest, or this loop on a system you cannot expose to a vendor model? Tell us what you are building. See <a href="/services/">services</a> for the rest of the stack, or <a href="/pay/">how to pay</a> when you are ready to settle.</p>
     <p class="hero__cta">
       <a class="btn" href="mailto:{{ site.author.email }}">contact</a>
       <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Servicios"
-description: "CodeStrux construye y opera el stack completo: Linux y Proxmox, nube, ETL, Java y TypeScript, pruebas de seguridad de entornos, cursos en vivo de código seguro, facturación electrónica de Costa Rica, WhatsApp Business e IA solo con metadatos en sistemas confidenciales."
+description: "CodeStrux construye y opera el stack completo: pruebas de seguridad y de penetración, Linux y Proxmox, nube, ETL, Java y TypeScript, cursos en vivo de código seguro, facturación electrónica de Costa Rica, WhatsApp Business e IA solo con metadatos en sistemas confidenciales."
 lang: es-CR
 ref: services
 alt_url: /services/
@@ -13,7 +13,7 @@ permalink: /es/services/
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">ls services/</span></p>
     <h1 class="hero__heading">Qué hacemos</h1>
-    <p class="hero__sub">Construimos y operamos el stack completo — las máquinas, las plataformas que corren sobre ellas y el software que ejecutan. Un solo proyecto puede abarcar infraestructura, datos, backend, frontend, cumplimiento e IA confidencial sin traspasos entre proveedores.</p>
+    <p class="hero__sub">Construimos y operamos el stack completo — las máquinas, las plataformas que corren sobre ellas y el software que ejecutan. Las pruebas de seguridad y de penetración son un servicio central. Un solo proyecto puede abarcar infraestructura, datos, backend, frontend, cumplimiento e IA confidencial sin traspasos entre proveedores.</p>
   </div>
 </section>
 
@@ -30,6 +30,15 @@ permalink: /es/services/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> oss</h2>
     <p>Construimos sobre código abierto y lo apoyamos. Preferimos herramientas abiertas e inspeccionables, autohospedamos servicios cuando tiene sentido y publicamos nuestro propio trabajo bajo la organización CodeStrux en GitHub.</p>
+  </div>
+</section>
+
+<section class="pane pane--feature pane--col-4" aria-label="Pruebas de seguridad y de penetración">
+  <div class="pane__bar"><span class="pane__path">services/pentest</span><span class="pane__status">core</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+  <div class="pane__body">
+    <h2 class="cmd-head"><span class="sigil">$</span> pentest <span class="flag">--env</span></h2>
+    <p>Las pruebas de seguridad y de penetración son cómo nos ganamos el derecho de operar un stack. Probamos hosts, redes, identidad, secretos y el camino del laptop a producción — el entorno que está corriendo, no una presentación. Los hallazgos se quedan con quien opera. Nos sentamos con el equipo dueño de la máquina hasta cerrar la exposición. Lea la práctica en <a href="/es/security/">seguridad</a>.</p>
+    <p class="hero__cta"><a class="btn" href="/es/security/">cat security.md</a></p>
   </div>
 </section>
 
@@ -107,14 +116,6 @@ permalink: /es/services/
     <h2 class="cmd-head"><span class="sigil">$</span> agent <span class="flag">--metadata</span></h2>
     <p>Usamos IA para ir rápido en sistemas que no pueden filtrarse a un modelo de un proveedor. Los agentes ven solo metadatos — esquemas, formas, volúmenes — y proponen un script de extracción. El equipo de CodeStrux Tech lo aprueba; el script corre donde ya viven los datos. El modelo nunca recibe la carga. Lea el ciclo completo en <a href="/es/security/">seguridad</a>.</p>
     <p class="hero__cta"><a class="btn" href="/es/security/">cat security.md</a></p>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Pruebas de seguridad de entornos">
-  <div class="pane__bar"><span class="pane__path">services/env-sec</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> probe <span class="flag">--env</span></h2>
-    <p>Pruebas de seguridad de entornos: ejercitamos el stack que realmente corre — hosts, redes, identidad, secretos y el camino del laptop a producción — y reportamos lo que está expuesto. Un hallazgo es una conversación, no un informe público. No afirmamos que un sistema sea inquebrantable.</p>
   </div>
 </section>
 

@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "CodeStrux Tech"
-description: "CodeStrux Tech is a studio in Cartago, Costa Rica. We build and run infrastructure and software for confidential systems — metadata-only AI, Linux, data pipelines, Java, TypeScript, e-invoicing, and WhatsApp."
+description: "CodeStrux Tech is a studio in Cartago, Costa Rica. We pentest environments, build and run infrastructure and software, and use metadata-only AI on confidential systems."
 lang: en
 ref: home
 alt_url: /es/
@@ -22,7 +22,7 @@ permalink: /
       <span class="caret" aria-hidden="true"></span>
     </p>
     <h1 class="hero__heading">We build and run <span class="hl">infrastructure</span> and <span class="hl">software</span>.</h1>
-    <p class="hero__sub">A studio from Cartago, Costa Rica. From the Linux box and the hypervisor up to the API, the data pipeline, the web app, and the AI agent — including on highly confidential systems. Agents see metadata only; humans approve the script; the data never enters the model.</p>
+    <p class="hero__sub">A studio from Cartago, Costa Rica. From the Linux box and the hypervisor up to the API, the data pipeline, the web app, and the AI agent. Security and penetration tests are how we earn the right to operate a stack. On confidential systems, agents see metadata only; humans approve the script; the data never enters the model.</p>
     <p class="hero__cta">
       <a class="btn" href="/projects/">ls projects</a>
       <a class="btn btn--ghost" href="/security/">cat security.md</a>
@@ -47,18 +47,13 @@ permalink: /
   </div>
 </section>
 
-<section class="pane pane--feature pane--col-2" aria-label="Confidential AI">
-  <div class="pane__bar"><span class="pane__path">~/security</span><span class="pane__status">metadata only</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
+<section class="pane pane--feature pane--col-2" aria-label="Security and penetration tests">
+  <div class="pane__bar"><span class="pane__path">~/security</span><span class="pane__status">pentest</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
   <div class="pane__body">
     <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat security.md</span></p>
-    <h2 class="hero__heading">Confidential data. Agents never see it.</h2>
-    <p>We advocate for data security on systems that cannot be dumped into a vendor model. The loop is short:</p>
-    <ol>
-      <li>Agents consume metadata — schemas, shapes, volumes — and propose an extraction script.</li>
-      <li>The CodeStrux Tech team reviews that script against human criteria.</li>
-      <li>The approved script runs where the data already lives. We compare the extract. Agents still never receive the payload.</li>
-    </ol>
-    <p>We also run environment security testing on the stack you operate.</p>
+    <h2 class="hero__heading">Security and <span class="hl">penetration tests</span>.</h2>
+    <p>This is a CodeStrux strength. We pentest the environments we operate and the ones you hire us to test — hosts, networks, identity, secrets, and the path from laptop to prod. Findings stay with the operators. We close exposure with the team that owns the box.</p>
+    <p>On confidential systems, the same discipline: agents see metadata only. The CodeStrux Tech team approves the script. The payload never enters the model.</p>
     <p class="hero__cta"><a class="btn" href="/security/">cat security.md</a> <a class="btn btn--ghost" href="/services/">ls services/</a></p>
   </div>
 </section>
