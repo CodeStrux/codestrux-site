@@ -45,7 +45,7 @@ permalink: /pay/
     <p class="card-meta">2. Pay with card inside MoonPay Commerce</p>
     <p>Some charges show <strong>Pay with card</strong> in Helio’s own checkout. That is still a crypto payment to us.</p>
     <p>MoonPay buys USDC with your card (their <strong>Ramps</strong> on-ramp), then you finish the on-chain step so the USDC reaches CodeStrux. A card charge can succeed while our order stays unpaid until that second step is done. If that happens, return to the <strong>same</strong> checkout and continue.</p>
-    <p>MoonPay will ask you to verify your identity (KYC) in their app or widget. Use their screens only. Do not send IDs to CodeStrux.</p>
+    <p>MoonPay will ask you to verify your identity (KYC) in their app or widget. That check is usually one-time. Use their screens only. Do not send IDs to CodeStrux.</p>
     <p>Card on-ramp usually has a <strong>minimum around $20 USD</strong>. Charges under that floor are wallet-only.</p>
   </div>
 </section>
@@ -70,6 +70,7 @@ permalink: /pay/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> kyc <span class="flag">--why</span></h2>
     <p>MoonPay is a regulated provider. They have to know who is buying crypto with a card or their app — <strong>Know Your Customer</strong>. That is a legal requirement on their side. It is not a CodeStrux login.</p>
+    <p>KYC is usually a one-time check. After you pass, later buys with the same MoonPay account typically skip it. They may ask again if the amount, country, or their rules change.</p>
     <p>They may ask for a government ID, a selfie, and sometimes proof of address or source of funds, depending on amount and country. See MoonPay’s <a href="https://support.moonpay.com/en/articles/383332-how-to-verify-your-moonpay-account" rel="noopener">verification guide</a> and <a href="https://support.moonpay.com/en/articles/380499-common-rejection-reasons-for-verification-documents" rel="noopener">document tips</a>.</p>
   </div>
 </section>

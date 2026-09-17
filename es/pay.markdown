@@ -45,7 +45,7 @@ permalink: /es/pay/
     <p class="card-meta">2. Pagar con tarjeta dentro de MoonPay Commerce</p>
     <p>Algunos cargos muestran <strong>Pay with card</strong> en el checkout de Helio. Para nosotros sigue siendo un pago en cripto.</p>
     <p>MoonPay compra USDC con tu tarjeta (su on-ramp <strong>Ramps</strong>) y después tenés que completar el paso on-chain para que el USDC llegue a CodeStrux. La tarjeta puede cobrarse y nuestro pedido seguir pendiente hasta ese segundo paso. Si pasa, volvé al <strong>mismo</strong> checkout y continuá.</p>
-    <p>MoonPay te va a pedir verificar la identidad (KYC) en su app o widget. Usá solo sus pantallas. No nos envíes documentos de identidad.</p>
+    <p>MoonPay te va a pedir verificar la identidad (KYC) en su app o widget. Esa verificación suele ser una sola vez. Usá solo sus pantallas. No nos envíes documentos de identidad.</p>
     <p>El on-ramp con tarjeta suele tener un <strong>mínimo de unos 20 USD</strong>. Los cargos por debajo de ese piso van solo con billetera.</p>
   </div>
 </section>
@@ -70,6 +70,7 @@ permalink: /es/pay/
   <div class="pane__body">
     <h2 class="cmd-head"><span class="sigil">$</span> kyc <span class="flag">--why</span></h2>
     <p>MoonPay es un proveedor regulado. Tiene que saber quién compra cripto con tarjeta o con su app — <strong>Know Your Customer</strong>. Es un requisito legal de ellos. No es el login de CodeStrux.</p>
+    <p>El KYC suele ser una sola vez. Si ya lo pasaste, las compras siguientes con la misma cuenta de MoonPay normalmente no lo piden de nuevo. Pueden volver a pedirlo si cambia el monto, el país o sus reglas.</p>
     <p>Pueden pedir un documento oficial, una selfie y a veces comprobante de domicilio o de origen de fondos, según el monto y el país. Guía de <a href="https://support.moonpay.com/en/articles/383332-how-to-verify-your-moonpay-account" rel="noopener">verificación</a> y <a href="https://support.moonpay.com/en/articles/380499-common-rejection-reasons-for-verification-documents" rel="noopener">documentos rechazados</a>.</p>
   </div>
 </section>
