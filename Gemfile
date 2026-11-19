@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.4.1"
 # This site uses clean-room custom _layouts + a fresh assets/css/style.scss
-# (the "bento terminal" design system) — no gem theme. The former
+# (the CodeStrux design system). No gem theme. The former
 # jekyll-nord-theme and the unused minima gem were dropped in the redesign.
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

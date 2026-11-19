@@ -1,0 +1,9 @@
+{%- comment -%}
+  CodeStrux Tech logo (horizontal-tight lockup, light version) from
+  assets/logo/, logo system v2, file unmodified. Do not recolour, stretch,
+  rotate, outline or add shadows (assets/logo/README.txt). Minimum width 120px.
+
+  Params:
+    class    optional extra class on the wrapper, for example "logo--footer".
+{%- endcomment -%}
+<span class="logo{% if include.class %} {{ include.class }}{% endif %}"><img class="logo__img" src="{{ '/assets/logo/codestrux-horizontal-tight-light.svg' | relative_url }}" alt="{{ site.title | escape }}" width="603" height="140"></span>

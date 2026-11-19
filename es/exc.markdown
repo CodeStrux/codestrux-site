@@ -1,146 +1,153 @@
 ---
 layout: page
-title: "exc — el menú de todo para su terminal"
-description: "exc es un selector de comandos buscable y manejado por teclado para la terminal: un archivo TOML con comandos, perfiles y parámetros, un encabezado con información del host y un núcleo en Rust seguro. cargo install exc-launcher."
+title: "exc: el menú de todo para su terminal"
+description: "exc es un selector de comandos con búsqueda para la terminal que se maneja con el teclado: un archivo TOML con comandos, perfiles y parámetros, un encabezado con información del host y un núcleo en Rust seguro. cargo install exc-launcher."
 lang: es-CR
 ref: exc
 alt_url: /exc/
 permalink: /es/exc/
 ---
 
-<section class="pane pane--col-4" aria-label="exc — el menú de todo para su terminal">
-  <div class="pane__bar"><span class="pane__path">~/exc</span><span class="pane__status">v0.6.0 · MIT</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">exc</span></p>
+<section class="band band--hero">
+  <div class="wrap">
+    <p class="eyebrow">exc · v0.9.1 · MIT</p>
     <h1 class="hero__heading">El <span class="hl">menú de todo</span> para su terminal.</h1>
-    <p class="hero__sub">Un solo archivo TOML con comandos, perfiles y parámetros — servido en un selector buscable y manejado por teclado, con un encabezado de información del host en vivo. Escrito en Rust; se instala como un único binario llamado <code>exc</code>.</p>
+    <p class="hero__sub">Un solo archivo TOML contiene sus comandos, perfiles y parámetros. exc los muestra en un selector con búsqueda que se maneja con el teclado, debajo de un encabezado con información del host en vivo. exc está escrito en Rust y se instala como un único binario llamado <code>exc</code>.</p>
     <p class="hero__cta">
-      <a class="btn" href="https://crates.io/crates/exc-launcher" rel="noopener">cargo install exc-launcher</a>
-      <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">github</a>
+      <a class="btn btn--mono" href="https://crates.io/crates/exc-launcher" rel="noopener">cargo install exc-launcher</a>
+      <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">GitHub</a>
     </p>
     <figure class="shot shot--hero">
       <img src="/assets/img/exc/picker.png" alt="El selector de exc: una cuadrícula numerada de comandos bajo un encabezado con información del host" width="2400" height="1500" fetchpriority="high" decoding="async" />
-      <figcaption>el selector — cuadrícula numerada, perfiles, encabezado del host</figcaption>
+      <figcaption>El selector: cuadrícula numerada, perfiles y encabezado del host</figcaption>
     </figure>
   </div>
 </section>
 
-<section class="pane pane--col-4" aria-label="Demostración de exc">
-  <div class="pane__bar"><span class="pane__path">exc/demo</span><span class="pane__status">demo.webm</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
+<section class="band band--alt">
+  <div class="wrap">
     <figure class="shot">
       <video data-autoplay muted loop playsinline controls preload="metadata" poster="/assets/img/exc/demo-poster.png" width="2400" height="1500" aria-label="Demostración de exc: filtrar, navegar, responder un prompt de parámetro, ejecutar">
         <source src="/assets/img/exc/demo.webm" type="video/webm" />
         <source src="/assets/img/exc/demo.mp4" type="video/mp4" />
       </video>
-      <figcaption>filtro en vivo, salto por número, prompt de parámetro, ejecución — un ciclo completo</figcaption>
+      <figcaption>Filtro en vivo, salto por número, prompt de parámetro y ejecución</figcaption>
     </figure>
   </div>
 </section>
 
-<section class="pane pane--col-2" aria-label="El selector">
-  <div class="pane__bar"><span class="pane__path">exc/picker</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> exc</h2>
-    <p>Escriba para filtrar — una expresión regular en vivo con recurso a subcadena — sobre una cuadrícula numerada por columnas, ordenada como <code>ls</code>. Escriba un número para saltar directo al elemento N; el glifo del prompt cambia a <code>#</code> mientras lo hace.</p>
-    <ul aria-label="Teclas del selector">
-      <li><kbd>Enter</kbd> ejecuta · <kbd>Esc</kbd> sale</li>
-      <li><kbd>Tab</kbd> / <kbd>Shift-Tab</kbd> cambia de perfil</li>
-      <li><kbd>Ctrl-H</kbd> <kbd>Ctrl-J</kbd> <kbd>Ctrl-K</kbd> <kbd>Ctrl-L</kbd> mueve el cursor — acordes vim; las letras sueltas siguen siendo filtro, el mismo intercambio que hace fzf</li>
-    </ul>
-    <figure class="shot">
-      <img src="/assets/img/exc/filter.png" alt="El selector reduciendo la cuadrícula con un filtro regex en vivo" width="2400" height="1500" loading="lazy" decoding="async" />
-      <figcaption>filtro regex, con recurso a subcadena</figcaption>
-    </figure>
+<section class="band">
+  <div class="wrap">
+    <div class="cards cards--2">
+      <article class="card">
+        <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">exc</span></p>
+        <h3>El selector</h3>
+        <p>Escriba para filtrar los comandos. El filtro es una expresión regular en vivo. Si la expresión no es válida, exc busca el texto. Los comandos están en una cuadrícula numerada, por columnas, como en <code>ls</code>. Escriba un número para ir a ese elemento. Mientras usted escribe un número, el símbolo del prompt cambia a <code>#</code>.</p>
+        <ul aria-label="Teclas del selector">
+          <li><kbd>Enter</kbd> ejecuta el comando. <kbd>Esc</kbd> sale.</li>
+          <li><kbd>Tab</kbd> y <kbd>Shift-Tab</kbd> cambian de perfil.</li>
+          <li><kbd>Ctrl-H</kbd> <kbd>Ctrl-J</kbd> <kbd>Ctrl-K</kbd> <kbd>Ctrl-L</kbd> mueven la selección, como en vim. Las letras sin <kbd>Ctrl</kbd> van al filtro, como en fzf.</li>
+        </ul>
+        <figure class="shot">
+          <img src="/assets/img/exc/filter.png" alt="El selector reduciendo la cuadrícula con un filtro regex en vivo" width="2400" height="1500" loading="lazy" decoding="async" />
+          <figcaption>Filtro con una expresión regular</figcaption>
+        </figure>
+      </article>
+      <article class="card">
+        <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">exc init</span></p>
+        <h3>Configuración y parámetros</h3>
+        <p>Toda la configuración está en <code>~/.config/exc/config.toml</code>. Los perfiles agrupan los comandos. Un marcador {% raw %}<code>{{param}}</code>{% endraw %} hace que exc pida un valor cuando el comando se ejecuta. Un parámetro puede tener un valor por defecto. Con <code>secret = true</code>, exc oculta la entrada. Los comandos se ejecutan por medio de <code>sh -c</code> con la terminal conectada, así que ssh, fzf y sudo funcionan bien. Para cargar la configuración de un proyecto, use <code>--config</code>.</p>
+        <pre><code>{% raw %}[[profiles]]
+        name = "network"
+        label = "Network"
+
+          [[profiles.commands]]
+          name = "cert-check"
+          description = "Check the TLS certificate for a domain"
+          command = "openssl s_client -connect {{domain}}:443"
+
+        [[profiles.commands.params]]
+        name = "domain"
+        prompt = "Domain to check"
+        secret = false{% endraw %}</code></pre>
+        <figure class="shot">
+          <img src="/assets/img/exc/param-prompt.png" alt="Un prompt de parámetro con entrada secreta enmascarada" width="2400" height="800" loading="lazy" decoding="async" />
+          <figcaption>Prompt de parámetro. Con secret = true, exc oculta la entrada.</figcaption>
+        </figure>
+      </article>
+    </div>
   </div>
 </section>
 
-<section class="pane pane--col-2" aria-label="Configuración y parámetros">
-  <div class="pane__bar"><span class="pane__path">exc/config</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> exc <span class="arg">init</span></h2>
-    <p>Todo vive en <code>~/.config/exc/config.toml</code>: los perfiles agrupan comandos, y los marcadores {% raw %}<code>{{param}}</code>{% endraw %} preguntan al ejecutar — con valores por defecto y <code>secret = true</code> para entrada enmascarada. Los comandos corren por <code>sh -c</code> con stdio heredado, así que ssh, fzf y sudo se comportan; las configuraciones por proyecto se cargan con <code>--config</code>.</p>
-    <pre><code>{% raw %}[[profiles]]
-name = "network"
-label = "Network"
-
-  [[profiles.commands]]
-  name = "cert-check"
-  description = "Check the TLS certificate for a domain"
-  command = "openssl s_client -connect {{domain}}:443"
-
-    [[profiles.commands.params]]
-    name = "domain"
-    prompt = "Domain to check"
-    secret = false{% endraw %}</code></pre>
-    <figure class="shot">
-      <img src="/assets/img/exc/param-prompt.png" alt="Un prompt de parámetro con entrada secreta enmascarada" width="2400" height="800" loading="lazy" decoding="async" />
-      <figcaption>parámetros con prompt — secret = true enmascara la entrada</figcaption>
-    </figure>
+<section class="band band--alt">
+  <div class="wrap">
+    <div class="cards cards--2">
+      <article class="card">
+        <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">exc sysinfo</span></p>
+        <h3>Panel de información del sistema</h3>
+        <p>El panel del host lee los datos en tres grupos.</p>
+        <ul>
+          <li><strong>Al arrancar:</strong> los datos que se leen rápido. Son el sistema operativo, el kernel, el tiempo de actividad, la memoria, el disco, la CPU, la carga, la dirección IP local, la batería, los procesos principales y la GPU.</li>
+          <li><strong>En segundo plano:</strong> los datos que se leen lento. Son la dirección IP pública, las actualizaciones de paquetes y el tráfico de red. El panel muestra esos datos cuando llegan y no se bloquea.</li>
+          <li><strong>API nativas de cada plataforma:</strong> sysctl e IOKit en macOS, /proc y /sys en Linux, kernel32 y PowerShell CIM en Windows.</li>
+        </ul>
+        <figure class="shot">
+          <img src="/assets/img/exc/sysinfo.png" alt="El panel sysinfo: host, memoria, disco, CPU, red" width="2400" height="1200" loading="lazy" decoding="async" />
+          <figcaption>El panel sysinfo</figcaption>
+        </figure>
+      </article>
+      <article class="card">
+        <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">grep -rl unsafe src/</span></p>
+        <h3>Rust seguro</h3>
+        <pre><code>src/hostinfo/platform/macos.rs
+        src/hostinfo/platform/linux.rs
+        src/hostinfo/platform/windows.rs
+        src/hostinfo/platform/macos/iokit_ffi.rs</code></pre>
+        <p>Esa es la lista completa de archivos con código <code>unsafe</code>. El selector, el ejecutor, la configuración y los temas son Rust seguro. El compilador impide los errores de uso de memoria liberada (use-after-free), de doble liberación (double-free) y las condiciones de carrera de datos, y no hay recolector de basura. El código <code>unsafe</code> solo está en las llamadas al sistema operativo de la capa de información del host, donde la API del kernel lo hace necesario.</p>
+        <p>Si exc falla, un manejador de pánico restaura la terminal, así que una falla no puede bloquear su sesión. Los errores tienen tipos de thiserror.</p>
+        <ul class="tags" aria-label="Propiedades de seguridad">
+          <li>núcleo en Rust seguro</li><li>unsafe solo en llamadas al sistema operativo</li><li>sin recolector de basura</li><li>terminal restaurada después de un pánico</li><li>thiserror</li>
+        </ul>
+      </article>
+    </div>
   </div>
 </section>
 
-<section class="pane pane--col-2" aria-label="Panel de información del sistema">
-  <div class="pane__bar"><span class="pane__path">exc/sysinfo</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> exc <span class="arg">sysinfo</span></h2>
-    <p>Un panel del host en tres niveles de costo: lo barato se lee de forma síncrona al arrancar — OS, kernel, uptime, memoria, disco, CPU, carga, IP local, batería, procesos principales, GPU. Lo lento — IP pública, actualizaciones de paquetes, tráfico de red — se refresca en segundo plano y se integra sin bloquear. Debajo, APIs nativas por plataforma: sysctl e IOKit en macOS, /proc y /sys en Linux, kernel32 y PowerShell CIM en Windows.</p>
-    <figure class="shot">
-      <img src="/assets/img/exc/sysinfo.png" alt="El panel sysinfo: host, memoria, disco, CPU, red" width="2400" height="1200" loading="lazy" decoding="async" />
-      <figcaption>tres niveles — síncrono, en segundo plano, nativo</figcaption>
-    </figure>
+<section class="band">
+  <div class="wrap">
+    <div class="cards cards--2">
+      <article class="card">
+        <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">theme nord</span></p>
+        <h3>Temas</h3>
+        <p>exc tiene tres temas integrados: default, dark y mono. Usted también puede escribir una tabla <code>[theme]</code> en la configuración, o indicar un <code>theme_file</code>. exc incluye diez paletas. Un tema tiene seis campos: accent, border, text, muted, fondo de la selección y texto de la selección. exc respeta la variable <code>NO_COLOR</code>.</p>
+        <ul class="tags" aria-label="Paletas incluidas">
+          <li>solarized-dark</li><li>solarized-light</li><li>dracula</li><li>nord</li><li>gruvbox-dark</li><li>one-dark</li><li>monokai</li><li>tomorrow-night</li><li>homebrew</li><li>ayu-dark</li>
+        </ul>
+      </article>
+      <article class="card">
+        <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">exc man</span></p>
+        <h3>Línea de comandos</h3>
+        <p><code>exc</code> sin argumentos abre el selector. <code>exc &lt;name&gt;</code> ejecuta el primer comando cuyo nombre contiene ese texto. <code>exc man</code> escribe la página man a partir de las mismas definiciones que <code>--help</code>, así que la página man siempre coincide con el binario.</p>
+        <ul aria-label="Subcomandos">
+          <li><code>exc run</code> · <code>exc list</code> · <code>exc sysinfo</code></li>
+          <li><code>exc validate --strict --format json</code></li>
+          <li><code>exc init</code> · <code>exc man</code></li>
+        </ul>
+      </article>
+    </div>
   </div>
 </section>
 
-<section class="pane pane--feature pane--col-2" aria-label="Seguridad de Rust">
-  <div class="pane__bar"><span class="pane__path">exc/src</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> grep <span class="flag">-rl</span> <span class="arg">unsafe</span> src/</h2>
-    <pre><code>src/hostinfo/platform/macos.rs
-src/hostinfo/platform/linux.rs
-src/hostinfo/platform/windows.rs
-src/hostinfo/platform/macos/iokit_ffi.rs</code></pre>
-    <p>Esa es la lista completa. El selector, el ejecutor, la configuración y los temas son Rust seguro: la propiedad y el préstamo descartan use-after-free, double-free y data races en tiempo de compilación, sin recolector de basura en ejecución. <code>unsafe</code> existe — confinado al FFI del sistema operativo en la capa de plataforma de hostinfo, donde la API del kernel no deja alternativa. Un panic hook sale de la pantalla alterna y reactiva la terminal, así que ni un crash puede dejar su sesión colgada; los errores son tipados con thiserror.</p>
-    <ul class="tags" aria-label="Propiedades de seguridad">
-      <li>núcleo en Rust seguro</li><li>unsafe confinado al FFI</li><li>sin GC</li><li>terminal restaurada ante pánico</li><li>thiserror</li>
-    </ul>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Temas">
-  <div class="pane__bar"><span class="pane__path">exc/themes</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> theme <span class="arg">nord</span></h2>
-    <p>Temas integrados default, dark y mono, una tabla <code>[theme]</code> en línea o un <code>theme_file</code>, y diez paletas incluidas. Seis campos — accent, border, text, muted, fondo y texto de selección — y se respeta <code>NO_COLOR</code>.</p>
-    <ul class="tags" aria-label="Paletas incluidas">
-      <li>solarized-dark</li><li>solarized-light</li><li>dracula</li><li>nord</li><li>gruvbox-dark</li><li>one-dark</li><li>monokai</li><li>tomorrow-night</li><li>homebrew</li><li>ayu-dark</li>
-    </ul>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Línea de comandos">
-  <div class="pane__bar"><span class="pane__path">exc/cli</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> exc <span class="arg">man</span></h2>
-    <p><code>exc</code> a secas abre el selector; <code>exc &lt;name&gt;</code> ejecuta la primera coincidencia por subcadena. Los subcomandos cubren el resto — y <code>exc man</code> genera el roff desde las mismas definiciones de clap que <code>--help</code>, así que la página man no puede desalinearse del binario.</p>
-    <ul aria-label="Subcomandos">
-      <li><code>exc run</code> · <code>exc list</code> · <code>exc sysinfo</code></li>
-      <li><code>exc validate --strict --format json</code></li>
-      <li><code>exc init</code> · <code>exc man</code></li>
-    </ul>
-  </div>
-</section>
-
-<section class="pane pane--col-4" aria-label="Instalar exc">
-  <div class="pane__bar"><span class="pane__path">~/exc/install</span><span class="pane__status">crates.io</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> cargo install <span class="arg">exc-launcher</span></h2>
-    <p>Rust 1.95 o más reciente, edición 2024, licencia MIT. ¿Sin toolchain de Rust en la máquina? <code>launcher.sh</code> en el repositorio es un fallback en bash sin dependencias. El cookbook <code>EXAMPLES.md</code> cubre perfiles, parámetros y temas.</p>
-    <p class="card-meta">author: aao@codestrux.tech</p>
+<section class="band band--alt">
+  <div class="wrap">
+    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cargo install exc-launcher</span></p>
+    <h2>Instalar exc</h2>
+    <p>exc necesita Rust 1.95 o más reciente (edición 2024). La licencia es MIT. Si la computadora no tiene las herramientas de Rust, use <code>launcher.sh</code> del repositorio. Es un script de bash sin dependencias. El archivo <code>EXAMPLES.md</code> tiene ejemplos de perfiles, parámetros y temas.</p>
+    <p class="card-meta">Autor: aao@codestrux.tech</p>
     <p class="hero__cta">
-      <a class="btn" href="https://crates.io/crates/exc-launcher" rel="noopener">cargo install exc-launcher</a>
-      <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">github</a>
-      <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher/blob/main/EXAMPLES.md" rel="noopener">EXAMPLES.md</a>
+      <a class="btn btn--mono" href="https://crates.io/crates/exc-launcher" rel="noopener">cargo install exc-launcher</a>
+      <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">GitHub</a>
+      <a class="btn btn--ghost btn--mono" href="https://github.com/codestrux/exc-launcher/blob/main/EXAMPLES.md" rel="noopener">EXAMPLES.md</a>
     </p>
   </div>
 </section>

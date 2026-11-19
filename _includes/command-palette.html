@@ -1,7 +1,8 @@
 {%- comment -%}
-  ⌘K / "/" command palette — PROGRESSIVE ENHANCEMENT.
+  ⌘K / "/" command palette: PROGRESSIVE ENHANCEMENT.
   Rendered hidden ([hidden] + aria-modal) and only ever shown by terminal.js.
-  Real navigation lives in the header <nav>; the palette is never the only path.
+  Real navigation lives in the header and footer; the palette is a keyboard
+  shortcut (Ctrl/Cmd-K or "/") and never the only path.
   The command set is serialized from _data/nav.yml into a JSON island that
   terminal.js reads, so header + palette share one source of truth.
 {%- endcomment -%}
@@ -28,19 +29,12 @@
   "strings": {
     "stratos": "open stratos",
     "stratosHref": "https://stratos.talk",
-    "learn": "open learn",
-    "learnHref": "https://learn.codestrux.tech",
-    "photo": "open photo",
-    "photoHref": "https://arayaj.photo",
     "instagram": "open instagram",
     "instagramHref": "https://www.instagram.com/codestrux.tech/",
     "contact": "contact",
     "contactHref": "mailto:{{ site.author.email }}",
-    "theme": "theme",
     "help": "help",
     "clear": "clear",
-    "themeDark": {{ ui.theme.dark | jsonify }},
-    "themeLight": {{ ui.theme.light | jsonify }},
     "empty": {{ ui.palette.empty | jsonify }},
     "helpTitle": {{ ui.palette.help_title | jsonify }}
   }
@@ -50,10 +44,7 @@
 <div class="palette" id="command-palette" hidden>
   <div class="palette__overlay" data-palette-close></div>
   <div class="palette__dialog" role="dialog" aria-modal="true" aria-labelledby="palette-title">
-    <div class="pane__bar">
-      <span class="pane__path">codestrux@{{ ui.shell.host }}:~$ <span id="palette-title">{{ ui.palette.heading }}</span></span>
-      <span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span>
-    </div>
+    <div class="palette__title" id="palette-title">{{ ui.palette.heading }}</div>
     <div class="palette__inputrow">
       <span class="palette__prompt" aria-hidden="true">&gt;</span>
       <input

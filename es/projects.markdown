@@ -1,66 +1,49 @@
 ---
 layout: page
 title: "Proyectos"
-description: "Productos que CodeStrux diseña, construye y opera: Stratos WhatsApp, CodeStrux Learn (sesiones en vivo de código seguro, USDC), arayaj.photo, FacturaCR y exc."
+description: "Productos que CodeStrux Tech diseña, construye y opera: Stratos WhatsApp, la facturación electrónica FacturaCR y exc."
 lang: es-CR
 ref: projects
 alt_url: /projects/
 permalink: /es/projects/
 ---
 
-<section class="pane pane--col-4" aria-label="Proyectos">
-  <div class="pane__bar"><span class="pane__path">~/projects</span><span class="pane__status">$ ls -la</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">ls projects/</span></p>
-    <h1 class="hero__heading">Lo que hemos construido</h1>
-    <p class="hero__sub">Nuestros propios productos — evidencia del stack que cubrimos, desde mensajería y aulas hasta fotografía, facturación electrónica y herramientas para desarrolladores. No es un catálogo de embeds: son sistemas que diseñamos, entregamos y mantenemos funcionando.</p>
+<section class="band band--hero">
+  <div class="wrap">
+    <p class="eyebrow">Proyectos</p>
+    <h1 class="hero__heading">Proyectos</h1>
+    <p class="hero__sub">Estos son nuestros propios productos. Los diseñamos, los construimos y los operamos. Muestran el trabajo que podemos hacer para usted.</p>
   </div>
 </section>
 
-<section class="pane pane--feature pane--col-4 product-stratos" aria-label="Stratos WhatsApp">
-  <div class="pane__bar"><span class="pane__path">projects/stratos-whatsapp</span><span class="pane__status">en línea · codestrux.app.stratos.talk</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <div class="product-wordmark">{% include stratos-wordmark.html class="is-lg" %}</div>
-    <p class="card-meta">Bandeja de WhatsApp Business centrada en audio para pymes de LATAM</p>
-    <p>Una bandeja de entrada de WhatsApp Business en tiempo real, pensada para pequeñas y medianas empresas en América Latina. Entrega mensajes por SSE, transcribe notas de voz en español, sugiere respuestas y ejecuta agentes de IA verticales.</p>
-    <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">open stratos</a></p>
+<section class="band band--alt">
+  <div class="wrap">
+    <div class="cards">
+      <article class="card">
+        <div class="product-wordmark">{% include stratos-wordmark.html class="is-lg" %}</div>
+        <p class="card-meta">Bandeja de WhatsApp Business centrada en audio para pequeñas y medianas empresas de América Latina</p>
+        <p>Una bandeja de WhatsApp Business en tiempo real. Muestra los mensajes nuevos en vivo, transcribe notas de voz en español, sugiere respuestas y ejecuta agentes de IA para industrias específicas.</p>
+        <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">Abrir Stratos</a></p>
+      </article>
+      <article class="card">
+        <h3>FacturaCR</h3>
+        <p class="card-meta">Facturación electrónica para Costa Rica</p>
+        <p>Un motor de facturación electrónica para Costa Rica. Genera los comprobantes, los firma con XAdES y los envía al Ministerio de Hacienda. Cumple la versión 4.4 del esquema oficial. Los comprobantes son facturas, tiquetes, notas de crédito, notas de débito, facturas de compra, facturas de exportación y recibos. Exporta a PDF, Excel y código QR.</p>
+      </article>
+      <article class="card">
+        <h3>exc</h3>
+        <p class="card-meta">El menú de todo para su terminal</p>
+        <p>Un selector de comandos con búsqueda que se maneja con el teclado. Un solo archivo TOML contiene sus comandos, perfiles y parámetros. Escrito en Rust. Código abierto.</p>
+        <p class="hero__cta"><a class="btn" href="/es/exc/">Abrir exc</a> <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">GitHub</a></p>
+      </article>
+    </div>
   </div>
 </section>
 
-<section class="pane pane--feature pane--col-4" aria-label="CodeStrux Learn">
-  <div class="pane__bar"><span class="pane__path">projects/learn</span><span class="pane__status">en línea · learn.codestrux.tech</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head">Learn</h2>
-    <p class="card-meta">sesiones en vivo de código seguro</p>
-    <p>Vendemos cursos en sesiones en vivo para que la gente aprenda prácticas de código seguro. Catálogo, cuentas y LMS — se desbloquean con USDC a través de MoonPay Commerce.</p>
-    <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
-  </div>
-</section>
-
-<section class="pane pane--feature pane--col-4" aria-label="arayaj.photo">
-  <div class="pane__bar"><span class="pane__path">projects/photo</span><span class="pane__status">en línea · arayaj.photo</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head">arayaj.photo</h2>
-    <p class="card-meta">portafolio fotográfico</p>
-    <p>Un portafolio fotográfico bilingüe: álbumes, cotizaciones y checkout en USDC a través de MoonPay Commerce.</p>
-    <p class="hero__cta"><a class="btn" href="https://arayaj.photo" rel="noopener">open photo</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
-  </div>
-</section>
-
-<section class="pane pane--col-4" aria-label="FacturaCR (ce-je)">
-  <div class="pane__bar"><span class="pane__path">projects/facturacr</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head">FacturaCR <span class="flag">(ce-je)</span></h2>
-    <p class="card-meta">Facturación electrónica de Costa Rica</p>
-    <p>Un motor de facturación electrónica de Costa Rica. Genera, firma (XAdES) y envía comprobantes a Hacienda conforme al XSD v4.4 — facturas, tiquetes, notas de crédito y débito, compras, exportación y recibos — con exportación a PDF, Excel y QR.</p>
-  </div>
-</section>
-
-<section class="pane pane--col-4" aria-label="Construya con nosotros">
-  <div class="pane__bar"><span class="pane__path">~/build</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> make <span class="arg">contact</span></h2>
-    <p>¿Le interesa algo similar o quiere saber más sobre cómo están hechos? Escríbanos a <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
+<section class="band">
+  <div class="wrap">
+    <h2>Construya con nosotros</h2>
+    <p>¿Quiere un sistema como estos? Escriba a <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">Contacto</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
   </div>
 </section>

@@ -1,40 +1,32 @@
 {%- comment -%}
-  Terminal top-bar header for the bento-terminal redesign.
-  - ASCII brand prompt (codestrux@cartago:~$) linking home; real <a> nav.
-  - Nav links come from _data/nav.yml (single source shared with the palette);
-    labels localized via _data/i18n.yml; the /es prefix is applied per language
-    so the /es/ mirror never leaks into the EN nav.
-  - Real <a>/<button> controls: language switcher, theme toggle, ⌘K affordance.
-    The palette is progressive enhancement layered on top of this real nav.
+  Header: logo on the left; on the right the primary nav, the language
+  switch and a "Contact us" button.
+  - Nav links come from _data/nav.yml (items with `header: true`, in file
+    order); labels are localized via _data/i18n.yml; the /es prefix is applied
+    per language so the /es/ mirror never leaks into the EN nav.
+  - Everything is a real <a>, so the header works with JS disabled.
 {%- endcomment -%}
 {%- assign L = page.lang | default: "en" -%}
 {%- assign ui = site.data.i18n[L] | default: site.data.i18n.en -%}
 {%- if L == "es-CR" -%}{%- assign base = "/es" -%}{%- else -%}{%- assign base = "" -%}{%- endif -%}
 <header class="topbar" role="banner">
-  <div class="topbar__inner">
+  <div class="wrap topbar__inner">
     <a class="brand" href="{{ base | append: '/' | relative_url }}" rel="home">
-      <span class="brand__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span>
-      <span class="brand__prompt"><span class="brand__user">{{ ui.shell.user }}@{{ ui.shell.host }}</span><span class="brand__sep">:</span><span class="brand__path">~</span><span class="brand__caret">$</span></span>
-      <span class="brand__name">codestrux<span class="brand__tld">.tech</span></span>
+      {% include logo.html %}
     </a>
 
     <nav class="nav" aria-label="{{ ui.shell.nav_label }}">
       {%- for item in site.data.nav.items -%}
-      {%- if item.key == "home" -%}{%- assign href = base | append: "/" -%}{%- else -%}{%- assign href = base | append: item.path -%}{%- endif -%}
-      <a class="nav__link{% if page.ref == item.key %} is-current{% endif %}" href="{{ href | relative_url }}"{% if page.ref == item.key %} aria-current="page"{% endif %}><span class="nav__slash" aria-hidden="true">/</span>{{ ui.nav[item.label] }}</a>
+      {%- if item.header -%}
+      {%- assign href = base | append: item.path -%}
+      <a class="nav__link{% if page.ref == item.key %} is-current{% endif %}" href="{{ href | relative_url }}"{% if page.ref == item.key %} aria-current="page"{% endif %}>{{ ui.nav[item.label] }}</a>
+      {%- endif -%}
       {%- endfor -%}
     </nav>
 
     <div class="topbar__tools">
-      <button type="button" class="btn-ghost palette-trigger" data-palette-open aria-haspopup="dialog" aria-controls="command-palette" aria-label="{{ ui.palette.open }}">
-        <span class="palette-trigger__k" aria-hidden="true">⌘K</span>
-        <span class="palette-trigger__menu" aria-hidden="true">{{ ui.shell.menu }}</span>
-      </button>
-      <button type="button" class="btn-ghost theme-toggle" data-theme-toggle aria-label="{{ ui.theme.toggle }}">
-        <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">●</span>
-        <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">○</span>
-      </button>
       {% include lang-switcher.html %}
+      <a class="btn btn--sm" href="mailto:{{ site.author.email }}">{{ ui.shell.contact_us }}</a>
     </div>
   </div>
 </header>

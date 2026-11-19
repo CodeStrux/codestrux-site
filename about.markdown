@@ -1,59 +1,76 @@
 ---
 layout: page
 title: "About"
-description: "CodeStrux Tech is Alvaro Araya Obando and Alejandro Araya Jiménez — a Cartago studio that designs, ships, and operates infrastructure and software. Humans approve every AI-proposed script before it runs on confidential data."
+description: "CodeStrux Tech is Alvaro Araya Obando and Alejandro Araya Jiménez: a studio in Cartago, Costa Rica, that designs, builds, and operates software and infrastructure. A person approves each AI-proposed script before it runs on confidential data."
 lang: en
 ref: about
 alt_url: /es/about/
 permalink: /about/
 ---
 
-<section class="pane pane--col-4" aria-label="About CodeStrux Tech">
-  <div class="pane__bar"><span class="pane__path">~/about</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat about.md</span></p>
+<section class="band band--hero">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
     <h1 class="hero__heading">About CodeStrux Tech</h1>
-    <p class="hero__sub">A studio based in Cartago, Costa Rica. The people who design a system are the ones who build it, deploy it, and keep it running — we treat infrastructure and software as one discipline.</p>
+    <p class="hero__sub">We are a studio in Cartago, Costa Rica. The people who design a system also build it, deploy it, and operate it. For us, infrastructure and software are one discipline.</p>
   </div>
 </section>
 
-<section class="pane pane--col-2" aria-label="Alejandro Araya Jiménez">
-  <div class="pane__bar"><span class="pane__path">~/team/aaj</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> whoami</h2>
-    <h3>Alejandro Araya Jiménez</h3>
-    <p class="card-meta">AI &amp; Systems Developer · co-founder · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
-    <p>Alejandro Araya Jiménez is co-founder of CodeStrux Tech, where most of his work today is building AI systems. He built the AI layer of Stratos, the studio's WhatsApp Business inbox for LATAM SMBs — a Claude-powered agent that answers customer conversations across text, transcribed voice notes, and images, working alongside a live agent inbox, with agent actions logged to an audit trail. He has also taken an AI customer-service agent live inside a client platform, and shipped an AI support portal that routes questions through tiered open-weight models.</p>
-    <p>He is the author of relay-mesh, CodeStrux's open-source multi-agent orchestrator (<a href="https://github.com/CodeStrux/relay-mesh" rel="noopener">github.com/CodeStrux/relay-mesh</a>): it fans a goal out to a fleet of parallel agents — recon, planning, execution, verification — running on open-weight models via OpenRouter, coordinated through a filesystem relay protocol with a mandatory human approval gate before anything executes. The studio itself builds agent-first: CodeStrux products are developed through multi-agent workflows — planning sessions, adversarial design reviews, parallel implementation — with the house stack and design languages codified as portable skills for coding agents.</p>
-    <p>Previously he was a System Development Engineer at Amazon (Enterprise Service Delivery) and, before that, a Finance BI Engineer at Amazon, with earlier backend and IT/development work in Costa Rica. He works across AWS (Lambda, CDK, Glue, Redshift, QuickSight, Batch, Lake Formation, S3, Bedrock), data pipelines and BI, Java/Spring, TypeScript, React and Next.js, and Docker/Kubernetes.</p>
+<section class="band band--alt">
+  <div class="wrap">
+    <div class="band__head">
+      <p class="eyebrow">Team</p>
+    </div>
+    <div class="cards cards--2">
+      <article class="card">
+        <h3>Alejandro Araya Jiménez</h3>
+        <p class="card-meta">AI &amp; Systems Developer · co-founder · <a href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></p>
+        <p>Alejandro Araya Jiménez is a co-founder of CodeStrux Tech. Most of his work today is to build AI systems. He built the AI layer of Stratos, the studio's WhatsApp Business inbox for small and mid-sized businesses in Latin America. This layer is an agent that uses Claude. The agent answers customer conversations in text, transcribed voice notes, and images. It works together with a live agent inbox, and an audit trail records its actions. He also put an AI customer-service agent into production in the platform of a client. He delivered an AI support portal that sends questions to open-weight models in tiers.</p>
+        <p>He is the author of relay-mesh, the open-source multi-agent orchestrator of CodeStrux (<a href="https://github.com/CodeStrux/relay-mesh" rel="noopener">github.com/CodeStrux/relay-mesh</a>). relay-mesh gives one goal to a group of parallel agents that do reconnaissance, planning, execution, and verification. The agents run on open-weight models through OpenRouter. A relay protocol on the file system coordinates them. A person must approve the plan before an agent executes it.</p>
+        <p>The studio builds its own products with agents. The work goes through multi-agent workflows: planning sessions, adversarial design reviews, and parallel implementation. The stack and the design languages of the studio are written as portable skills for coding agents.</p>
+        <p>Before CodeStrux Tech, he was a System Development Engineer at Amazon (Enterprise Service Delivery) and a Finance BI Engineer at Amazon. Before that, he did backend, IT, and development work in Costa Rica. He works with AWS (Lambda, CDK, Glue, Redshift, QuickSight, Batch, Lake Formation, S3, Bedrock), data pipelines, business intelligence, Java with Spring, TypeScript, React, Next.js, Docker, and Kubernetes.</p>
+      </article>
+      <article class="card">
+        <h3>Alvaro Araya Obando</h3>
+        <p class="card-meta">Backend and Infrastructure Engineer · co-founder · <a href="mailto:aao@codestrux.tech">aao@codestrux.tech</a></p>
+        <p>Alvaro Araya Obando is a co-founder of CodeStrux Tech, a software studio that designs and implements cloud-native applications that scale and have high availability. Through CodeStrux Tech, he gives consulting services to private companies and government institutions. These services cover the design and implementation of open-source software architectures. He is the author of codestrux-ce, the electronic-invoicing engine of the company for Costa Rica.</p>
+        <p>Alvaro is a senior software developer and network administrator. He has worked with open-source software since 1998. Java is his primary development language, and he has taught Java Web and Java Enterprise courses. He knows development and systems administration. Thus he can deliver complete solutions on premises and in the cloud, on Linux and BSD platforms. He also works in cybersecurity, with a focus on secure software development, and he implements VoIP services.</p>
+        <p>In July 2019, he won first place in the Hackathon on Improving Public Financial Management Through Technology. The Ministry of Finance of Costa Rica and the International Monetary Fund organized this event. His solution used only open-source software.</p>
+      </article>
+    </div>
   </div>
 </section>
 
-<section class="pane pane--col-2" aria-label="Alvaro Araya Obando">
-  <div class="pane__bar"><span class="pane__path">~/team/aao</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> whoami</h2>
-    <h3>Alvaro Araya Obando</h3>
-    <p class="card-meta">Backend and Infrastructure Engineer · co-founder · <a href="mailto:aao@codestrux.tech">aao@codestrux.tech</a></p>
-    <p>Alvaro Araya Obando is Co-Founder of Codestrux Tech, a software studio focused on the architecture and implementation of cloud-native, scalable, high-availability applications. Through Codestrux, he provides consulting services to private companies and government institutions on the design and implementation of open-source software architectures. He is the author of codestrux-ce, the company's electronic-invoicing engine for Costa Rica.</p>
-    <p>A senior software developer and network administrator, Alvaro has worked with open-source software since 1998. Java is his primary development language — he has taught Java Web and Java Enterprise courses. His dual background in development and systems administration allows him to deliver end-to-end solutions across on-premises and cloud environments built on Linux and BSD platforms. His expertise also extends to cybersecurity with a focus on secure software development, and to the implementation of VoIP services.</p>
-    <p>In July 2019, he won first place in the Hackathon on Improving Public Financial Management Through Technology, organized by Costa Rica's Ministry of Finance and the International Monetary Fund, with a solution built entirely on open-source software.</p>
+<section class="band">
+  <div class="wrap">
+    <div class="split">
+      <div class="split__head">
+        <h2>How we work</h2>
+      </div>
+      <div class="split__body">
+        <p>We are organized, and our method makes it easy for you to give us what we need. Each project follows clear steps. At each step, we polish what you told us, and you approve it before the next step starts. See <a href="/services/">services</a>.</p>
+        <p>We share our capabilities as a team. Together we cover AI engineering, software development, cybersecurity, infrastructure, cloud, and data. We work directly with the people who will use the system, because they know the process best.</p>
+        <p>On confidential systems, AI agents propose extraction scripts from metadata only. The CodeStrux Tech team reviews each script before it runs. See <a href="/security/#confidential-ai">security</a>.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="pane pane--col-3" aria-label="How we work">
-  <div class="pane__bar"><span class="pane__path">~/about/how-we-work</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">how-we-work.md</span></h2>
-    <p>Capabilities at CodeStrux Tech are pooled, not split by person — together we cover infrastructure and operations, cloud and data, backends and frontends, fintech compliance, and AI tooling. On confidential systems, the CodeStrux Tech team is the human gate: agents propose extraction scripts from metadata only; we review them against human criteria before anything runs. See <a href="/security/">security</a>. We collaborate directly with the people we build for, keep our systems open and maintainable, and prefer durable engineering over throwaway work.</p>
-  </div>
-</section>
-
-<section class="pane" aria-label="Get in touch">
-  <div class="pane__bar"><span class="pane__path">~/contact</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> mail</h2>
-    <p>We would be glad to hear about your project.</p>
-    <p class="hero__cta"><a class="btn" href="mailto:{{ site.author.email }}">contact</a> <a class="btn btn--ghost" href="https://wa.me/50671789868">WhatsApp</a></p>
+<section class="band band--alt" id="contact">
+  <div class="wrap">
+    <div class="band__head">
+      <p class="eyebrow">Contact</p>
+      <h2>Tell us about your project</h2>
+    </div>
+    <ul class="contact-list">
+      <li><a class="btn" href="mailto:aaj@codestrux.tech">aaj@codestrux.tech</a></li>
+      <li><a class="btn btn--ghost" href="mailto:aao@codestrux.tech">aao@codestrux.tech</a></li>
+      <li><a class="btn btn--ghost" href="https://wa.me/{{ site.social.whatsapp }}" rel="me noopener">WhatsApp</a></li>
+    </ul>
+    <ul class="contact-list" style="margin-top:12px">
+      <li><a href="https://github.com/{{ site.social.github }}" rel="me noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/company/{{ site.social.linkedin }}" rel="me noopener">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/{{ site.social.instagram }}/" rel="me noopener">Instagram</a></li>
+    </ul>
   </div>
 </section>

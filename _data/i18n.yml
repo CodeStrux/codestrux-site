@@ -1,35 +1,27 @@
 # UI / nav / footer strings for the manual bilingual tree.
 # Accessed in templates as site.data.i18n[L] where L is page.lang
 # ("en" canonical at root, "es-CR" mirrored under /es/).
-# Keep both language blocks in sync — every key must exist in both.
+# Keep both language blocks in sync: every key must exist in both.
 #
 # NOTE: shell *commands* (ls, cd, cat, help, theme, clear, open) are NOT
-# translated — they are a universal shell. Only the human-facing prose is.
+# translated: they are a universal shell. Only the human-facing prose is.
 
 en:
   # Label shown on the language switcher (the language you switch TO).
   switch_to: "ES"
   switch_to_full: "Switch to Spanish"
   nav:
-    home: "home"
-    about: "about"
-    services: "services"
-    security: "security"
-    projects: "projects"
+    home: "Home"
+    about: "About"
+    services: "Software Development"
+    security: "Cybersecurity"
+    projects: "Projects"
     exc: "exc"
-    pay: "pay"
+    pay: "Pay"
   shell:
-    # The prompt rendered before command-as-heading kickers, e.g.
-    # `codestrux@cartago:~$`. host/user are not localized.
-    user: "codestrux"
-    host: "cartago"
-    menu: "menu"            # touch affordance label for the command palette
     skip: "Skip to content"
     nav_label: "Primary"     # aria-label for the <nav>
-  theme:
-    toggle: "Toggle theme"   # aria-label / tooltip on the theme button
-    dark: "dark"
-    light: "ice"
+    contact_us: "Contact us"
   palette:
     open: "Open command palette"
     placeholder: "Type a command or page name…"
@@ -39,17 +31,21 @@ en:
     empty: "No matching command. Try help."
     heading: "Command palette"
     help_title: "Available commands"
-  boot:
-    # Typewriter line shown once on first paint (reduced-motion shows it static).
-    line: "booting codestrux.tech …"
-    ready: "ready."
   footer:
-    tagline: "A studio from Cartago, Costa Rica. We build and run infrastructure and software — including on confidential systems."
+    tagline: "A studio from Cartago, Costa Rica. We build and run infrastructure and software."
+    company: "Company"
+    services: "Services"
     legal: "Legal"
+    about: "About"
+    projects: "Projects"
     contact: "Contact"
-    whatsapp: "WhatsApp"
-    nav_heading: "Navigate"
-    built: "Built with Jekyll. No trackers."
+    security: "Cybersecurity"
+    infrastructure: "Infrastructure"
+    software: "Software"
+    privacy: "Privacy"
+    terms: "Terms"
+    data_deletion: "Data deletion"
+    location: "Cartago, Costa Rica"
   legal_links:
     privacy: "Privacy Policy"
     terms: "Terms of Service"
@@ -63,23 +59,17 @@ es-CR:
   switch_to: "EN"
   switch_to_full: "Cambiar a inglés"
   nav:
-    home: "inicio"
-    about: "nosotros"
-    services: "servicios"
-    security: "seguridad"
-    projects: "proyectos"
+    home: "Inicio"
+    about: "Nosotros"
+    services: "Desarrollo de Software"
+    security: "Ciberseguridad"
+    projects: "Proyectos"
     exc: "exc"
-    pay: "pagar"
+    pay: "Pagar"
   shell:
-    user: "codestrux"
-    host: "cartago"
-    menu: "menú"
     skip: "Saltar al contenido"
     nav_label: "Principal"
-  theme:
-    toggle: "Cambiar tema"
-    dark: "oscuro"
-    light: "hielo"
+    contact_us: "Contáctenos"
   palette:
     open: "Abrir paleta de comandos"
     placeholder: "Escriba un comando o el nombre de una página…"
@@ -89,16 +79,21 @@ es-CR:
     empty: "Ningún comando coincide. Pruebe help."
     heading: "Paleta de comandos"
     help_title: "Comandos disponibles"
-  boot:
-    line: "arrancando codestrux.tech …"
-    ready: "listo."
   footer:
-    tagline: "Un estudio desde Cartago, Costa Rica. Construimos y operamos infraestructura y software — también sobre sistemas confidenciales."
+    tagline: "Un estudio de Cartago, Costa Rica. Construimos y operamos infraestructura y software."
+    company: "Empresa"
+    services: "Servicios"
     legal: "Legal"
+    about: "Nosotros"
+    projects: "Proyectos"
     contact: "Contacto"
-    whatsapp: "WhatsApp"
-    nav_heading: "Navegar"
-    built: "Hecho con Jekyll. Sin rastreadores."
+    security: "Ciberseguridad"
+    infrastructure: "Infraestructura"
+    software: "Software"
+    privacy: "Privacidad"
+    terms: "Términos"
+    data_deletion: "Eliminación de datos"
+    location: "Cartago, Costa Rica"
   legal_links:
     privacy: "Política de Privacidad"
     terms: "Términos del Servicio"

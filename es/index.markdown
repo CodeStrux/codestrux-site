@@ -1,147 +1,98 @@
 ---
 layout: home
 title: "CodeStrux Tech"
-description: "CodeStrux Tech es un estudio en Cartago, Costa Rica. Hacemos pentest de entornos, construimos y operamos infraestructura y software, y usamos IA solo con metadatos en sistemas confidenciales."
+description: "CodeStrux Tech es un estudio de Cartago, Costa Rica. Construimos software y analizamos la seguridad con un método fijo: pasos claros que convierten lo que usted sabe en un sistema que funciona."
 lang: es-CR
 ref: home
 alt_url: /
 permalink: /es/
 ---
 
-<section class="pane pane--feature pane--col-3 pane--row-2 hero" aria-label="CodeStrux Tech">
-  <div class="pane__bar">
-    <span class="pane__path">codestrux@cartago:~</span>
-    <span class="pane__status" data-boot-status data-ready="listo.">arrancando codestrux.tech …</span>
-    <span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span>
-  </div>
-  <div class="pane__body hero__body">
-    {% include codestrux-wordmark.html %}
-    <p class="prompt prompt--hero">
-      <span class="prompt__sigil" aria-hidden="true">$</span>
-      <span class="prompt__cmd" data-typewriter data-typewriter-text="whoami">whoami</span>
-      <span class="caret" aria-hidden="true"></span>
-    </p>
-    <h1 class="hero__heading">Construimos y operamos <span class="hl">infraestructura</span> y <span class="hl">software</span>.</h1>
-    <p class="hero__sub">Un estudio desde Cartago, Costa Rica. Desde el servidor Linux y el hipervisor hasta la API, el pipeline de datos, la aplicación web y el agente de IA. Las pruebas de seguridad y de penetración son cómo nos ganamos el derecho de operar un stack. En sistemas confidenciales, los agentes ven solo metadatos; las personas aprueban el script; los datos nunca entran al modelo.</p>
+<section class="band band--hero">
+  <div class="wrap">
+    <p class="eyebrow">Infraestructura · Software · Seguridad</p>
+    <h1 class="hero__heading">Construimos y operamos infraestructura y software.</h1>
+    <p class="hero__sub">Un estudio de Cartago, Costa Rica. Su conocimiento de su negocio es el insumo más importante de un proyecto. Nuestro método toma ese insumo y lo vuelve exacto, un paso claro a la vez, con su aprobación en cada uno.</p>
     <p class="hero__cta">
-      <a class="btn" href="/es/projects/">ls projects</a>
-      <a class="btn btn--ghost" href="/es/security/">cat security.md</a>
-      <a class="btn btn--ghost" href="mailto:{{ site.author.email }}">contact</a>
+      <a class="btn" href="mailto:{{ site.author.email }}">Contáctenos</a>
+      <a class="btn btn--ghost" href="/es/services/">Ver cómo trabajamos</a>
     </p>
   </div>
 </section>
 
-<section class="pane" aria-label="Infraestructura y Linux">
-  <div class="pane__bar"><span class="pane__path">~/infra</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> uname <span class="flag">-a</span></h2>
-    <p>Arch, Debian/Ubuntu, FreeBSD, RHEL y Amazon Linux sobre Proxmox VE, KVM y hardware dedicado. Aprovisionamos, endurecemos y operamos las máquinas donde corre nuestro software.</p>
+<section class="band band--alt">
+  <div class="wrap">
+    <div class="band__head">
+      <p class="eyebrow">Qué hacemos</p>
+      <h2>Un solo equipo, un método para cada servicio</h2>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <p class="eyebrow">Software</p>
+        <h3>Un sistema nuevo y confiable en cuatro pasos</h3>
+        <p>Descubrimiento, después datos y backend, después interfaz, después pruebas de aceptación. Cada paso vuelve más exacto lo que usted nos dijo, así que el sistema hace lo que usted necesita.</p>
+        <a class="more" href="/es/services/#software">Leer más</a>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Seguridad</p>
+        <h3>Un análisis de seguridad en cinco pasos</h3>
+        <p>Analizamos aplicaciones y servidores desde adentro hacia afuera. Usted recibe hallazgos que demostramos, cada uno con su criticidad y un plan para corregirlo.</p>
+        <a class="more" href="/es/security/">Leer más</a>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Infraestructura</p>
+        <h3>Linux y virtualización</h3>
+        <p>Instalamos, aseguramos y operamos las máquinas donde se ejecuta nuestro software, sobre Proxmox VE, KVM y hardware dedicado.</p>
+        <a class="more" href="/es/services/#infrastructure">Leer más</a>
+      </article>
+    </div>
   </div>
 </section>
 
-<section class="pane" aria-label="Código abierto">
-  <div class="pane__bar"><span class="pane__path">~/oss</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> git remote <span class="flag">-v</span></h2>
-    <p>Construimos sobre código abierto y aportamos de vuelta, y publicamos nuestras propias herramientas bajo la organización CodeStrux en GitHub.</p>
+<section class="band">
+  <div class="wrap">
+    <div class="split">
+      <div class="split__head">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2>Usted conoce su proceso. Nosotros le damos estructura.</h2>
+      </div>
+      <div class="split__body">
+        <p>Nadie conoce su proceso mejor que usted y su equipo. Nuestro trabajo es tomar lo que usted sabe y pulirlo hasta que sea exacto: qué entra, qué sale y qué significa cada dato.</p>
+        <p>Lo hacemos en una secuencia fija. Cada paso termina con un documento que usted puede leer y aprobar. Usted siempre sabe en qué punto está el proyecto y qué sigue. Los buenos insumos dan buenos resultados, y nosotros le ayudamos a afinar los insumos.</p>
+        <p><a class="link-underline" href="/es/services/">Lea el método paso a paso</a></p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="pane pane--feature pane--col-2" aria-label="Pruebas de seguridad y de penetración">
-  <div class="pane__bar"><span class="pane__path">~/security</span><span class="pane__status">pentest</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">cat security.md</span></p>
-    <h2 class="hero__heading">Pruebas de seguridad y de <span class="hl">penetración</span>.</h2>
-    <p>Esta es una fortaleza de CodeStrux. Hacemos pentest en los entornos que operamos y en los que nos contratan para probar — hosts, redes, identidad, secretos y el camino del laptop a producción. Los hallazgos se quedan con quien opera. Cerramos la exposición con el equipo dueño de la máquina.</p>
-    <p>En sistemas confidenciales, la misma disciplina: los agentes ven solo metadatos. El equipo de CodeStrux Tech aprueba el script. La carga nunca entra al modelo.</p>
-    <p class="hero__cta"><a class="btn" href="/es/security/">cat security.md</a> <a class="btn btn--ghost" href="/es/services/">ls services/</a></p>
+<section class="band band--alt">
+  <div class="wrap">
+    <div class="band__head">
+      <p class="eyebrow">Trabajo en conjunto</p>
+      <h2>Su aporte, pulido. Después, construido.</h2>
+    </div>
+    <div class="cards cards--2">
+      <article class="card">
+        <h3>Su aporte</h3>
+        <p>Usted nos presenta a las personas que conocen cada proceso. Comparte los documentos y los datos de prueba que describen su trabajo. Lee lo que escribimos y nos dice si es correcto.</p>
+        <p>Hacemos muchas preguntas, porque cada respuesta mejora el resultado.</p>
+      </article>
+      <article class="card">
+        <h3>Qué recibe usted</h3>
+        <p>Estimaciones con las que usted puede planificar. Un solo significado acordado para cada dato. Una interfaz que su gente probó antes de que la termináramos. Un sistema que sus dueños del proceso revisaron con sus propios datos.</p>
+        <p>Y cuando usted reporta una falla, una respuesta inmediata.</p>
+      </article>
+    </div>
   </div>
 </section>
 
-<section class="pane pane--col-2" aria-label="Nube, datos y backends">
-  <div class="pane__bar"><span class="pane__path">~/stack</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> ls <span class="arg">stack/</span></h2>
-    <p>AWS, Cloudflare, Azure y GCP; Proxmox y contenedores; pipelines de ETL y BI; backends en producción en Java (Jakarta EE, Spring Boot) y TypeScript (React, Next.js); facturación electrónica de Costa Rica y WhatsApp Business.</p>
-    <ul class="tags" aria-label="Stack">
-      <li>Proxmox</li><li>AWS</li><li>GCP</li><li>Java</li><li>Spring Boot</li><li>Jakarta EE</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>ETL</li><li>WhatsApp</li><li>FacturaCR</li>
-    </ul>
-  </div>
-</section>
-
-<section class="pane pane--feature pane--col-2 product-stratos" aria-label="Stratos WhatsApp — producto destacado">
-  <div class="pane__bar"><span class="pane__path">~/projects/stratos</span><span class="pane__status">en línea</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">./stratos --status</span></p>
-    <div class="product-wordmark">{% include stratos-wordmark.html class="is-lg" %}</div>
-    <p>Nuestra propia bandeja de WhatsApp Business en tiempo real para pymes de LATAM: actualizaciones en vivo por SSE, transcripción de notas de voz en español, sugerencias de respuesta con IA y agentes de IA verticales.</p>
-    <ul class="tags" aria-label="Capacidades de Stratos">
-      <li>agentes de IA</li><li>bandeja SSE</li><li>transcripción de voz</li><li>sugerencias de respuesta</li><li>WhatsApp Flows</li>
-    </ul>
-    <p class="hero__cta"><a class="btn" href="https://stratos.talk" rel="noopener">open stratos</a> <a class="btn btn--ghost" href="/es/projects/">más proyectos</a></p>
-  </div>
-</section>
-
-<section class="pane pane--feature pane--col-2 product-exc" aria-label="exc — el menú de todo para su terminal">
-  <div class="pane__bar"><span class="pane__path">~/projects/exc</span><span class="pane__status">v0.6.0</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">exc</span></p>
-    <h2 class="hero__heading">exc<span class="hl">.</span></h2>
-    <p class="card-meta">el menú de todo para su terminal</p>
-    <p>Un selector de comandos buscable y manejado por teclado, escrito en Rust: un archivo TOML con comandos, perfiles y parámetros con prompt, y un encabezado de información del host en vivo. Código abierto, MIT.</p>
-    <ul class="tags" aria-label="Capacidades de exc">
-      <li>Rust</li><li>TUI</li><li>config TOML</li><li>filtro regex</li><li>sysinfo</li>
-    </ul>
-    <p class="hero__cta"><a class="btn" href="/es/exc/">open exc</a> <a class="btn btn--ghost" href="https://github.com/codestrux/exc-launcher" rel="noopener">github</a></p>
-  </div>
-</section>
-
-<section class="pane pane--feature pane--col-2" aria-label="CodeStrux Learn">
-  <div class="pane__bar"><span class="pane__path">~/projects/learn</span><span class="pane__status">usdc</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">open learn</span></p>
-    <h2 class="hero__heading">Learn</h2>
-    <p class="card-meta">sesiones en vivo de código seguro</p>
-    <p>Vendemos cursos en sesiones en vivo para que la gente aprenda prácticas de código seguro. Catálogo, cuentas y LMS — se desbloquean con USDC a través de MoonPay Commerce.</p>
-    <ul class="tags" aria-label="Capacidades de Learn">
-      <li>sesiones en vivo</li><li>código seguro</li><li>USDC</li>
-    </ul>
-    <p class="hero__cta"><a class="btn" href="https://learn.codestrux.tech" rel="noopener">open learn</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
-  </div>
-</section>
-
-<section class="pane pane--feature pane--col-2" aria-label="arayaj.photo">
-  <div class="pane__bar"><span class="pane__path">~/projects/photo</span><span class="pane__status">usdc</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <p class="prompt"><span class="prompt__sigil" aria-hidden="true">$</span> <span class="prompt__cmd">open photo</span></p>
-    <h2 class="hero__heading">arayaj.photo</h2>
-    <p class="card-meta">portafolio fotográfico</p>
-    <p>Un portafolio fotográfico bilingüe: álbumes, cotizaciones y checkout en USDC a través de MoonPay Commerce.</p>
-    <ul class="tags" aria-label="Capacidades de arayaj.photo">
-      <li>portafolio</li><li>USDC</li><li>MoonPay</li>
-    </ul>
-    <p class="hero__cta"><a class="btn" href="https://arayaj.photo" rel="noopener">open photo</a> <a class="btn btn--ghost" href="/es/pay/">cat pay.md</a></p>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="CodeStrux Socials">
-  <div class="pane__bar"><span class="pane__path">~/socials</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> ls <span class="arg">socials/</span></h2>
-    <p>CodeStrux Socials — Instagram, GitHub, LinkedIn, WhatsApp.</p>
-    <ul>
-      <li><a href="https://www.instagram.com/codestrux.tech/" rel="me noopener">instagram.com/codestrux.tech</a></li>
-      <li><a href="https://github.com/CodeStrux" rel="me noopener">github.com/CodeStrux</a></li>
-      <li><a href="https://www.linkedin.com/company/codestrux" rel="me noopener">linkedin.com/company/codestrux</a></li>
-      <li><a href="https://wa.me/50671789868" rel="me noopener">WhatsApp</a></li>
-    </ul>
-  </div>
-</section>
-
-<section class="pane pane--col-2" aria-label="Trabajemos juntos">
-  <div class="pane__bar"><span class="pane__path">~/contact</span><span class="pane__dots" aria-hidden="true"><i class="dot dot--a"></i><i class="dot dot--b"></i><i class="dot dot--c"></i></span></div>
-  <div class="pane__body">
-    <h2 class="cmd-head"><span class="sigil">$</span> cat <span class="arg">contact.md</span></h2>
-    <p>Vea lo que hemos construido en la página de <a href="/es/projects/">proyectos</a>, conozca más <a href="/es/about/">sobre nosotros</a> o explore los <a href="/es/services/">servicios</a> que ofrecemos. Cuando facturamos, enviamos un cargo de MoonPay Commerce — <a href="/es/pay/">cómo pagar</a>. ¿Listo para conversar? Escríbanos a <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+<section class="band">
+  <div class="wrap">
+    <h2>Empiece con una conversación</h2>
+    <p>Cuéntenos qué quiere construir o proteger. El primer paso es una reunión, y le da una lista clara de lo que sigue.</p>
+    <p class="hero__cta">
+      <a class="btn" href="mailto:{{ site.author.email }}">Contáctenos</a>
+      <a class="btn btn--ghost" href="/es/projects/">Ver los proyectos</a>
+    </p>
   </div>
 </section>

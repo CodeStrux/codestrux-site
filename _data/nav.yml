@@ -7,6 +7,8 @@
 # - `path`    EN path WITHOUT the /es prefix; the template prepends `base` for es-CR.
 # - `cmd`     the shell-style label shown in the palette / nav (English; universal shell).
 # - `icon`    a single ASCII/box glyph used as the palette row marker.
+# - `header`  true = shown in the header nav (in this order). The rest stay
+#             reachable from the palette, the footer and in-page links.
 #
 # Commands stay in English in both languages (a universal shell); only the
 # human-facing `label` is localized.
@@ -16,26 +18,30 @@ items:
     path: /
     cmd: "cd ~"
     icon: "~"
-  - key: about
-    label: about
-    path: /about/
-    cmd: "cat about.md"
-    icon: "*"
   - key: services
     label: services
     path: /services/
     cmd: "ls services/"
     icon: "+"
+    header: true
   - key: security
     label: security
     path: /security/
     cmd: "cat security.md"
     icon: "^"
+    header: true
   - key: projects
     label: projects
     path: /projects/
     cmd: "ls projects/"
     icon: "#"
+    header: true
+  - key: about
+    label: about
+    path: /about/
+    cmd: "cat about.md"
+    icon: "*"
+    header: true
   - key: exc
     label: exc
     path: /exc/

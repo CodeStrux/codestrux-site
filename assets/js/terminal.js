@@ -1,70 +1,21 @@
 /* ============================================================ *
- *  codestrux.tech — terminal interactions (vanilla, no deps)
+ *  codestrux.tech: interactions (vanilla, no deps)
  *  Progressive enhancement: the site is fully navigable with this
  *  file absent. Everything here is additive.
  *
- *    1. Theme toggle      — persists to localStorage (no-FOUC script
- *                           in <head> reads it back before first paint).
- *    2. Boot / typewriter — one tasteful reveal, gated by
- *                           prefers-reduced-motion.
- *    3. Command palette   — ⌘K / Ctrl-K / "/" launcher with a bounded
- *                           command set + a small toy mini-shell.
- *                           Focus-trapped, Esc-closable, ARIA-wired,
- *                           restores focus on close. Real <nav> remains
- *                           the primary path; the palette is a shortcut.
+ *    1. Demo video        autoplay, gated by prefers-reduced-motion.
+ *    2. Command palette   ⌘K / Ctrl-K / "/" launcher with a bounded
+ *                         command set + a small toy mini-shell.
+ *                         Focus-trapped, Esc-closable, ARIA-wired,
+ *                         restores focus on close. Real <nav> remains
+ *                         the primary path; the palette is a shortcut.
  * ============================================================ */
 (function () {
   'use strict';
 
-  var STORAGE_KEY = 'codestrux-theme';
-  var root = document.documentElement;
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- 1. Theme toggle ---------- */
-  function currentTheme() {
-    return root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
-  }
-  function setTheme(theme) {
-    root.setAttribute('data-theme', theme);
-    try { localStorage.setItem(STORAGE_KEY, theme); } catch (e) {}
-  }
-  function toggleTheme() {
-    setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
-  }
-  Array.prototype.forEach.call(document.querySelectorAll('[data-theme-toggle]'), function (btn) {
-    btn.addEventListener('click', toggleTheme);
-  });
-
-  /* ---------- 2. Boot / typewriter reveal ---------- */
-  function runBoot() {
-    if (reduceMotion) {
-      root.classList.remove('boot');
-      var s = document.querySelector('[data-boot-status]');
-      if (s) { s.textContent = s.getAttribute('data-ready') || s.textContent; }
-      return;
-    }
-    // Pane-in is pure CSS (animation gated on html.boot). Drop the class
-    // after the cascade finishes so re-flows (theme toggle) don't re-trigger.
-    window.setTimeout(function () { root.classList.remove('boot'); }, 1300);
-
-    // Typewriter the hero command, then any boot status line.
-    Array.prototype.forEach.call(document.querySelectorAll('[data-typewriter]'), function (el) {
-      var full = el.getAttribute('data-typewriter-text') || el.textContent;
-      var i = 0;
-      el.textContent = '';
-      (function tick() {
-        if (i <= full.length) {
-          el.textContent = full.slice(0, i);
-          i++;
-          window.setTimeout(tick, 55 + Math.random() * 45);
-        }
-      })();
-    });
-  }
-  if (document.readyState !== 'loading') { runBoot(); }
-  else { document.addEventListener('DOMContentLoaded', runBoot); }
-
-  /* ---------- 2b. Demo video autoplay (gated by prefers-reduced-motion) ----------
+  /* ---------- 1. Demo video autoplay (gated by prefers-reduced-motion) ----------
      Markup ships without an `autoplay` attribute, so JS-off and reduced-motion
      both fall back to poster + native controls (the pause affordance). */
   function runVideos() {
@@ -78,7 +29,7 @@
   if (document.readyState !== 'loading') { runVideos(); }
   else { document.addEventListener('DOMContentLoaded', runVideos); }
 
-  /* ---------- 3. Command palette + mini-shell ---------- */
+  /* ---------- 2. Command palette + mini-shell ---------- */
   var paletteEl = document.getElementById('command-palette');
   var dataEl = document.getElementById('palette-commands');
   if (!paletteEl || !dataEl) { return; }
@@ -101,10 +52,7 @@
   }
   var BUILTINS = [
     { id: 'help',    cmd: S.help || 'help',   label: S.helpTitle || 'help', icon: '?', run: showHelp },
-    { id: 'theme',   cmd: S.theme || 'theme', label: '', icon: '◐', run: function () { toggleTheme(); echo((S.theme || 'theme') + ' → ' + (currentTheme() === 'dark' ? (S.themeDark || 'dark') : (S.themeLight || 'light'))); } },
     { id: 'stratos',    cmd: S.stratos || 'open stratos', label: 'stratos.talk', icon: '↗', href: S.stratosHref },
-    { id: 'learn',      cmd: S.learn || 'open learn', label: 'learn.codestrux.tech', icon: '↗', href: S.learnHref },
-    { id: 'photo',      cmd: S.photo || 'open photo', label: 'arayaj.photo', icon: '↗', href: S.photoHref },
     { id: 'instagram',  cmd: S.instagram || 'open instagram', label: 'instagram.com/codestrux.tech', icon: '↗', href: S.instagramHref },
     { id: 'contact',    cmd: S.contact || 'contact', label: 'email', icon: '@', href: S.contactHref },
     { id: 'clear',   cmd: S.clear || 'clear', label: '', icon: '⌫', run: function () { clearOutput(); inputEl.value = ''; render(''); } }

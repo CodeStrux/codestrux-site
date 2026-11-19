@@ -1,7 +1,7 @@
 {%- comment -%}
-  Language toggle — a real <a> pointing at page.alt_url (the paired page in
-  the other language). Styled as a terminal "EN | ES"-style control via the
-  .lang-switch rules in assets/css/style.scss. Drives hreflang correctness too.
+  Language toggle: a real <a> pointing at page.alt_url (the paired page in
+  the other language). Styled by the .lang-switch rules in
+  assets/css/style.scss. Drives hreflang correctness too.
 {%- endcomment -%}
 {%- assign L = page.lang | default: "en" -%}
 {%- assign ui = site.data.i18n[L] | default: site.data.i18n.en -%}
